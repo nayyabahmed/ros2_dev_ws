@@ -1,0 +1,404 @@
+[0.000000] (-) TimerEvent: {}
+[0.000556] (turtlesim) JobQueued: {'identifier': 'turtlesim', 'dependencies': OrderedDict()}
+[0.000617] (turtlesim) JobStarted: {'identifier': 'turtlesim'}
+[0.011687] (turtlesim) JobProgress: {'identifier': 'turtlesim', 'progress': 'cmake'}
+[0.012554] (turtlesim) JobProgress: {'identifier': 'turtlesim', 'progress': 'build'}
+[0.013566] (turtlesim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nayab/dev_ws/build/turtlesim', '--', '-j4', '-l4'], 'cwd': '/home/nayab/dev_ws/build/turtlesim', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'nayab'), ('SSH_AGENT_PID', '1533'), ('ROS_PACKAGE_PATH', '/home/nayab/project_ws/src:/opt/ros/noetic/share'), ('XDG_SESSION_TYPE', 'x11'), ('ROS_ETC_DIR', '/opt/ros/noetic/etc/ros'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/home/nayab/project_ws/devel/lib:/opt/ros/noetic/lib'), ('HOME', '/home/nayab'), ('OLDPWD', '/home/nayab/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1354'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nayab'), ('JOURNAL_STREAM', '8:44619'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/nayab/project_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nayab'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/opt/ros/noetic/bin:/home/nayab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nayab-HP:@/tmp/.ICE-unix/1576,unix/nayab-HP:/tmp/.ICE-unix/1576'), ('INVOCATION_ID', 'b2ae9183104d4bcaa7b95957d5c55b65'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9657b320_bb7b_4a2c_a6e8_bd67d5edbeb5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('ROSLISP_PACKAGE_DIRECTORIES', '/home/nayab/project_ws/devel/share/common-lisp'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.194'), ('ROS_ROOT', '/opt/ros/noetic/share/ros'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nayab/dev_ws/build/turtlesim'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages:/home/nayab/project_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy:/home/nayab/project_ws/devel:/opt/ros/noetic')]), 'shell': False}
+[0.078706] (turtlesim) StdoutLine: {'line': b'[  3%] Built target turtlesim__cpp\n'}
+[0.079065] (turtlesim) StdoutLine: {'line': b'[ 11%] Built target turtlesim__rosidl_generator_c\n'}
+[0.099302] (-) TimerEvent: {}
+[0.103302] (turtlesim) StdoutLine: {'line': b'[ 29%] Built target turtlesim__rosidl_typesupport_introspection_c\n'}
+[0.103555] (turtlesim) StdoutLine: {'line': b'[ 32%] Built target turtlesim__rosidl_typesupport_introspection_cpp\n'}
+[0.103654] (turtlesim) StdoutLine: {'line': b'[ 41%] Built target turtlesim__rosidl_typesupport_cpp\n'}
+[0.108525] (turtlesim) StdoutLine: {'line': b'[ 51%] Built target turtlesim__rosidl_typesupport_fastrtps_cpp\n'}
+[0.129037] (turtlesim) StdoutLine: {'line': b'[ 61%] Built target turtlesim__rosidl_typesupport_c\n'}
+[0.141561] (turtlesim) StdoutLine: {'line': b'[ 71%] Built target turtlesim__rosidl_typesupport_fastrtps_c\n'}
+[0.166193] (turtlesim) StdoutLine: {'line': b'[ 71%] Built target turtlesim\n'}
+[0.187680] (turtlesim) StdoutLine: {'line': b'[ 72%] Built target turtlesim__py\n'}
+[0.196477] (turtlesim) StdoutLine: {'line': b'[ 78%] Built target turtle_teleop_key\n'}
+[0.196746] (turtlesim) StdoutLine: {'line': b'[ 78%] Built target draw_square\n'}
+[0.196949] (turtlesim) StdoutLine: {'line': b'[ 78%] Built target mimic\n'}
+[0.199377] (-) TimerEvent: {}
+[0.205774] (turtlesim) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target turtlesim_node\x1b[0m\n'}
+[0.226551] (turtlesim) StdoutLine: {'line': b'[ 87%] Built target turtlesim__python\n'}
+[0.254021] (turtlesim) StdoutLine: {'line': b'[ 89%] Built target turtlesim__rosidl_typesupport_introspection_c__pyext\n'}
+[0.257842] (turtlesim) StdoutLine: {'line': b'[ 91%] Built target turtlesim__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.263484] (turtlesim) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding CXX object CMakeFiles/turtlesim_node.dir/src/turtle_frame.cpp.o\x1b[0m\n'}
+[0.263720] (turtlesim) StdoutLine: {'line': b'[ 94%] Built target turtlesim__rosidl_typesupport_c__pyext\n'}
+[0.299497] (-) TimerEvent: {}
+[0.399811] (-) TimerEvent: {}
+[0.500124] (-) TimerEvent: {}
+[0.600420] (-) TimerEvent: {}
+[0.700711] (-) TimerEvent: {}
+[0.801034] (-) TimerEvent: {}
+[0.901359] (-) TimerEvent: {}
+[1.001692] (-) TimerEvent: {}
+[1.102025] (-) TimerEvent: {}
+[1.202357] (-) TimerEvent: {}
+[1.302692] (-) TimerEvent: {}
+[1.403029] (-) TimerEvent: {}
+[1.503368] (-) TimerEvent: {}
+[1.603686] (-) TimerEvent: {}
+[1.703999] (-) TimerEvent: {}
+[1.804329] (-) TimerEvent: {}
+[1.904656] (-) TimerEvent: {}
+[2.004949] (-) TimerEvent: {}
+[2.105242] (-) TimerEvent: {}
+[2.205549] (-) TimerEvent: {}
+[2.305899] (-) TimerEvent: {}
+[2.406213] (-) TimerEvent: {}
+[2.506563] (-) TimerEvent: {}
+[2.606897] (-) TimerEvent: {}
+[2.707240] (-) TimerEvent: {}
+[2.807548] (-) TimerEvent: {}
+[2.907883] (-) TimerEvent: {}
+[3.008211] (-) TimerEvent: {}
+[3.108549] (-) TimerEvent: {}
+[3.208892] (-) TimerEvent: {}
+[3.309223] (-) TimerEvent: {}
+[3.409551] (-) TimerEvent: {}
+[3.509882] (-) TimerEvent: {}
+[3.610218] (-) TimerEvent: {}
+[3.710569] (-) TimerEvent: {}
+[3.810901] (-) TimerEvent: {}
+[3.911243] (-) TimerEvent: {}
+[4.011572] (-) TimerEvent: {}
+[4.111919] (-) TimerEvent: {}
+[4.212284] (-) TimerEvent: {}
+[4.312673] (-) TimerEvent: {}
+[4.412998] (-) TimerEvent: {}
+[4.513335] (-) TimerEvent: {}
+[4.613660] (-) TimerEvent: {}
+[4.713986] (-) TimerEvent: {}
+[4.814305] (-) TimerEvent: {}
+[4.914617] (-) TimerEvent: {}
+[5.014939] (-) TimerEvent: {}
+[5.115251] (-) TimerEvent: {}
+[5.215595] (-) TimerEvent: {}
+[5.315915] (-) TimerEvent: {}
+[5.416268] (-) TimerEvent: {}
+[5.516589] (-) TimerEvent: {}
+[5.616909] (-) TimerEvent: {}
+[5.717231] (-) TimerEvent: {}
+[5.817538] (-) TimerEvent: {}
+[5.917844] (-) TimerEvent: {}
+[6.018163] (-) TimerEvent: {}
+[6.118487] (-) TimerEvent: {}
+[6.218809] (-) TimerEvent: {}
+[6.319121] (-) TimerEvent: {}
+[6.419445] (-) TimerEvent: {}
+[6.519769] (-) TimerEvent: {}
+[6.620145] (-) TimerEvent: {}
+[6.720469] (-) TimerEvent: {}
+[6.820792] (-) TimerEvent: {}
+[6.921125] (-) TimerEvent: {}
+[7.021452] (-) TimerEvent: {}
+[7.033060] (turtlesim) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX executable turtlesim_node\x1b[0m\n'}
+[7.121566] (-) TimerEvent: {}
+[7.221910] (-) TimerEvent: {}
+[7.322297] (-) TimerEvent: {}
+[7.422697] (-) TimerEvent: {}
+[7.523100] (-) TimerEvent: {}
+[7.623547] (-) TimerEvent: {}
+[7.723998] (-) TimerEvent: {}
+[7.824409] (-) TimerEvent: {}
+[7.924848] (-) TimerEvent: {}
+[8.025285] (-) TimerEvent: {}
+[8.125672] (-) TimerEvent: {}
+[8.226103] (-) TimerEvent: {}
+[8.326460] (-) TimerEvent: {}
+[8.426825] (-) TimerEvent: {}
+[8.527232] (-) TimerEvent: {}
+[8.596868] (turtlesim) StdoutLine: {'line': b'[100%] Built target turtlesim_node\n'}
+[8.608483] (turtlesim) CommandEnded: {'returncode': 0}
+[8.627393] (-) TimerEvent: {}
+[8.727832] (-) TimerEvent: {}
+[8.762828] (turtlesim) JobProgress: {'identifier': 'turtlesim', 'progress': 'install'}
+[8.775233] (turtlesim) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nayab/dev_ws/build/turtlesim'], 'cwd': '/home/nayab/dev_ws/build/turtlesim', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'nayab'), ('SSH_AGENT_PID', '1533'), ('ROS_PACKAGE_PATH', '/home/nayab/project_ws/src:/opt/ros/noetic/share'), ('XDG_SESSION_TYPE', 'x11'), ('ROS_ETC_DIR', '/opt/ros/noetic/etc/ros'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/home/nayab/project_ws/devel/lib:/opt/ros/noetic/lib'), ('HOME', '/home/nayab'), ('OLDPWD', '/home/nayab/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1354'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nayab'), ('JOURNAL_STREAM', '8:44619'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/nayab/project_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nayab'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/opt/ros/noetic/bin:/home/nayab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nayab-HP:@/tmp/.ICE-unix/1576,unix/nayab-HP:/tmp/.ICE-unix/1576'), ('INVOCATION_ID', 'b2ae9183104d4bcaa7b95957d5c55b65'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9657b320_bb7b_4a2c_a6e8_bd67d5edbeb5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('ROSLISP_PACKAGE_DIRECTORIES', '/home/nayab/project_ws/devel/share/common-lisp'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.194'), ('ROS_ROOT', '/opt/ros/noetic/share/ros'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nayab/dev_ws/build/turtlesim'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages:/home/nayab/project_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy:/home/nayab/project_ws/devel:/opt/ros/noetic')]), 'shell': False}
+[8.785291] (turtlesim) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.785517] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/ament_index/resource_index/rosidl_interfaces/turtlesim\n'}
+[8.785745] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim\n'}
+[8.785907] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action\n'}
+[8.786058] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/rotate_absolute.h\n'}
+[8.786204] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail\n'}
+[8.786362] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__functions.c\n'}
+[8.786473] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__functions.h\n'}
+[8.786584] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__struct.h\n'}
+[8.786675] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__type_support.h\n'}
+[8.786756] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg\n'}
+[8.786860] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/pose.h\n'}
+[8.786941] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail\n'}
+[8.787029] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__type_support.h\n'}
+[8.787176] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__type_support.h\n'}
+[8.787326] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__struct.h\n'}
+[8.787451] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__functions.c\n'}
+[8.787533] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__functions.h\n'}
+[8.787613] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__functions.h\n'}
+[8.787704] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__functions.c\n'}
+[8.787786] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__struct.h\n'}
+[8.787864] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/rosidl_generator_c__visibility_control.h\n'}
+[8.787948] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/color.h\n'}
+[8.788069] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv\n'}
+[8.788207] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail\n'}
+[8.788344] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__functions.c\n'}
+[8.788468] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__type_support.h\n'}
+[8.788548] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__struct.h\n'}
+[8.788626] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__functions.h\n'}
+[8.788729] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__functions.c\n'}
+[8.788809] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__functions.h\n'}
+[8.788886] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__struct.h\n'}
+[8.789020] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__functions.h\n'}
+[8.789149] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__functions.h\n'}
+[8.789283] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__struct.h\n'}
+[8.789423] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__functions.c\n'}
+[8.789542] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__type_support.h\n'}
+[8.789622] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__struct.h\n'}
+[8.789700] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__type_support.h\n'}
+[8.789793] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__functions.c\n'}
+[8.789878] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__functions.c\n'}
+[8.789955] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__struct.h\n'}
+[8.790033] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__type_support.h\n'}
+[8.790111] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__type_support.h\n'}
+[8.790204] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__functions.h\n'}
+[8.790282] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/set_pen.h\n'}
+[8.790359] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/teleport_relative.h\n'}
+[8.790460] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/kill.h\n'}
+[8.790639] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/teleport_absolute.h\n'}
+[8.790818] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/spawn.h\n'}
+[8.790972] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/environment/library_path.sh\n'}
+[8.791132] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/environment/library_path.dsv\n'}
+[8.791277] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_generator_c.so\n'}
+[8.791406] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim\n'}
+[8.791553] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action\n'}
+[8.791689] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail\n'}
+[8.791849] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_fastrtps_c.h\n'}
+[8.791946] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg\n'}
+[8.792031] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail\n'}
+[8.792126] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__rosidl_typesupport_fastrtps_c.h\n'}
+[8.792218] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__rosidl_typesupport_fastrtps_c.h\n'}
+[8.792305] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[8.792387] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv\n'}
+[8.792466] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail\n'}
+[8.792546] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__rosidl_typesupport_fastrtps_c.h\n'}
+[8.792624] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_fastrtps_c.h\n'}
+[8.792701] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__rosidl_typesupport_fastrtps_c.h\n'}
+[8.792803] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_fastrtps_c.h\n'}
+[8.792889] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__rosidl_typesupport_fastrtps_c.h\n'}
+[8.792968] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_fastrtps_c.so\n'}
+[8.793076] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim\n'}
+[8.793167] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action\n'}
+[8.793246] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail\n'}
+[8.793333] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/dds_fastrtps\n'}
+[8.793411] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.793509] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg\n'}
+[8.793580] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail\n'}
+[8.793651] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/dds_fastrtps\n'}
+[8.793721] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.793792] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.793872] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[8.793953] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv\n'}
+[8.794024] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail\n'}
+[8.794094] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.794166] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/dds_fastrtps\n'}
+[8.794236] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.794307] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.794378] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.794448] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.794518] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_fastrtps_cpp.so\n'}
+[8.794589] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim\n'}
+[8.794660] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action\n'}
+[8.794731] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail\n'}
+[8.794801] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_introspection_c.h\n'}
+[8.794878] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__type_support.c\n'}
+[8.794949] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg\n'}
+[8.795020] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[8.795096] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail\n'}
+[8.795167] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__type_support.c\n'}
+[8.795237] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__rosidl_typesupport_introspection_c.h\n'}
+[8.795307] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__rosidl_typesupport_introspection_c.h\n'}
+[8.795377] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__type_support.c\n'}
+[8.795447] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv\n'}
+[8.795517] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail\n'}
+[8.795587] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__rosidl_typesupport_introspection_c.h\n'}
+[8.795657] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__type_support.c\n'}
+[8.795727] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__rosidl_typesupport_introspection_c.h\n'}
+[8.795797] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__rosidl_typesupport_introspection_c.h\n'}
+[8.795867] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__type_support.c\n'}
+[8.795936] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_introspection_c.h\n'}
+[8.796007] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_introspection_c.h\n'}
+[8.796101] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__type_support.c\n'}
+[8.796198] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__type_support.c\n'}
+[8.796276] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__type_support.c\n'}
+[8.796358] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_introspection_c.so\n'}
+[8.796429] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_c.so\n'}
+[8.796514] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim\n'}
+[8.796594] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action\n'}
+[8.796665] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail\n'}
+[8.796736] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__builder.hpp\n'}
+[8.796807] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__traits.hpp\n'}
+[8.796883] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__struct.hpp\n'}
+[8.796953] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/rotate_absolute.hpp\n'}
+[8.797022] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg\n'}
+[8.797092] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail\n'}
+[8.797162] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__traits.hpp\n'}
+[8.797233] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__struct.hpp\n'}
+[8.797303] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__traits.hpp\n'}
+[8.797373] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__builder.hpp\n'}
+[8.797443] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__builder.hpp\n'}
+[8.797514] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__struct.hpp\n'}
+[8.797584] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/pose.hpp\n'}
+[8.797654] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/color.hpp\n'}
+[8.797723] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv\n'}
+[8.797796] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail\n'}
+[8.797866] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__traits.hpp\n'}
+[8.797935] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__struct.hpp\n'}
+[8.798005] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__builder.hpp\n'}
+[8.798074] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__traits.hpp\n'}
+[8.798144] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__builder.hpp\n'}
+[8.798214] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__struct.hpp\n'}
+[8.798284] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__struct.hpp\n'}
+[8.798353] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__traits.hpp\n'}
+[8.798423] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__builder.hpp\n'}
+[8.798493] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__struct.hpp\n'}
+[8.798563] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__traits.hpp\n'}
+[8.798631] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__builder.hpp\n'}
+[8.798700] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__builder.hpp\n'}
+[8.798775] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__traits.hpp\n'}
+[8.798845] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__struct.hpp\n'}
+[8.798915] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/teleport_relative.hpp\n'}
+[8.798984] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/set_pen.hpp\n'}
+[8.799054] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/spawn.hpp\n'}
+[8.799131] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/kill.hpp\n'}
+[8.799201] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/teleport_absolute.hpp\n'}
+[8.799272] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim\n'}
+[8.799342] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action\n'}
+[8.799413] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail\n'}
+[8.799483] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.799554] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__type_support.cpp\n'}
+[8.799625] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg\n'}
+[8.799696] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail\n'}
+[8.799766] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__type_support.cpp\n'}
+[8.799836] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.799908] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.799979] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__type_support.cpp\n'}
+[8.800050] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv\n'}
+[8.800121] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail\n'}
+[8.800219] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__type_support.cpp\n'}
+[8.800290] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__type_support.cpp\n'}
+[8.800360] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__type_support.cpp\n'}
+[8.800435] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.800506] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__type_support.cpp\n'}
+[8.800576] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.800646] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.800723] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.800793] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.800863] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__type_support.cpp\n'}
+[8.800934] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_introspection_cpp.so\n'}
+[8.801004] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_cpp.so\n'}
+[8.801074] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/environment/pythonpath.sh\n'}
+[8.801144] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/environment/pythonpath.dsv\n'}
+[8.801213] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/__init__.py\n'}
+[8.824624] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/action\n'}
+[8.824938] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/action/_rotate_absolute.py\n'}
+[8.825144] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/action/_rotate_absolute_s.c\n'}
+[8.825272] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/action/__init__.py\n'}
+[8.825358] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/msg\n'}
+[8.825439] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/msg/_pose.py\n'}
+[8.825518] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/msg/_color_s.c\n'}
+[8.825610] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/msg/__init__.py\n'}
+[8.825687] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/msg/_pose_s.c\n'}
+[8.825775] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/msg/_color.py\n'}
+[8.825848] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv\n'}
+[8.825922] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_teleport_relative.py\n'}
+[8.825995] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_set_pen.py\n'}
+[8.826068] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_kill.py\n'}
+[8.826141] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/__init__.py\n'}
+[8.826230] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_set_pen_s.c\n'}
+[8.826305] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_kill_s.c\n'}
+[8.826378] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_teleport_absolute.py\n'}
+[8.826457] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_spawn.py\n'}
+[8.826531] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_teleport_relative_s.c\n'}
+[8.826602] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_spawn_s.c\n'}
+[8.826674] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_teleport_absolute_s.c\n'}
+[8.826746] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/turtlesim_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[8.826840] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/turtlesim_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[8.826914] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/turtlesim_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[8.827267] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/libturtlesim__python.so\n'}
+[8.827535] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/action/RotateAbsolute.idl\n'}
+[8.827663] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/msg/Color.idl\n'}
+[8.827782] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/msg/Pose.idl\n'}
+[8.827878] (-) TimerEvent: {}
+[8.828068] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/Kill.idl\n'}
+[8.828191] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/SetPen.idl\n'}
+[8.828297] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/Spawn.idl\n'}
+[8.828397] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute.idl\n'}
+[8.828485] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative.idl\n'}
+[8.828583] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/action/RotateAbsolute.action\n'}
+[8.828681] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/msg/Color.msg\n'}
+[8.828778] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/msg/Pose.msg\n'}
+[8.828876] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/Kill.srv\n'}
+[8.828951] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/Kill_Request.msg\n'}
+[8.829025] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/Kill_Response.msg\n'}
+[8.829112] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/SetPen.srv\n'}
+[8.829186] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/SetPen_Request.msg\n'}
+[8.829258] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/SetPen_Response.msg\n'}
+[8.829330] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/Spawn.srv\n'}
+[8.829402] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/Spawn_Request.msg\n'}
+[8.829475] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/Spawn_Response.msg\n'}
+[8.829555] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute.srv\n'}
+[8.829628] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute_Request.msg\n'}
+[8.829700] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute_Response.msg\n'}
+[8.829771] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative.srv\n'}
+[8.829849] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative_Request.msg\n'}
+[8.829921] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative_Response.msg\n'}
+[8.829989] (turtlesim) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/turtlesim/lib/turtlesim/turtlesim_node\n'}
+[8.834851] (turtlesim) StdoutLine: {'line': b'-- Set runtime path of "/home/nayab/dev_ws/install/turtlesim/lib/turtlesim/turtlesim_node" to ""\n'}
+[8.835178] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/turtlesim/turtle_teleop_key\n'}
+[8.835586] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/turtlesim/draw_square\n'}
+[8.835971] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/turtlesim/mimic\n'}
+[8.836228] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/images\n'}
+[8.836424] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/images/bouncy.png\n'}
+[8.836566] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/images/eloquent.png\n'}
+[8.836674] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/images/ardent.png\n'}
+[8.836780] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/images/crystal.png\n'}
+[8.836896] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/images/foxy.png\n'}
+[8.837003] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/images/dashing.png\n'}
+[8.837105] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/launch\n'}
+[8.837179] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/launch/multisim.launch.py\n'}
+[8.837267] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/ament_index/resource_index/package_run_dependencies/turtlesim\n'}
+[8.837342] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/ament_index/resource_index/parent_prefix_path/turtlesim\n'}
+[8.837433] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/environment/ament_prefix_path.sh\n'}
+[8.837521] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/environment/ament_prefix_path.dsv\n'}
+[8.837594] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/environment/path.sh\n'}
+[8.837689] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/environment/path.dsv\n'}
+[8.837777] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/local_setup.bash\n'}
+[8.837863] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/local_setup.sh\n'}
+[8.837951] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/local_setup.zsh\n'}
+[8.838030] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/local_setup.dsv\n'}
+[8.838116] (turtlesim) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/package.dsv\n'}
+[8.838187] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/ament_index/resource_index/packages/turtlesim\n'}
+[8.838268] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_generator_cExport.cmake\n'}
+[8.838352] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_generator_cExport-noconfig.cmake\n'}
+[8.838433] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cExport.cmake\n'}
+[8.838534] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[8.838632] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cExport.cmake\n'}
+[8.838728] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[8.838834] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_generator_cppExport.cmake\n'}
+[8.838929] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[8.839025] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[8.839100] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cppExport.cmake\n'}
+[8.839173] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[8.839246] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/rosidl_cmake-extras.cmake\n'}
+[8.839319] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[8.839405] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[8.839480] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[8.839553] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[8.839626] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[8.839699] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[8.839772] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesimConfig.cmake\n'}
+[8.839845] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesimConfig-version.cmake\n'}
+[8.839921] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/package.xml\n'}
+[8.841234] (turtlesim) CommandEnded: {'returncode': 0}
+[8.928012] (-) TimerEvent: {}
+[9.011813] (turtlesim) JobEnded: {'identifier': 'turtlesim', 'rc': 0}
+[9.012640] (-) EventReactorShutdown: {}

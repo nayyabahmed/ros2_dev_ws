@@ -1,0 +1,636 @@
+[0.000000] (-) TimerEvent: {}
+[0.000647] (my_package) JobQueued: {'identifier': 'my_package', 'dependencies': OrderedDict()}
+[0.000829] (py_pubsub) JobQueued: {'identifier': 'py_pubsub', 'dependencies': OrderedDict()}
+[0.001127] (turtlesim) JobQueued: {'identifier': 'turtlesim', 'dependencies': OrderedDict()}
+[0.001165] (tutorial_interfaces) JobQueued: {'identifier': 'tutorial_interfaces', 'dependencies': OrderedDict()}
+[0.001201] (my_package) JobStarted: {'identifier': 'my_package'}
+[0.011893] (py_pubsub) JobStarted: {'identifier': 'py_pubsub'}
+[0.022124] (turtlesim) JobStarted: {'identifier': 'turtlesim'}
+[0.028018] (tutorial_interfaces) JobStarted: {'identifier': 'tutorial_interfaces'}
+[0.099853] (-) TimerEvent: {}
+[0.200289] (-) TimerEvent: {}
+[0.300777] (-) TimerEvent: {}
+[0.401350] (-) TimerEvent: {}
+[0.501785] (-) TimerEvent: {}
+[0.561229] (turtlesim) JobProgress: {'identifier': 'turtlesim', 'progress': 'cmake'}
+[0.562683] (turtlesim) JobProgress: {'identifier': 'turtlesim', 'progress': 'build'}
+[0.564162] (turtlesim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nayab/dev_ws/build/turtlesim', '--', '-j4', '-l4'], 'cwd': '/home/nayab/dev_ws/build/turtlesim', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'nayab'), ('SSH_AGENT_PID', '1545'), ('ROS_PACKAGE_PATH', '/home/nayab/project_ws/src:/opt/ros/noetic/share'), ('XDG_SESSION_TYPE', 'x11'), ('ROS_ETC_DIR', '/opt/ros/noetic/etc/ros'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nayab/dev_ws/install/tutorial_interfaces/lib:/home/nayab/dev_ws/install/turtlesim/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/home/nayab/project_ws/devel/lib:/opt/ros/noetic/lib'), ('HOME', '/home/nayab'), ('OLDPWD', '/home/nayab'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1355'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2731'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nayab/dev_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nayab'), ('JOURNAL_STREAM', '8:41301'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/nayab/project_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nayab'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/opt/ros/noetic/bin:/home/nayab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nayab-HP:@/tmp/.ICE-unix/1588,unix/nayab-HP:/tmp/.ICE-unix/1588'), ('INVOCATION_ID', '0cad2e53120340379bf94a4be7d74d8d'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('ROSLISP_PACKAGE_DIRECTORIES', '/home/nayab/project_ws/devel/share/common-lisp'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/noetic/share/ros'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nayab/dev_ws/install/tutorial_interfaces:/home/nayab/dev_ws/install/turtlesim:/home/nayab/dev_ws/install/py_pubsub:/home/nayab/dev_ws/install/my_package:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:8ac67921-b466-428a-bb42-0fb8c5cf3fa1'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nayab/dev_ws/build/turtlesim'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages:/home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages:/home/nayab/dev_ws/install/py_pubsub/lib/python3.8/site-packages:/home/nayab/dev_ws/install/my_package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/nayab/project_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/nayab/dev_ws/install/tutorial_interfaces:/home/nayab/dev_ws/install/turtlesim:/home/nayab/dev_ws/install/py_pubsub:/home/nayab/dev_ws/install/my_package:/opt/ros/foxy:/home/nayab/project_ws/devel:/opt/ros/noetic')]), 'shell': False}
+[0.570513] (tutorial_interfaces) JobProgress: {'identifier': 'tutorial_interfaces', 'progress': 'cmake'}
+[0.571301] (tutorial_interfaces) JobProgress: {'identifier': 'tutorial_interfaces', 'progress': 'build'}
+[0.572909] (tutorial_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nayab/dev_ws/build/tutorial_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/nayab/dev_ws/build/tutorial_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'nayab'), ('SSH_AGENT_PID', '1545'), ('ROS_PACKAGE_PATH', '/home/nayab/project_ws/src:/opt/ros/noetic/share'), ('XDG_SESSION_TYPE', 'x11'), ('ROS_ETC_DIR', '/opt/ros/noetic/etc/ros'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nayab/dev_ws/install/tutorial_interfaces/lib:/home/nayab/dev_ws/install/turtlesim/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/home/nayab/project_ws/devel/lib:/opt/ros/noetic/lib'), ('HOME', '/home/nayab'), ('OLDPWD', '/home/nayab'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1355'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2731'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nayab/dev_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nayab'), ('JOURNAL_STREAM', '8:41301'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/nayab/project_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nayab'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/opt/ros/noetic/bin:/home/nayab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nayab-HP:@/tmp/.ICE-unix/1588,unix/nayab-HP:/tmp/.ICE-unix/1588'), ('INVOCATION_ID', '0cad2e53120340379bf94a4be7d74d8d'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('ROSLISP_PACKAGE_DIRECTORIES', '/home/nayab/project_ws/devel/share/common-lisp'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/noetic/share/ros'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nayab/dev_ws/install/tutorial_interfaces:/home/nayab/dev_ws/install/turtlesim:/home/nayab/dev_ws/install/py_pubsub:/home/nayab/dev_ws/install/my_package:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:8ac67921-b466-428a-bb42-0fb8c5cf3fa1'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nayab/dev_ws/build/tutorial_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages:/home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages:/home/nayab/dev_ws/install/py_pubsub/lib/python3.8/site-packages:/home/nayab/dev_ws/install/my_package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/nayab/project_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/nayab/dev_ws/install/tutorial_interfaces:/home/nayab/dev_ws/install/turtlesim:/home/nayab/dev_ws/install/py_pubsub:/home/nayab/dev_ws/install/my_package:/opt/ros/foxy:/home/nayab/project_ws/devel:/opt/ros/noetic')]), 'shell': False}
+[0.601497] (tutorial_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.601861] (-) TimerEvent: {}
+[0.628577] (tutorial_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.630669] (tutorial_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.631394] (turtlesim) StdoutLine: {'line': b'[  1%] Built target turtlesim__cpp\n'}
+[0.697904] (turtlesim) StdoutLine: {'line': b'[ 11%] Built target turtlesim__rosidl_generator_c\n'}
+[0.701953] (-) TimerEvent: {}
+[0.702776] (turtlesim) StdoutLine: {'line': b'[ 21%] Built target turtlesim__rosidl_typesupport_introspection_cpp\n'}
+[0.714910] (turtlesim) StdoutLine: {'line': b'[ 31%] Built target turtlesim__rosidl_typesupport_cpp\n'}
+[0.722232] (turtlesim) StdoutLine: {'line': b'[ 41%] Built target turtlesim__rosidl_typesupport_fastrtps_cpp\n'}
+[0.773666] (turtlesim) StdoutLine: {'line': b'[ 51%] Built target turtlesim__rosidl_typesupport_c\n'}
+[0.774010] (turtlesim) StdoutLine: {'line': b'[ 61%] Built target turtlesim__rosidl_typesupport_introspection_c\n'}
+[0.781824] (turtlesim) StdoutLine: {'line': b'[ 71%] Built target turtlesim__rosidl_typesupport_fastrtps_c\n'}
+[0.802054] (-) TimerEvent: {}
+[0.805510] (turtlesim) StdoutLine: {'line': b'[ 71%] Built target turtlesim\n'}
+[0.876232] (turtlesim) StdoutLine: {'line': b'[ 72%] Built target turtlesim__py\n'}
+[0.877487] (turtlesim) StdoutLine: {'line': b'[ 74%] Built target mimic\n'}
+[0.889307] (tutorial_interfaces) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)\n'}
+[0.902147] (-) TimerEvent: {}
+[0.905576] (turtlesim) StdoutLine: {'line': b'[ 76%] Built target turtle_teleop_key\n'}
+[0.913158] (turtlesim) StdoutLine: {'line': b'[ 78%] Built target draw_square\n'}
+[0.925068] (tutorial_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.932973] (tutorial_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.938835] (turtlesim) StdoutLine: {'line': b'[ 87%] Built target turtlesim__python\n'}
+[1.002245] (-) TimerEvent: {}
+[1.006020] (turtlesim) StdoutLine: {'line': b'[ 89%] Built target turtlesim__rosidl_typesupport_introspection_c__pyext\n'}
+[1.016793] (turtlesim) StdoutLine: {'line': b'[ 91%] Built target turtlesim__rosidl_typesupport_c__pyext\n'}
+[1.025731] (turtlesim) StdoutLine: {'line': b'[ 95%] Built target turtlesim__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.027177] (turtlesim) StdoutLine: {'line': b'[100%] Built target turtlesim_node\n'}
+[1.044897] (turtlesim) CommandEnded: {'returncode': 0}
+[1.091725] (py_pubsub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_pubsub', 'build', '--build-base', '/home/nayab/dev_ws/build/py_pubsub/build', 'install', '--prefix', '/home/nayab/dev_ws/install/py_pubsub', '--record', '/home/nayab/dev_ws/build/py_pubsub/install.log', '--single-version-externally-managed'], 'cwd': '/home/nayab/dev_ws/src/py_pubsub', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'nayab', 'SSH_AGENT_PID': '1545', 'ROS_PACKAGE_PATH': '/home/nayab/project_ws/src:/opt/ros/noetic/share', 'XDG_SESSION_TYPE': 'x11', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/nayab/dev_ws/install/tutorial_interfaces/lib:/home/nayab/dev_ws/install/turtlesim/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/home/nayab/project_ws/devel/lib:/opt/ros/noetic/lib', 'HOME': '/home/nayab', 'OLDPWD': '/home/nayab', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1355', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2731', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/nayab/dev_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'nayab', 'JOURNAL_STREAM': '8:41301', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/nayab/project_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nayab', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/opt/ros/noetic/bin:/home/nayab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/nayab-HP:@/tmp/.ICE-unix/1588,unix/nayab-HP:/tmp/.ICE-unix/1588', 'INVOCATION_ID': '0cad2e53120340379bf94a4be7d74d8d', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_GB.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/nayab/project_ws/devel/share/common-lisp', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/nayab/dev_ws/install/tutorial_interfaces:/home/nayab/dev_ws/install/turtlesim:/home/nayab/dev_ws/install/py_pubsub:/home/nayab/dev_ws/install/my_package:/opt/ros/foxy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:8ac67921-b466-428a-bb42-0fb8c5cf3fa1', 'QT_ACCESSIBILITY': '1', 'ROS_MASTER_URI': 'http://localhost:11311', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nayab/dev_ws/build/py_pubsub', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nayab/dev_ws/install/py_pubsub/lib/python3.8/site-packages:/home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages:/home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages:/home/nayab/dev_ws/install/py_pubsub/lib/python3.8/site-packages:/home/nayab/dev_ws/install/my_package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/nayab/project_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/nayab/dev_ws/install/tutorial_interfaces:/home/nayab/dev_ws/install/turtlesim:/home/nayab/project_ws/devel:/opt/ros/noetic'}, 'shell': False}
+[1.106042] (-) TimerEvent: {}
+[1.107191] (tutorial_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.119530] (my_package) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/my_package', 'build', '--build-base', '/home/nayab/dev_ws/build/my_package/build', 'install', '--prefix', '/home/nayab/dev_ws/install/my_package', '--record', '/home/nayab/dev_ws/build/my_package/install.log', '--single-version-externally-managed'], 'cwd': '/home/nayab/dev_ws/src/my_package', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'nayab', 'SSH_AGENT_PID': '1545', 'ROS_PACKAGE_PATH': '/home/nayab/project_ws/src:/opt/ros/noetic/share', 'XDG_SESSION_TYPE': 'x11', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/nayab/dev_ws/install/tutorial_interfaces/lib:/home/nayab/dev_ws/install/turtlesim/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/home/nayab/project_ws/devel/lib:/opt/ros/noetic/lib', 'HOME': '/home/nayab', 'OLDPWD': '/home/nayab', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1355', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2731', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/nayab/dev_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'nayab', 'JOURNAL_STREAM': '8:41301', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/nayab/project_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nayab', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/opt/ros/noetic/bin:/home/nayab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/nayab-HP:@/tmp/.ICE-unix/1588,unix/nayab-HP:/tmp/.ICE-unix/1588', 'INVOCATION_ID': '0cad2e53120340379bf94a4be7d74d8d', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_GB.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/nayab/project_ws/devel/share/common-lisp', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/nayab/dev_ws/install/tutorial_interfaces:/home/nayab/dev_ws/install/turtlesim:/home/nayab/dev_ws/install/py_pubsub:/home/nayab/dev_ws/install/my_package:/opt/ros/foxy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:8ac67921-b466-428a-bb42-0fb8c5cf3fa1', 'QT_ACCESSIBILITY': '1', 'ROS_MASTER_URI': 'http://localhost:11311', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nayab/dev_ws/build/my_package', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nayab/dev_ws/install/my_package/lib/python3.8/site-packages:/home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages:/home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages:/home/nayab/dev_ws/install/py_pubsub/lib/python3.8/site-packages:/home/nayab/dev_ws/install/my_package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/nayab/project_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/nayab/dev_ws/install/tutorial_interfaces:/home/nayab/dev_ws/install/turtlesim:/home/nayab/project_ws/devel:/opt/ros/noetic'}, 'shell': False}
+[1.132631] (tutorial_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[1.168946] (tutorial_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[1.206122] (-) TimerEvent: {}
+[1.220981] (turtlesim) JobProgress: {'identifier': 'turtlesim', 'progress': 'install'}
+[1.234885] (turtlesim) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nayab/dev_ws/build/turtlesim'], 'cwd': '/home/nayab/dev_ws/build/turtlesim', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'nayab'), ('SSH_AGENT_PID', '1545'), ('ROS_PACKAGE_PATH', '/home/nayab/project_ws/src:/opt/ros/noetic/share'), ('XDG_SESSION_TYPE', 'x11'), ('ROS_ETC_DIR', '/opt/ros/noetic/etc/ros'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nayab/dev_ws/install/tutorial_interfaces/lib:/home/nayab/dev_ws/install/turtlesim/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/home/nayab/project_ws/devel/lib:/opt/ros/noetic/lib'), ('HOME', '/home/nayab'), ('OLDPWD', '/home/nayab'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1355'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2731'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nayab/dev_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nayab'), ('JOURNAL_STREAM', '8:41301'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/nayab/project_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nayab'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/opt/ros/noetic/bin:/home/nayab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nayab-HP:@/tmp/.ICE-unix/1588,unix/nayab-HP:/tmp/.ICE-unix/1588'), ('INVOCATION_ID', '0cad2e53120340379bf94a4be7d74d8d'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('ROSLISP_PACKAGE_DIRECTORIES', '/home/nayab/project_ws/devel/share/common-lisp'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/noetic/share/ros'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nayab/dev_ws/install/tutorial_interfaces:/home/nayab/dev_ws/install/turtlesim:/home/nayab/dev_ws/install/py_pubsub:/home/nayab/dev_ws/install/my_package:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:8ac67921-b466-428a-bb42-0fb8c5cf3fa1'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nayab/dev_ws/build/turtlesim'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages:/home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages:/home/nayab/dev_ws/install/py_pubsub/lib/python3.8/site-packages:/home/nayab/dev_ws/install/my_package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/nayab/project_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/nayab/dev_ws/install/tutorial_interfaces:/home/nayab/dev_ws/install/turtlesim:/home/nayab/dev_ws/install/py_pubsub:/home/nayab/dev_ws/install/my_package:/opt/ros/foxy:/home/nayab/project_ws/devel:/opt/ros/noetic')]), 'shell': False}
+[1.248221] (turtlesim) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.248680] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/ament_index/resource_index/rosidl_interfaces/turtlesim\n'}
+[1.249325] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim\n'}
+[1.249587] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action\n'}
+[1.249820] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/rotate_absolute.h\n'}
+[1.250019] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail\n'}
+[1.250241] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__functions.c\n'}
+[1.250438] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__functions.h\n'}
+[1.250632] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__struct.h\n'}
+[1.250819] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__type_support.h\n'}
+[1.251001] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg\n'}
+[1.251207] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/pose.h\n'}
+[1.251387] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail\n'}
+[1.251596] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__type_support.h\n'}
+[1.251786] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__type_support.h\n'}
+[1.251974] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__struct.h\n'}
+[1.252156] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__functions.c\n'}
+[1.252339] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__functions.h\n'}
+[1.252528] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__functions.h\n'}
+[1.252708] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__functions.c\n'}
+[1.252907] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__struct.h\n'}
+[1.253099] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/rosidl_generator_c__visibility_control.h\n'}
+[1.253281] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/color.h\n'}
+[1.253456] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv\n'}
+[1.253657] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail\n'}
+[1.253868] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__functions.c\n'}
+[1.254056] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__type_support.h\n'}
+[1.254239] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__struct.h\n'}
+[1.254423] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__functions.h\n'}
+[1.254612] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__functions.c\n'}
+[1.254792] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__functions.h\n'}
+[1.254972] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__struct.h\n'}
+[1.255155] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__functions.h\n'}
+[1.255335] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__functions.h\n'}
+[1.255527] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__struct.h\n'}
+[1.255707] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__functions.c\n'}
+[1.255890] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__type_support.h\n'}
+[1.256070] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__struct.h\n'}
+[1.256254] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__type_support.h\n'}
+[1.256437] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__functions.c\n'}
+[1.256616] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__functions.c\n'}
+[1.256797] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__struct.h\n'}
+[1.256994] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__type_support.h\n'}
+[1.257176] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__type_support.h\n'}
+[1.257358] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__functions.h\n'}
+[1.257541] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/set_pen.h\n'}
+[1.257721] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/teleport_relative.h\n'}
+[1.257900] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/kill.h\n'}
+[1.258079] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/teleport_absolute.h\n'}
+[1.258255] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/spawn.h\n'}
+[1.258521] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/environment/library_path.sh\n'}
+[1.258773] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/environment/library_path.dsv\n'}
+[1.259223] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_generator_c.so\n'}
+[1.259675] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim\n'}
+[1.259898] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action\n'}
+[1.260106] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail\n'}
+[1.260328] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_fastrtps_c.h\n'}
+[1.260524] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg\n'}
+[1.260746] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail\n'}
+[1.260983] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__rosidl_typesupport_fastrtps_c.h\n'}
+[1.261173] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__rosidl_typesupport_fastrtps_c.h\n'}
+[1.261360] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[1.261538] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv\n'}
+[1.261736] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail\n'}
+[1.261950] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__rosidl_typesupport_fastrtps_c.h\n'}
+[1.262137] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_fastrtps_c.h\n'}
+[1.262322] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__rosidl_typesupport_fastrtps_c.h\n'}
+[1.262512] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_fastrtps_c.h\n'}
+[1.262698] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__rosidl_typesupport_fastrtps_c.h\n'}
+[1.263148] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_fastrtps_c.so\n'}
+[1.263619] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim\n'}
+[1.263842] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action\n'}
+[1.264050] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail\n'}
+[1.264253] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/dds_fastrtps\n'}
+[1.264464] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.264664] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg\n'}
+[1.265010] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail\n'}
+[1.265219] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/dds_fastrtps\n'}
+[1.265427] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.265614] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.265801] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[1.265979] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv\n'}
+[1.266177] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail\n'}
+[1.266390] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.266575] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/dds_fastrtps\n'}
+[1.266786] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.266978] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.267164] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.267347] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.267794] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_fastrtps_cpp.so\n'}
+[1.268264] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim\n'}
+[1.268485] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action\n'}
+[1.268693] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail\n'}
+[1.268918] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_introspection_c.h\n'}
+[1.269119] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__type_support.c\n'}
+[1.269300] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg\n'}
+[1.269504] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[1.269686] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail\n'}
+[1.269894] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__type_support.c\n'}
+[1.270078] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__rosidl_typesupport_introspection_c.h\n'}
+[1.270263] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__rosidl_typesupport_introspection_c.h\n'}
+[1.270446] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__type_support.c\n'}
+[1.270623] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv\n'}
+[1.270819] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail\n'}
+[1.271031] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__rosidl_typesupport_introspection_c.h\n'}
+[1.271215] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__type_support.c\n'}
+[1.271398] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__rosidl_typesupport_introspection_c.h\n'}
+[1.271579] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__rosidl_typesupport_introspection_c.h\n'}
+[1.271761] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__type_support.c\n'}
+[1.271950] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_introspection_c.h\n'}
+[1.272137] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_introspection_c.h\n'}
+[1.272322] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__type_support.c\n'}
+[1.272503] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__type_support.c\n'}
+[1.272696] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__type_support.c\n'}
+[1.273169] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_introspection_c.so\n'}
+[1.273797] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_c.so\n'}
+[1.274259] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim\n'}
+[1.274481] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action\n'}
+[1.274691] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail\n'}
+[1.274899] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__builder.hpp\n'}
+[1.275089] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__traits.hpp\n'}
+[1.275275] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__struct.hpp\n'}
+[1.275464] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/rotate_absolute.hpp\n'}
+[1.275643] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg\n'}
+[1.275848] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail\n'}
+[1.276057] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__traits.hpp\n'}
+[1.276243] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__struct.hpp\n'}
+[1.276426] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__traits.hpp\n'}
+[1.276613] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__builder.hpp\n'}
+[1.276794] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__builder.hpp\n'}
+[1.276996] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__struct.hpp\n'}
+[1.277178] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/pose.hpp\n'}
+[1.277360] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/color.hpp\n'}
+[1.277534] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv\n'}
+[1.277742] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail\n'}
+[1.277950] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__traits.hpp\n'}
+[1.278133] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__struct.hpp\n'}
+[1.278324] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__builder.hpp\n'}
+[1.278504] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__traits.hpp\n'}
+[1.278688] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__builder.hpp\n'}
+[1.278872] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__struct.hpp\n'}
+[1.279050] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__struct.hpp\n'}
+[1.279229] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__traits.hpp\n'}
+[1.279406] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__builder.hpp\n'}
+[1.279585] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__struct.hpp\n'}
+[1.279764] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__traits.hpp\n'}
+[1.279942] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__builder.hpp\n'}
+[1.280125] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__builder.hpp\n'}
+[1.280303] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__traits.hpp\n'}
+[1.280481] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__struct.hpp\n'}
+[1.280659] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/teleport_relative.hpp\n'}
+[1.280846] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/set_pen.hpp\n'}
+[1.281029] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/spawn.hpp\n'}
+[1.281212] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/kill.hpp\n'}
+[1.281392] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/teleport_absolute.hpp\n'}
+[1.281650] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim\n'}
+[1.281868] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action\n'}
+[1.282068] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail\n'}
+[1.282274] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.282470] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__type_support.cpp\n'}
+[1.282649] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg\n'}
+[1.282852] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail\n'}
+[1.283056] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__type_support.cpp\n'}
+[1.283240] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.283480] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.283830] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__type_support.cpp\n'}
+[1.284175] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv\n'}
+[1.284512] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail\n'}
+[1.285105] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__type_support.cpp\n'}
+[1.285225] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__type_support.cpp\n'}
+[1.285325] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__type_support.cpp\n'}
+[1.285711] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.285817] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__type_support.cpp\n'}
+[1.285916] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.286312] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.286415] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.286767] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.286872] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__type_support.cpp\n'}
+[1.287094] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_introspection_cpp.so\n'}
+[1.287342] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_cpp.so\n'}
+[1.287620] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/environment/pythonpath.sh\n'}
+[1.288172] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/environment/pythonpath.dsv\n'}
+[1.288279] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/__init__.py\n'}
+[1.306219] (-) TimerEvent: {}
+[1.320090] (tutorial_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[1.330129] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/action\n'}
+[1.330489] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/action/_rotate_absolute.py\n'}
+[1.330760] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/action/_rotate_absolute_s.c\n'}
+[1.331051] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/action/__init__.py\n'}
+[1.331443] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/msg\n'}
+[1.331694] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/msg/_pose.py\n'}
+[1.332092] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/msg/_color_s.c\n'}
+[1.332413] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/msg/__init__.py\n'}
+[1.332954] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/msg/_pose_s.c\n'}
+[1.333396] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/msg/_color.py\n'}
+[1.333514] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv\n'}
+[1.333633] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_teleport_relative.py\n'}
+[1.334747] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_set_pen.py\n'}
+[1.335009] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_kill.py\n'}
+[1.335626] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/__init__.py\n'}
+[1.335748] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_set_pen_s.c\n'}
+[1.335852] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_kill_s.c\n'}
+[1.335952] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_teleport_absolute.py\n'}
+[1.336050] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_spawn.py\n'}
+[1.336508] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_teleport_relative_s.c\n'}
+[1.336621] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_spawn_s.c\n'}
+[1.336724] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_teleport_absolute_s.c\n'}
+[1.337278] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/turtlesim_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[1.337400] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/turtlesim_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[1.337501] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/turtlesim_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[1.338198] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/libturtlesim__python.so\n'}
+[1.338643] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/action/RotateAbsolute.idl\n'}
+[1.338908] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/msg/Color.idl\n'}
+[1.339167] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/msg/Pose.idl\n'}
+[1.339425] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/Kill.idl\n'}
+[1.339673] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/SetPen.idl\n'}
+[1.339915] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/Spawn.idl\n'}
+[1.340164] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute.idl\n'}
+[1.340404] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative.idl\n'}
+[1.340648] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/action/RotateAbsolute.action\n'}
+[1.340892] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/msg/Color.msg\n'}
+[1.341131] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/msg/Pose.msg\n'}
+[1.341358] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/Kill.srv\n'}
+[1.341586] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/Kill_Request.msg\n'}
+[1.341814] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/Kill_Response.msg\n'}
+[1.342044] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/SetPen.srv\n'}
+[1.342272] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/SetPen_Request.msg\n'}
+[1.342499] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/SetPen_Response.msg\n'}
+[1.342740] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/Spawn.srv\n'}
+[1.342975] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/Spawn_Request.msg\n'}
+[1.343198] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/Spawn_Response.msg\n'}
+[1.343507] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute.srv\n'}
+[1.343736] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute_Request.msg\n'}
+[1.344060] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute_Response.msg\n'}
+[1.344283] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative.srv\n'}
+[1.344702] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative_Request.msg\n'}
+[1.344806] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative_Response.msg\n'}
+[1.345158] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/turtlesim/turtlesim_node\n'}
+[1.345551] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/turtlesim/turtle_teleop_key\n'}
+[1.346145] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/turtlesim/draw_square\n'}
+[1.346728] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/lib/turtlesim/mimic\n'}
+[1.347155] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/images\n'}
+[1.347369] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/images/bouncy.png\n'}
+[1.347549] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/images/eloquent.png\n'}
+[1.347752] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/images/ardent.png\n'}
+[1.348051] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/images/crystal.png\n'}
+[1.348244] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/images/foxy.png\n'}
+[1.348441] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/images/dashing.png\n'}
+[1.348680] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/launch\n'}
+[1.348904] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/launch/multisim.launch.py\n'}
+[1.349170] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/ament_index/resource_index/package_run_dependencies/turtlesim\n'}
+[1.349424] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/ament_index/resource_index/parent_prefix_path/turtlesim\n'}
+[1.349671] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/environment/ament_prefix_path.sh\n'}
+[1.349912] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/environment/ament_prefix_path.dsv\n'}
+[1.350154] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/environment/path.sh\n'}
+[1.350397] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/environment/path.dsv\n'}
+[1.350638] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/local_setup.bash\n'}
+[1.350886] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/local_setup.sh\n'}
+[1.351132] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/local_setup.zsh\n'}
+[1.351372] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/local_setup.dsv\n'}
+[1.351605] (turtlesim) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/package.dsv\n'}
+[1.352036] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/ament_index/resource_index/packages/turtlesim\n'}
+[1.352402] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_generator_cExport.cmake\n'}
+[1.352670] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_generator_cExport-noconfig.cmake\n'}
+[1.353078] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cExport.cmake\n'}
+[1.353355] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[1.353729] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cExport.cmake\n'}
+[1.354001] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[1.354360] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_generator_cppExport.cmake\n'}
+[1.354738] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[1.354999] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[1.355358] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cppExport.cmake\n'}
+[1.355613] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[1.355872] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/rosidl_cmake-extras.cmake\n'}
+[1.356120] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.356363] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.356610] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[1.356903] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.357151] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[1.357399] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[1.357654] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesimConfig.cmake\n'}
+[1.357848] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesimConfig-version.cmake\n'}
+[1.358086] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/turtlesim/share/turtlesim/package.xml\n'}
+[1.362357] (py_pubsub) StdoutLine: {'line': b'running egg_info\n'}
+[1.371051] (turtlesim) CommandEnded: {'returncode': 0}
+[1.371905] (py_pubsub) StdoutLine: {'line': b'writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO\n'}
+[1.372378] (py_pubsub) StdoutLine: {'line': b'writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt\n'}
+[1.372502] (py_pubsub) StdoutLine: {'line': b'writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt\n'}
+[1.373211] (py_pubsub) StdoutLine: {'line': b'writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt\n'}
+[1.373341] (py_pubsub) StdoutLine: {'line': b'writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt\n'}
+[1.390101] (my_package) StdoutLine: {'line': b'running egg_info\n'}
+[1.390839] (my_package) StdoutLine: {'line': b'writing ../../build/my_package/my_package.egg-info/PKG-INFO\n'}
+[1.391155] (my_package) StdoutLine: {'line': b'writing dependency_links to ../../build/my_package/my_package.egg-info/dependency_links.txt\n'}
+[1.391356] (my_package) StdoutLine: {'line': b'writing entry points to ../../build/my_package/my_package.egg-info/entry_points.txt\n'}
+[1.391532] (my_package) StdoutLine: {'line': b'writing requirements to ../../build/my_package/my_package.egg-info/requires.txt\n'}
+[1.391675] (my_package) StdoutLine: {'line': b'writing top-level names to ../../build/my_package/my_package.egg-info/top_level.txt\n'}
+[1.399166] (py_pubsub) StdoutLine: {'line': b"reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[1.400039] (py_pubsub) StdoutLine: {'line': b"writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[1.400250] (py_pubsub) StdoutLine: {'line': b'running build\n'}
+[1.401350] (py_pubsub) StdoutLine: {'line': b'running build_py\n'}
+[1.401499] (py_pubsub) StdoutLine: {'line': b'running install\n'}
+[1.402256] (py_pubsub) StdoutLine: {'line': b'running install_lib\n'}
+[1.404149] (py_pubsub) StdoutLine: {'line': b'running install_data\n'}
+[1.404687] (py_pubsub) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.406306] (-) TimerEvent: {}
+[1.406690] (py_pubsub) StdoutLine: {'line': b"removing '/home/nayab/dev_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[1.407075] (py_pubsub) StdoutLine: {'line': b'Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/nayab/dev_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info\n'}
+[1.408181] (py_pubsub) StdoutLine: {'line': b'running install_scripts\n'}
+[1.427382] (py_pubsub) StdoutLine: {'line': b'Installing dbr_pub_old script to /home/nayab/dev_ws/install/py_pubsub/lib/py_pubsub\n'}
+[1.427772] (py_pubsub) StdoutLine: {'line': b'Installing listener script to /home/nayab/dev_ws/install/py_pubsub/lib/py_pubsub\n'}
+[1.427936] (py_pubsub) StdoutLine: {'line': b'Installing listener_old script to /home/nayab/dev_ws/install/py_pubsub/lib/py_pubsub\n'}
+[1.428188] (py_pubsub) StdoutLine: {'line': b'Installing talker script to /home/nayab/dev_ws/install/py_pubsub/lib/py_pubsub\n'}
+[1.428390] (py_pubsub) StdoutLine: {'line': b'Installing talker_old script to /home/nayab/dev_ws/install/py_pubsub/lib/py_pubsub\n'}
+[1.428551] (my_package) StdoutLine: {'line': b"reading manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'\n"}
+[1.428669] (py_pubsub) StdoutLine: {'line': b"writing list of installed files to '/home/nayab/dev_ws/build/py_pubsub/install.log'\n"}
+[1.429842] (my_package) StdoutLine: {'line': b"writing manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'\n"}
+[1.430273] (my_package) StdoutLine: {'line': b'running build\n'}
+[1.430460] (my_package) StdoutLine: {'line': b'running build_py\n'}
+[1.431047] (my_package) StdoutLine: {'line': b'running install\n'}
+[1.432666] (my_package) StdoutLine: {'line': b'running install_lib\n'}
+[1.434952] (tutorial_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.436078] (my_package) StdoutLine: {'line': b'running install_data\n'}
+[1.436985] (my_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.439335] (my_package) StdoutLine: {'line': b"removing '/home/nayab/dev_ws/install/my_package/lib/python3.8/site-packages/my_package-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[1.440049] (my_package) StdoutLine: {'line': b'Copying ../../build/my_package/my_package.egg-info to /home/nayab/dev_ws/install/my_package/lib/python3.8/site-packages/my_package-0.0.0-py3.8.egg-info\n'}
+[1.441590] (my_package) StdoutLine: {'line': b'running install_scripts\n'}
+[1.444173] (tutorial_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.464576] (py_pubsub) CommandEnded: {'returncode': 0}
+[1.467630] (my_package) StdoutLine: {'line': b'Installing my_node script to /home/nayab/dev_ws/install/my_package/lib/my_package\n'}
+[1.467815] (my_package) StdoutLine: {'line': b"writing list of installed files to '/home/nayab/dev_ws/build/my_package/install.log'\n"}
+[1.473129] (tutorial_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.474848] (tutorial_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[1.475937] (py_pubsub) JobEnded: {'identifier': 'py_pubsub', 'rc': 0}
+[1.499672] (my_package) CommandEnded: {'returncode': 0}
+[1.506457] (-) TimerEvent: {}
+[1.506839] (tutorial_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.507222] (tutorial_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[1.507621] (tutorial_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[1.508426] (my_package) JobEnded: {'identifier': 'my_package', 'rc': 0}
+[1.522298] (tutorial_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.533352] (tutorial_interfaces) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.538959] (tutorial_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.539200] (tutorial_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.541185] (tutorial_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.572386] (turtlesim) JobEnded: {'identifier': 'turtlesim', 'rc': 0}
+[1.578776] (tutorial_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[1.583235] (tutorial_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/nayab/dev_ws/build/tutorial_interfaces\n'}
+[1.606594] (-) TimerEvent: {}
+[1.612869] (tutorial_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.623975] (tutorial_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.706689] (-) TimerEvent: {}
+[1.807058] (-) TimerEvent: {}
+[1.898815] (tutorial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tutorial_interfaces__rosidl_generator_c\x1b[0m\n'}
+[1.907184] (-) TimerEvent: {}
+[1.909501] (tutorial_interfaces) StdoutLine: {'line': b'[  5%] Built target tutorial_interfaces__cpp\n'}
+[1.910908] (tutorial_interfaces) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/msg/detail/num__functions.c.o\x1b[0m\n'}
+[1.911284] (tutorial_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/msg/detail/mp_status__functions.c.o\x1b[0m\n'}
+[1.920937] (tutorial_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.921234] (tutorial_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.952034] (tutorial_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32m\x1b[1mLinking C shared library libtutorial_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[1.952647] (tutorial_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.991818] (tutorial_interfaces) StdoutLine: {'line': b'[ 20%] Built target tutorial_interfaces__rosidl_generator_c\n'}
+[2.004012] (tutorial_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.007261] (-) TimerEvent: {}
+[2.107547] (-) TimerEvent: {}
+[2.175142] (tutorial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tutorial_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[2.188791] (tutorial_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tutorial_interfaces/msg/num__type_support.cpp.o\x1b[0m\n'}
+[2.207645] (-) TimerEvent: {}
+[2.223708] (tutorial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tutorial_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.233597] (tutorial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tutorial_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.246142] (tutorial_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tutorial_interfaces/msg/detail/dds_fastrtps/num__type_support.cpp.o\x1b[0m\n'}
+[2.248728] (tutorial_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tutorial_interfaces/msg/detail/num__type_support.cpp.o\x1b[0m\n'}
+[2.283502] (tutorial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tutorial_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[2.298018] (tutorial_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tutorial_interfaces/msg/detail/num__type_support.c.o\x1b[0m\n'}
+[2.307754] (-) TimerEvent: {}
+[2.332149] (tutorial_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tutorial_interfaces/msg/detail/mp_status__type_support.c.o\x1b[0m\n'}
+[2.367180] (tutorial_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32m\x1b[1mLinking C shared library libtutorial_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.405726] (tutorial_interfaces) StdoutLine: {'line': b'[ 38%] Built target tutorial_interfaces__rosidl_typesupport_introspection_c\n'}
+[2.407842] (-) TimerEvent: {}
+[2.416339] (tutorial_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tutorial_interfaces/msg/mp_status__type_support.cpp.o\x1b[0m\n'}
+[2.491089] (tutorial_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.507949] (-) TimerEvent: {}
+[2.547274] (tutorial_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tutorial_interfaces/msg/detail/mp_status__type_support.cpp.o\x1b[0m\n'}
+[2.608044] (-) TimerEvent: {}
+[2.678803] (tutorial_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tutorial_interfaces/msg/detail/dds_fastrtps/mp_status__type_support.cpp.o\x1b[0m\n'}
+[2.708158] (-) TimerEvent: {}
+[2.709805] (tutorial_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.739338] (tutorial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tutorial_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[2.753656] (tutorial_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/tutorial_interfaces/msg/num__type_support.cpp.o\x1b[0m\n'}
+[2.753933] (tutorial_interfaces) StdoutLine: {'line': b'[ 53%] Built target tutorial_interfaces__rosidl_typesupport_cpp\n'}
+[2.764100] (tutorial_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/tutorial_interfaces/msg/mp_status__type_support.cpp.o\x1b[0m\n'}
+[2.796116] (tutorial_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.808258] (-) TimerEvent: {}
+[2.839864] (tutorial_interfaces) StdoutLine: {'line': b'[ 58%] Built target tutorial_interfaces__rosidl_typesupport_c\n'}
+[2.842209] (tutorial_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.907648] (tutorial_interfaces) StdoutLine: {'line': b'[ 61%] Built target tutorial_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[2.908351] (-) TimerEvent: {}
+[3.008655] (-) TimerEvent: {}
+[3.093130] (tutorial_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.108772] (-) TimerEvent: {}
+[3.186345] (tutorial_interfaces) StdoutLine: {'line': b'[ 64%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[3.197554] (tutorial_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.208889] (-) TimerEvent: {}
+[3.309155] (-) TimerEvent: {}
+[3.409468] (-) TimerEvent: {}
+[3.432698] (tutorial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tutorial_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[3.446292] (tutorial_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/detail/mp_status__type_support_c.cpp.o\x1b[0m\n'}
+[3.446523] (tutorial_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/detail/num__type_support_c.cpp.o\x1b[0m\n'}
+[3.509587] (-) TimerEvent: {}
+[3.609929] (-) TimerEvent: {}
+[3.710279] (-) TimerEvent: {}
+[3.779583] (tutorial_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.810396] (-) TimerEvent: {}
+[3.877769] (tutorial_interfaces) StdoutLine: {'line': b'[ 74%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[3.899725] (tutorial_interfaces) StdoutLine: {'line': b'[ 74%] Built target tutorial_interfaces\n'}
+[3.910554] (-) TimerEvent: {}
+[3.923404] (tutorial_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.010642] (-) TimerEvent: {}
+[4.110944] (-) TimerEvent: {}
+[4.211233] (-) TimerEvent: {}
+[4.311546] (-) TimerEvent: {}
+[4.328143] (tutorial_interfaces) StdoutLine: {'line': b'[ 76%] Built target tutorial_interfaces__py\n'}
+[4.343295] (tutorial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tutorial_interfaces__python\x1b[0m\n'}
+[4.361422] (tutorial_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__python.dir/rosidl_generator_py/tutorial_interfaces/msg/_num_s.c.o\x1b[0m\n'}
+[4.361670] (tutorial_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__python.dir/rosidl_generator_py/tutorial_interfaces/msg/_mp_status_s.c.o\x1b[0m\n'}
+[4.411663] (-) TimerEvent: {}
+[4.450984] (tutorial_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tutorial_interfaces/libtutorial_interfaces__python.so\x1b[0m\n'}
+[4.492778] (tutorial_interfaces) StdoutLine: {'line': b'[ 84%] Built target tutorial_interfaces__python\n'}
+[4.504681] (tutorial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tutorial_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[4.504926] (tutorial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tutorial_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[4.505059] (tutorial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tutorial_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[4.515411] (-) TimerEvent: {}
+[4.520172] (tutorial_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.524331] (tutorial_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.524603] (tutorial_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.600274] (tutorial_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.608614] (tutorial_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.609133] (tutorial_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.615534] (-) TimerEvent: {}
+[4.637384] (tutorial_interfaces) StdoutLine: {'line': b'[100%] Built target tutorial_interfaces__rosidl_typesupport_c__pyext\n'}
+[4.646182] (tutorial_interfaces) StdoutLine: {'line': b'[100%] Built target tutorial_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[4.672993] (tutorial_interfaces) StdoutLine: {'line': b'[100%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.686210] (tutorial_interfaces) CommandEnded: {'returncode': 0}
+[4.715656] (-) TimerEvent: {}
+[4.754734] (tutorial_interfaces) JobProgress: {'identifier': 'tutorial_interfaces', 'progress': 'install'}
+[4.756485] (tutorial_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nayab/dev_ws/build/tutorial_interfaces'], 'cwd': '/home/nayab/dev_ws/build/tutorial_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'nayab'), ('SSH_AGENT_PID', '1545'), ('ROS_PACKAGE_PATH', '/home/nayab/project_ws/src:/opt/ros/noetic/share'), ('XDG_SESSION_TYPE', 'x11'), ('ROS_ETC_DIR', '/opt/ros/noetic/etc/ros'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nayab/dev_ws/install/tutorial_interfaces/lib:/home/nayab/dev_ws/install/turtlesim/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/home/nayab/project_ws/devel/lib:/opt/ros/noetic/lib'), ('HOME', '/home/nayab'), ('OLDPWD', '/home/nayab'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1355'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2731'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nayab/dev_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nayab'), ('JOURNAL_STREAM', '8:41301'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/nayab/project_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nayab'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/opt/ros/noetic/bin:/home/nayab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nayab-HP:@/tmp/.ICE-unix/1588,unix/nayab-HP:/tmp/.ICE-unix/1588'), ('INVOCATION_ID', '0cad2e53120340379bf94a4be7d74d8d'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('ROSLISP_PACKAGE_DIRECTORIES', '/home/nayab/project_ws/devel/share/common-lisp'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/noetic/share/ros'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nayab/dev_ws/install/tutorial_interfaces:/home/nayab/dev_ws/install/turtlesim:/home/nayab/dev_ws/install/py_pubsub:/home/nayab/dev_ws/install/my_package:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:8ac67921-b466-428a-bb42-0fb8c5cf3fa1'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nayab/dev_ws/build/tutorial_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages:/home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages:/home/nayab/dev_ws/install/py_pubsub/lib/python3.8/site-packages:/home/nayab/dev_ws/install/my_package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/nayab/project_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/nayab/dev_ws/install/tutorial_interfaces:/home/nayab/dev_ws/install/turtlesim:/home/nayab/dev_ws/install/py_pubsub:/home/nayab/dev_ws/install/my_package:/opt/ros/foxy:/home/nayab/project_ws/devel:/opt/ros/noetic')]), 'shell': False}
+[4.768012] (tutorial_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.768307] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/ament_index/resource_index/rosidl_interfaces/tutorial_interfaces\n'}
+[4.768473] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces\n'}
+[4.768599] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg\n'}
+[4.768724] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail\n'}
+[4.768857] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__functions.h\n'}
+[4.768953] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__functions.h\n'}
+[4.769034] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__type_support.h\n'}
+[4.769115] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__type_support.h\n'}
+[4.769244] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__functions.c\n'}
+[4.769342] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__functions.c\n'}
+[4.769441] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__struct.h\n'}
+[4.769540] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__struct.h\n'}
+[4.769634] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num.h\n'}
+[4.769716] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/mp_status.h\n'}
+[4.769832] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.769903] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/library_path.sh\n'}
+[4.769974] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/library_path.dsv\n'}
+[4.770125] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_generator_c.so\n'}
+[4.770535] (tutorial_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_generator_c.so" to ""\n'}
+[4.770665] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces\n'}
+[4.770754] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg\n'}
+[4.770838] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail\n'}
+[4.770908] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h\n'}
+[4.770997] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__rosidl_typesupport_fastrtps_c.h\n'}
+[4.771068] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.771159] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[4.771640] (tutorial_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[4.771888] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces\n'}
+[4.771980] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg\n'}
+[4.772086] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail\n'}
+[4.772211] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/dds_fastrtps\n'}
+[4.772286] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.772365] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.772450] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.772522] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.772860] (tutorial_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[4.773084] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces\n'}
+[4.773243] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg\n'}
+[4.773406] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.773481] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail\n'}
+[4.773571] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__type_support.c\n'}
+[4.773657] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__rosidl_typesupport_introspection_c.h\n'}
+[4.773734] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__rosidl_typesupport_introspection_c.h\n'}
+[4.773807] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__type_support.c\n'}
+[4.773938] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[4.774378] (tutorial_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[4.774628] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_c.so\n'}
+[4.775000] (tutorial_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[4.775147] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces\n'}
+[4.775264] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg\n'}
+[4.775351] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail\n'}
+[4.775420] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__traits.hpp\n'}
+[4.775509] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__struct.hpp\n'}
+[4.775597] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__builder.hpp\n'}
+[4.775683] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__traits.hpp\n'}
+[4.775760] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__builder.hpp\n'}
+[4.775847] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__struct.hpp\n'}
+[4.775967] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/mp_status.hpp\n'}
+[4.776074] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num.hpp\n'}
+[4.776176] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces\n'}
+[4.776287] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg\n'}
+[4.776358] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail\n'}
+[4.776457] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__type_support.cpp\n'}
+[4.776545] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.776634] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.776704] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__type_support.cpp\n'}
+[4.776940] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[4.777412] (tutorial_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[4.777731] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_cpp.so\n'}
+[4.778132] (tutorial_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[4.778290] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/pythonpath.sh\n'}
+[4.778398] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/pythonpath.dsv\n'}
+[4.778489] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/__init__.py\n'}
+[4.808865] (tutorial_interfaces) StdoutLine: {'line': b"Compiling '/home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/__init__.py'...\n"}
+[4.812837] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/msg\n'}
+[4.813204] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/msg/__init__.py\n'}
+[4.813373] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/msg/_num_s.c\n'}
+[4.813475] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/msg/_num.py\n'}
+[4.813574] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/msg/_mp_status_s.c\n'}
+[4.813654] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/msg/_mp_status.py\n'}
+[4.814007] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.814587] (tutorial_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[4.815053] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.815700] (tutorial_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[4.815852] (-) TimerEvent: {}
+[4.816222] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.816776] (tutorial_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[4.817131] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__python.so\n'}
+[4.817686] (tutorial_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__python.so" to ""\n'}
+[4.817894] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Num.idl\n'}
+[4.818089] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/MpStatus.idl\n'}
+[4.818303] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Num.msg\n'}
+[4.818469] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/MpStatus.msg\n'}
+[4.818642] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/ament_index/resource_index/package_run_dependencies/tutorial_interfaces\n'}
+[4.818781] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/ament_index/resource_index/parent_prefix_path/tutorial_interfaces\n'}
+[4.818891] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/ament_prefix_path.sh\n'}
+[4.819054] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/ament_prefix_path.dsv\n'}
+[4.819161] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/path.sh\n'}
+[4.819320] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/path.dsv\n'}
+[4.819472] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.bash\n'}
+[4.819580] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.sh\n'}
+[4.819711] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.zsh\n'}
+[4.819818] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.dsv\n'}
+[4.819949] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.dsv\n'}
+[4.820058] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/ament_index/resource_index/packages/tutorial_interfaces\n'}
+[4.820186] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_generator_cExport.cmake\n'}
+[4.820327] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.820685] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.820833] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.821215] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[4.821378] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.821686] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_generator_cppExport.cmake\n'}
+[4.821998] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.822134] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.822511] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[4.822640] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.822833] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[4.822962] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.823093] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.823242] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.823390] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.823535] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.823666] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.823784] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfacesConfig.cmake\n'}
+[4.823892] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfacesConfig-version.cmake\n'}
+[4.824013] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.xml\n'}
+[4.827498] (tutorial_interfaces) CommandEnded: {'returncode': 0}
+[4.924167] (-) TimerEvent: {}
+[4.927526] (tutorial_interfaces) JobEnded: {'identifier': 'tutorial_interfaces', 'rc': 0}
+[4.928471] (-) EventReactorShutdown: {}

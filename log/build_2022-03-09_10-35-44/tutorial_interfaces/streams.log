@@ -1,0 +1,189 @@
+[0.537s] Invoking command in '/home/nayab/dev_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=/home/nayab/dev_ws/install/tutorial_interfaces:/home/nayab/dev_ws/install/turtlesim:/home/nayab/dev_ws/install/py_pubsub:/home/nayab/dev_ws/install/my_package:/opt/ros/foxy:/home/nayab/project_ws/devel:/opt/ros/noetic /usr/bin/cmake --build /home/nayab/dev_ws/build/tutorial_interfaces -- -j4 -l4
+[0.564s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.600s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.600s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.889s] -- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)
+[0.919s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.923s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.072s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.098s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[1.135s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.269s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[1.389s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.409s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.438s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[1.438s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[1.467s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.467s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[1.468s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[1.485s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.495s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.499s] -- Added test 'lint_cmake' to check CMake code style
+[1.499s] -- Added test 'xmllint' to check XML markup files
+[1.502s] -- Configuring done
+[1.545s] -- Generating done
+[1.550s] -- Build files have been written to: /home/nayab/dev_ws/build/tutorial_interfaces
+[1.588s] [  5%] Built target tutorial_interfaces__cpp
+[1.588s] [  5%] [32m[1mLinking C shared library libtutorial_interfaces__rosidl_generator_c.so[0m
+[1.613s] [  7%] [32m[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_cpp.so[0m
+[1.614s] [ 10%] [32m[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[1.623s] [ 12%] [32m[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.632s] [ 20%] Built target tutorial_interfaces__rosidl_generator_c
+[1.657s] [ 23%] [32m[1mLinking C shared library libtutorial_interfaces__rosidl_typesupport_introspection_c.so[0m
+[1.660s] [ 30%] Built target tutorial_interfaces__rosidl_typesupport_cpp
+[1.696s] [ 33%] [32m[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_c.so[0m
+[1.696s] [ 41%] Built target tutorial_interfaces__rosidl_typesupport_introspection_c
+[1.697s] [ 48%] Built target tutorial_interfaces__rosidl_typesupport_introspection_cpp
+[1.736s] [ 56%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.743s] [ 64%] Built target tutorial_interfaces__rosidl_typesupport_c
+[1.747s] [35m[1mScanning dependencies of target tutorial_interfaces__rosidl_typesupport_fastrtps_c[0m
+[1.759s] [ 69%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/detail/mp_status__type_support_c.cpp.o[0m
+[1.760s] [ 69%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/detail/num__type_support_c.cpp.o[0m
+[2.089s] [ 71%] [32m[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[2.185s] [ 74%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_c
+[2.208s] [ 74%] Built target tutorial_interfaces
+[2.233s] [ 76%] Built target tutorial_interfaces__py
+[2.265s] [ 79%] [32m[1mLinking C shared library rosidl_generator_py/tutorial_interfaces/libtutorial_interfaces__python.so[0m
+[2.310s] [ 84%] Built target tutorial_interfaces__python
+[2.322s] [35m[1mScanning dependencies of target tutorial_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[2.338s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[2.338s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[2.338s] [ 92%] [32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.376s] [ 97%] Built target tutorial_interfaces__rosidl_typesupport_introspection_c__pyext
+[2.376s] [ 97%] Built target tutorial_interfaces__rosidl_typesupport_c__pyext
+[2.422s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[2.491s] [100%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[2.503s] Invoked command in '/home/nayab/dev_ws/build/tutorial_interfaces' returned '0': CMAKE_PREFIX_PATH=/home/nayab/dev_ws/install/tutorial_interfaces:/home/nayab/dev_ws/install/turtlesim:/home/nayab/dev_ws/install/py_pubsub:/home/nayab/dev_ws/install/my_package:/opt/ros/foxy:/home/nayab/project_ws/devel:/opt/ros/noetic /usr/bin/cmake --build /home/nayab/dev_ws/build/tutorial_interfaces -- -j4 -l4
+[2.572s] Invoking command in '/home/nayab/dev_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=/home/nayab/dev_ws/install/tutorial_interfaces:/home/nayab/dev_ws/install/turtlesim:/home/nayab/dev_ws/install/py_pubsub:/home/nayab/dev_ws/install/my_package:/opt/ros/foxy:/home/nayab/project_ws/devel:/opt/ros/noetic /usr/bin/cmake --install /home/nayab/dev_ws/build/tutorial_interfaces
+[2.583s] -- Install configuration: ""
+[2.584s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/ament_index/resource_index/rosidl_interfaces/tutorial_interfaces
+[2.584s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces
+[2.584s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg
+[2.584s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail
+[2.584s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__functions.h
+[2.584s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__functions.h
+[2.584s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__type_support.h
+[2.584s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__type_support.h
+[2.585s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__functions.c
+[2.585s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__functions.c
+[2.585s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__struct.h
+[2.585s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__struct.h
+[2.585s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num.h
+[2.585s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/mp_status.h
+[2.585s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/rosidl_generator_c__visibility_control.h
+[2.585s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/library_path.sh
+[2.585s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/library_path.dsv
+[2.585s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_generator_c.so
+[2.585s] -- Set runtime path of "/home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_generator_c.so" to ""
+[2.586s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces
+[2.586s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg
+[2.586s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail
+[2.586s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
+[2.586s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__rosidl_typesupport_fastrtps_c.h
+[2.586s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.586s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so
+[2.586s] -- Set runtime path of "/home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[2.586s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces
+[2.586s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg
+[2.587s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail
+[2.587s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/dds_fastrtps
+[2.587s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__rosidl_typesupport_fastrtps_cpp.hpp
+[2.587s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp
+[2.587s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.587s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[2.587s] -- Set runtime path of "/home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.587s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces
+[2.587s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg
+[2.587s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.587s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail
+[2.588s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__type_support.c
+[2.588s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__rosidl_typesupport_introspection_c.h
+[2.588s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__rosidl_typesupport_introspection_c.h
+[2.588s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__type_support.c
+[2.588s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_c.so
+[2.588s] -- Set runtime path of "/home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[2.588s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_c.so
+[2.589s] -- Set runtime path of "/home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_c.so" to ""
+[2.589s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces
+[2.589s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg
+[2.589s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail
+[2.589s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__traits.hpp
+[2.589s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__struct.hpp
+[2.589s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__builder.hpp
+[2.590s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__traits.hpp
+[2.590s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__builder.hpp
+[2.590s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__struct.hpp
+[2.590s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/mp_status.hpp
+[2.590s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num.hpp
+[2.590s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces
+[2.590s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg
+[2.590s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail
+[2.590s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__type_support.cpp
+[2.590s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp
+[2.590s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__rosidl_typesupport_introspection_cpp.hpp
+[2.591s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/detail/mp_status__type_support.cpp
+[2.591s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_cpp.so
+[2.591s] -- Set runtime path of "/home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[2.591s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_cpp.so
+[2.591s] -- Set runtime path of "/home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_cpp.so" to ""
+[2.591s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/pythonpath.sh
+[2.591s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/pythonpath.dsv
+[2.591s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/__init__.py
+[2.623s] Compiling '/home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/__init__.py'...
+[2.628s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/msg
+[2.628s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/msg/__init__.py
+[2.628s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/msg/_num_s.c
+[2.628s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/msg/_num.py
+[2.628s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/msg/_mp_status_s.c
+[2.628s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/msg/_mp_status.py
+[2.628s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[2.629s] -- Set runtime path of "/home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+[2.629s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[2.630s] -- Set runtime path of "/home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+[2.630s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[2.631s] -- Set runtime path of "/home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+[2.631s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__python.so
+[2.631s] -- Set runtime path of "/home/nayab/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__python.so" to ""
+[2.632s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Num.idl
+[2.632s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/MpStatus.idl
+[2.632s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Num.msg
+[2.632s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/MpStatus.msg
+[2.632s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/ament_index/resource_index/package_run_dependencies/tutorial_interfaces
+[2.632s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/ament_index/resource_index/parent_prefix_path/tutorial_interfaces
+[2.633s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/ament_prefix_path.sh
+[2.633s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/ament_prefix_path.dsv
+[2.633s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/path.sh
+[2.633s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/path.dsv
+[2.633s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.bash
+[2.633s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.sh
+[2.633s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.zsh
+[2.633s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.dsv
+[2.634s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.dsv
+[2.634s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/ament_index/resource_index/packages/tutorial_interfaces
+[2.634s] -- Old export file "/home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_generator_cExport.cmake" will be replaced.  Removing files [/home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_generator_cExport-noconfig.cmake].
+[2.634s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_generator_cExport.cmake
+[2.634s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_generator_cExport-noconfig.cmake
+[2.635s] -- Old export file "/home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cExport.cmake" will be replaced.  Removing files [/home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake].
+[2.635s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[2.635s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.636s] -- Old export file "/home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cExport.cmake" will be replaced.  Removing files [/home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cExport-noconfig.cmake].
+[2.636s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cExport.cmake
+[2.636s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[2.636s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_generator_cppExport.cmake
+[2.637s] -- Old export file "/home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cppExport.cmake" will be replaced.  Removing files [/home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake].
+[2.637s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[2.637s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.638s] -- Old export file "/home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cppExport.cmake" will be replaced.  Removing files [/home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cppExport-noconfig.cmake].
+[2.638s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cppExport.cmake
+[2.638s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[2.638s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/rosidl_cmake-extras.cmake
+[2.638s] -- Installing: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.639s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[2.639s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[2.639s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.639s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.639s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.639s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfacesConfig.cmake
+[2.639s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfacesConfig-version.cmake
+[2.639s] -- Up-to-date: /home/nayab/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.xml
+[2.643s] Invoked command in '/home/nayab/dev_ws/build/tutorial_interfaces' returned '0': CMAKE_PREFIX_PATH=/home/nayab/dev_ws/install/tutorial_interfaces:/home/nayab/dev_ws/install/turtlesim:/home/nayab/dev_ws/install/py_pubsub:/home/nayab/dev_ws/install/my_package:/opt/ros/foxy:/home/nayab/project_ws/devel:/opt/ros/noetic /usr/bin/cmake --install /home/nayab/dev_ws/build/tutorial_interfaces

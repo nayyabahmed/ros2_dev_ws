@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from abds_core_common/interfaces/LuminarConnect.srv
+// generated code does not contain a copyright notice
+
+
+module abds_core_common {
+  module srv {
+    @verbatim (language="comment", text=
+      " service for connecting to Luminar sensors")
+    struct LuminarConnect_Request {
+      int8 sensor_id;
+    };
+    struct LuminarConnect_Response {
+      int8 result;
+    };
+  };
+};

@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from abds_core_common/interfaces/LuminarSetFrequency.srv
+// generated code does not contain a copyright notice
+
+
+module abds_core_common {
+  module srv {
+    @verbatim (language="comment", text=
+      " service for setting capture frequency of luminar sensors in Hz")
+    struct LuminarSetFrequency_Request {
+      float frequency;
+    };
+    struct LuminarSetFrequency_Response {
+      int8 result;
+    };
+  };
+};

@@ -1,0 +1,28 @@
+[0.795s] Invoking command in '/home/nayab/dev_ws/src/py_pubsub': PYTHONPATH=/home/nayab/dev_ws/install/py_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/nayab/dev_ws/build/py_pubsub/build install --prefix /home/nayab/dev_ws/install/py_pubsub --record /home/nayab/dev_ws/build/py_pubsub/install.log --single-version-externally-managed
+[1.029s] running egg_info
+[1.029s] writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[1.029s] writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[1.030s] writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[1.030s] writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt
+[1.030s] writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[1.062s] reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[1.062s] writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[1.063s] running build
+[1.063s] running build_py
+[1.063s] copying py_pubsub/dbr_pub_oldschool.py -> /home/nayab/dev_ws/build/py_pubsub/build/lib/py_pubsub
+[1.063s] running install
+[1.064s] running install_lib
+[1.065s] copying /home/nayab/dev_ws/build/py_pubsub/build/lib/py_pubsub/dbr_pub_oldschool.py -> /home/nayab/dev_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+[1.066s] byte-compiling /home/nayab/dev_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/dbr_pub_oldschool.py to dbr_pub_oldschool.cpython-38.pyc
+[1.069s] running install_data
+[1.070s] running install_egg_info
+[1.071s] removing '/home/nayab/dev_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info' (and everything under it)
+[1.072s] Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/nayab/dev_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info
+[1.073s] running install_scripts
+[1.089s] Installing dbr_pub_old script to /home/nayab/dev_ws/install/py_pubsub/lib/py_pubsub
+[1.090s] Installing listener script to /home/nayab/dev_ws/install/py_pubsub/lib/py_pubsub
+[1.090s] Installing listener_old script to /home/nayab/dev_ws/install/py_pubsub/lib/py_pubsub
+[1.090s] Installing talker script to /home/nayab/dev_ws/install/py_pubsub/lib/py_pubsub
+[1.090s] Installing talker_old script to /home/nayab/dev_ws/install/py_pubsub/lib/py_pubsub
+[1.090s] writing list of installed files to '/home/nayab/dev_ws/build/py_pubsub/install.log'
+[1.115s] Invoked command in '/home/nayab/dev_ws/src/py_pubsub' returned '0': PYTHONPATH=/home/nayab/dev_ws/install/py_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/nayab/dev_ws/build/py_pubsub/build install --prefix /home/nayab/dev_ws/install/py_pubsub --record /home/nayab/dev_ws/build/py_pubsub/install.log --single-version-externally-managed

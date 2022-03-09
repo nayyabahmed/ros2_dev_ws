@@ -1,0 +1,2 @@
+Invoking command in '/home/nayab/dev_ws/build/tutorial_interfaces': /usr/bin/cmake --build /home/nayab/dev_ws/build/tutorial_interfaces -- -j4 -l4
+Invoked command in '/home/nayab/dev_ws/build/tutorial_interfaces' returned '2': /usr/bin/cmake --build /home/nayab/dev_ws/build/tutorial_interfaces -- -j4 -l4

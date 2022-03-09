@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from abds_core_common/interfaces/LuminarSetFov.srv
+// generated code does not contain a copyright notice
+
+
+module abds_core_common {
+  module srv {
+    @verbatim (language="comment", text=
+      " service for setting field of view for luminar sensors")
+    struct LuminarSetFov_Request {
+      float fov;
+
+      float fov_center;
+    };
+    struct LuminarSetFov_Response {
+      int8 result;
+    };
+  };
+};

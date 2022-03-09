@@ -1,0 +1,3 @@
+# service to trigger discovery of luminar sensors on the network
+---
+int8 sensors_found

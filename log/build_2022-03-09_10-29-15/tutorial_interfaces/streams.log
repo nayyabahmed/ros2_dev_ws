@@ -1,0 +1,39 @@
+[0.543s] Invoking command in '/home/nayab/dev_ws/build/tutorial_interfaces': /usr/bin/cmake --build /home/nayab/dev_ws/build/tutorial_interfaces -- -j4 -l4
+[0.578s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.604s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.604s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.879s] -- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)
+[0.908s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.912s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.058s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.087s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[1.123s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.243s] Error parsing '/home/nayab/dev_ws/src/tutorial_interfaces/package.xml':
+[1.390s] Traceback (most recent call last):
+[1.390s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 143, in <module>
+[1.390s]     main()
+[1.390s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 52, in main
+[1.390s]     raise e
+[1.390s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 48, in main
+[1.390s]     package = parse_package_string(
+[1.390s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 772, in parse_package_string
+[1.391s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[1.391s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/nayab/dev_ws/src/tutorial_interfaces/package.xml':
+[1.391s] Error(s):
+[1.391s] - The generic dependency on 'geometry_msgs' is redundant with: build_depend, exec_depend
+[1.445s] CMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:94 (message):
+[1.446s]   execute_process(/usr/bin/python3
+[1.446s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[1.446s]   /home/nayab/dev_ws/src/tutorial_interfaces/package.xml
+[1.446s]   /home/nayab/dev_ws/build/tutorial_interfaces/ament_cmake_core/package.cmake)
+[1.446s]   returned error code 1
+[1.446s] Call Stack (most recent call first):
+[1.446s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[1.446s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:226 (ament_package_xml)
+[1.446s]   CMakeLists.txt:28 (rosidl_generate_interfaces)
+[1.447s] 
+[1.447s] 
+[1.447s] -- Configuring incomplete, errors occurred!
+[1.448s] See also "/home/nayab/dev_ws/build/tutorial_interfaces/CMakeFiles/CMakeOutput.log".
+[1.459s] make: *** [Makefile:988: cmake_check_build_system] Error 1
+[1.461s] Invoked command in '/home/nayab/dev_ws/build/tutorial_interfaces' returned '2': /usr/bin/cmake --build /home/nayab/dev_ws/build/tutorial_interfaces -- -j4 -l4

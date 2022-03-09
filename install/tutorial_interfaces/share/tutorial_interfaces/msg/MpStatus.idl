@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tutorial_interfaces/msg/MpStatus.msg
+// generated code does not contain a copyright notice
+
+
+module tutorial_interfaces {
+  module msg {
+    struct MpStatus {
+      double mp_time;
+
+      float mp_lat;
+
+      float mp_longt;
+
+      float mp_bearing;
+
+      float yaw_angle;
+    };
+  };
+};

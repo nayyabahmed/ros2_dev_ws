@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "../rosidl_generator_py/abds_core_common/_abds_core_common_s.ep.rosidl_typesupport_c.c"
+  "../rosidl_generator_py/abds_core_common/_abds_core_common_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "../rosidl_generator_py/abds_core_common/_abds_core_common_s.ep.rosidl_typesupport_introspection_c.c"
+  "../rosidl_generator_py/abds_core_common/msg/__init__.py"
+  "../rosidl_generator_py/abds_core_common/msg/_bounding_box.py"
+  "../rosidl_generator_py/abds_core_common/msg/_bounding_box_s.c"
+  "../rosidl_generator_py/abds_core_common/msg/_bounding_boxes.py"
+  "../rosidl_generator_py/abds_core_common/msg/_bounding_boxes_s.c"
+  "../rosidl_generator_py/abds_core_common/msg/_cluster.py"
+  "../rosidl_generator_py/abds_core_common/msg/_cluster_s.c"
+  "../rosidl_generator_py/abds_core_common/msg/_clusters.py"
+  "../rosidl_generator_py/abds_core_common/msg/_clusters_s.c"
+  "../rosidl_generator_py/abds_core_common/msg/_test_state.py"
+  "../rosidl_generator_py/abds_core_common/msg/_test_state_s.c"
+  "../rosidl_generator_py/abds_core_common/msg/_trajectory.py"
+  "../rosidl_generator_py/abds_core_common/msg/_trajectory_point.py"
+  "../rosidl_generator_py/abds_core_common/msg/_trajectory_point_s.c"
+  "../rosidl_generator_py/abds_core_common/msg/_trajectory_s.c"
+  "../rosidl_generator_py/abds_core_common/msg/_vehicle_command.py"
+  "../rosidl_generator_py/abds_core_common/msg/_vehicle_command_s.c"
+  "../rosidl_generator_py/abds_core_common/msg/_vehicle_state.py"
+  "../rosidl_generator_py/abds_core_common/msg/_vehicle_state_s.c"
+  "../rosidl_generator_py/abds_core_common/srv/__init__.py"
+  "../rosidl_generator_py/abds_core_common/srv/_luminar_connect.py"
+  "../rosidl_generator_py/abds_core_common/srv/_luminar_connect_s.c"
+  "../rosidl_generator_py/abds_core_common/srv/_luminar_discover_sensors.py"
+  "../rosidl_generator_py/abds_core_common/srv/_luminar_discover_sensors_s.c"
+  "../rosidl_generator_py/abds_core_common/srv/_luminar_set_duration.py"
+  "../rosidl_generator_py/abds_core_common/srv/_luminar_set_duration_s.c"
+  "../rosidl_generator_py/abds_core_common/srv/_luminar_set_fov.py"
+  "../rosidl_generator_py/abds_core_common/srv/_luminar_set_fov_s.c"
+  "../rosidl_generator_py/abds_core_common/srv/_luminar_set_frequency.py"
+  "../rosidl_generator_py/abds_core_common/srv/_luminar_set_frequency_s.c"
+  "CMakeFiles/abds_core_common__py"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/abds_core_common__py.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

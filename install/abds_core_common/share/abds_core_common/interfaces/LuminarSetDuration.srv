@@ -1,0 +1,4 @@
+# service for setting luminar sensor setting duration
+int8 duration
+---
+int8 result

@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from abds_core_common/interfaces/LuminarDiscoverSensors.srv
+// generated code does not contain a copyright notice
+
+
+module abds_core_common {
+  module srv {
+    @verbatim (language="comment", text=
+      " service to trigger discovery of luminar sensors on the network")
+    struct LuminarDiscoverSensors_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct LuminarDiscoverSensors_Response {
+      int8 sensors_found;
+    };
+  };
+};

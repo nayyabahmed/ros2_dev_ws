@@ -1,0 +1,5 @@
+  File "/home/nayab/dev_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/dbr_pub_oldschool.py", line 510
+    node.destroy_node()
+    ^
+SyntaxError: invalid syntax
+

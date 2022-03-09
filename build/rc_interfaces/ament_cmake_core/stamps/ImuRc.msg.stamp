@@ -1,0 +1,10 @@
+string name
+int32 msg_count
+float64 mp_time
+float32 mp_lat
+float32 mp_longt
+float32 mp_bearing
+float32 yaw_angle
+geometry_msgs/Pose pose
+geometry_msgs/Twist twist
+geometry_msgs/Accel accel

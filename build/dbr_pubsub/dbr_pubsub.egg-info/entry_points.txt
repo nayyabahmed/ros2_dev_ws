@@ -1,0 +1,3 @@
+[console_scripts]
+dbr_pub = dbr_pubsub.dbr_pub:main
+

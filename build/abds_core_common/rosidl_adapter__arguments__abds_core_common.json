@@ -1,0 +1,19 @@
+{
+  "package_name": "abds_core_common",
+  "non_idl_tuples": [
+    "/home/nayab/dev_ws/src/abds_core_common:interfaces/LuminarConnect.srv",
+    "/home/nayab/dev_ws/src/abds_core_common:interfaces/LuminarDiscoverSensors.srv",
+    "/home/nayab/dev_ws/src/abds_core_common:interfaces/LuminarSetDuration.srv",
+    "/home/nayab/dev_ws/src/abds_core_common:interfaces/LuminarSetFov.srv",
+    "/home/nayab/dev_ws/src/abds_core_common:interfaces/LuminarSetFrequency.srv",
+    "/home/nayab/dev_ws/src/abds_core_common:msg/Cluster.msg",
+    "/home/nayab/dev_ws/src/abds_core_common:msg/Clusters.msg",
+    "/home/nayab/dev_ws/src/abds_core_common:msg/BoundingBox.msg",
+    "/home/nayab/dev_ws/src/abds_core_common:msg/BoundingBoxes.msg",
+    "/home/nayab/dev_ws/src/abds_core_common:msg/TrajectoryPoint.msg",
+    "/home/nayab/dev_ws/src/abds_core_common:msg/Trajectory.msg",
+    "/home/nayab/dev_ws/src/abds_core_common:msg/VehicleCommand.msg",
+    "/home/nayab/dev_ws/src/abds_core_common:msg/VehicleState.msg",
+    "/home/nayab/dev_ws/src/abds_core_common:msg/TestState.msg"
+  ]
+}

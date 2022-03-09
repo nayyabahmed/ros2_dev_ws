@@ -1,0 +1,47 @@
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  "C"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/home/nayab/dev_ws/build/abds_core_common/rosidl_generator_py/abds_core_common/msg/_bounding_box_s.c" "/home/nayab/dev_ws/build/abds_core_common/CMakeFiles/abds_core_common__python.dir/rosidl_generator_py/abds_core_common/msg/_bounding_box_s.c.o"
+  "/home/nayab/dev_ws/build/abds_core_common/rosidl_generator_py/abds_core_common/msg/_bounding_boxes_s.c" "/home/nayab/dev_ws/build/abds_core_common/CMakeFiles/abds_core_common__python.dir/rosidl_generator_py/abds_core_common/msg/_bounding_boxes_s.c.o"
+  "/home/nayab/dev_ws/build/abds_core_common/rosidl_generator_py/abds_core_common/msg/_cluster_s.c" "/home/nayab/dev_ws/build/abds_core_common/CMakeFiles/abds_core_common__python.dir/rosidl_generator_py/abds_core_common/msg/_cluster_s.c.o"
+  "/home/nayab/dev_ws/build/abds_core_common/rosidl_generator_py/abds_core_common/msg/_clusters_s.c" "/home/nayab/dev_ws/build/abds_core_common/CMakeFiles/abds_core_common__python.dir/rosidl_generator_py/abds_core_common/msg/_clusters_s.c.o"
+  "/home/nayab/dev_ws/build/abds_core_common/rosidl_generator_py/abds_core_common/msg/_test_state_s.c" "/home/nayab/dev_ws/build/abds_core_common/CMakeFiles/abds_core_common__python.dir/rosidl_generator_py/abds_core_common/msg/_test_state_s.c.o"
+  "/home/nayab/dev_ws/build/abds_core_common/rosidl_generator_py/abds_core_common/msg/_trajectory_point_s.c" "/home/nayab/dev_ws/build/abds_core_common/CMakeFiles/abds_core_common__python.dir/rosidl_generator_py/abds_core_common/msg/_trajectory_point_s.c.o"
+  "/home/nayab/dev_ws/build/abds_core_common/rosidl_generator_py/abds_core_common/msg/_trajectory_s.c" "/home/nayab/dev_ws/build/abds_core_common/CMakeFiles/abds_core_common__python.dir/rosidl_generator_py/abds_core_common/msg/_trajectory_s.c.o"
+  "/home/nayab/dev_ws/build/abds_core_common/rosidl_generator_py/abds_core_common/msg/_vehicle_command_s.c" "/home/nayab/dev_ws/build/abds_core_common/CMakeFiles/abds_core_common__python.dir/rosidl_generator_py/abds_core_common/msg/_vehicle_command_s.c.o"
+  "/home/nayab/dev_ws/build/abds_core_common/rosidl_generator_py/abds_core_common/msg/_vehicle_state_s.c" "/home/nayab/dev_ws/build/abds_core_common/CMakeFiles/abds_core_common__python.dir/rosidl_generator_py/abds_core_common/msg/_vehicle_state_s.c.o"
+  "/home/nayab/dev_ws/build/abds_core_common/rosidl_generator_py/abds_core_common/srv/_luminar_connect_s.c" "/home/nayab/dev_ws/build/abds_core_common/CMakeFiles/abds_core_common__python.dir/rosidl_generator_py/abds_core_common/srv/_luminar_connect_s.c.o"
+  "/home/nayab/dev_ws/build/abds_core_common/rosidl_generator_py/abds_core_common/srv/_luminar_discover_sensors_s.c" "/home/nayab/dev_ws/build/abds_core_common/CMakeFiles/abds_core_common__python.dir/rosidl_generator_py/abds_core_common/srv/_luminar_discover_sensors_s.c.o"
+  "/home/nayab/dev_ws/build/abds_core_common/rosidl_generator_py/abds_core_common/srv/_luminar_set_duration_s.c" "/home/nayab/dev_ws/build/abds_core_common/CMakeFiles/abds_core_common__python.dir/rosidl_generator_py/abds_core_common/srv/_luminar_set_duration_s.c.o"
+  "/home/nayab/dev_ws/build/abds_core_common/rosidl_generator_py/abds_core_common/srv/_luminar_set_fov_s.c" "/home/nayab/dev_ws/build/abds_core_common/CMakeFiles/abds_core_common__python.dir/rosidl_generator_py/abds_core_common/srv/_luminar_set_fov_s.c.o"
+  "/home/nayab/dev_ws/build/abds_core_common/rosidl_generator_py/abds_core_common/srv/_luminar_set_frequency_s.c" "/home/nayab/dev_ws/build/abds_core_common/CMakeFiles/abds_core_common__python.dir/rosidl_generator_py/abds_core_common/srv/_luminar_set_frequency_s.c.o"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_C
+  "RCUTILS_ENABLE_FAULT_INJECTION"
+  "ROS_PACKAGE_NAME=\"abds_core_common\""
+  "abds_core_common__python_EXPORTS"
+  )
+
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  "rosidl_generator_c"
+  "rosidl_generator_py"
+  "/usr/include/python3.8"
+  "rosidl_typesupport_c"
+  "/opt/ros/foxy/include"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/nayab/dev_ws/build/abds_core_common/CMakeFiles/abds_core_common__rosidl_generator_c.dir/DependInfo.cmake"
+  "/home/nayab/dev_ws/build/abds_core_common/CMakeFiles/abds_core_common__rosidl_typesupport_c.dir/DependInfo.cmake"
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

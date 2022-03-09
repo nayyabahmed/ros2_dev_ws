@@ -1,0 +1,66 @@
+In file included from [01m[K/home/nayab/dev_ws/src/abds_core_common/include/types.hpp:6[m[K,
+                 from [01m[K/home/nayab/dev_ws/src/abds_core_common/include/data_storage/quad_storage.hpp:4[m[K,
+                 from [01m[K/home/nayab/dev_ws/src/abds_core_common/include/data_storage/quad_storage.cpp:1[m[K:
+[01m[K/home/nayab/dev_ws/src/abds_core_common/include/calculations.hpp:10:1:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K-Wignored-qualifiers[m[K]
+   10 | [01;35m[Kconst[m[K bool isInLimit(const T & target, const T & value, const T & limit)
+      | [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/nayab/dev_ws/src/abds_core_common/include/data_storage/quad_storage.hpp:4[m[K,
+                 from [01m[K/home/nayab/dev_ws/src/abds_core_common/include/data_storage/quad_storage.cpp:1[m[K:
+[01m[K/home/nayab/dev_ws/src/abds_core_common/include/types.hpp:103:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K-Wignored-qualifiers[m[K]
+  103 |   [01;35m[Kconst[m[K bool operator==(
+      |   [01;35m[K^~~~~[m[K
+[01m[K/home/nayab/dev_ws/src/abds_core_common/include/types.hpp:[m[K In constructor ‘[01m[Kabds_core::PointXYZIR::PointXYZIR(abds_core::PointXYZI)[m[K’:
+[01m[K/home/nayab/dev_ws/src/abds_core_common/include/types.hpp:100:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kabds_core::PointXYZIR::intensity[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+  100 |   float [01;35m[Kintensity[m[K{0.0F};
+      |         [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/nayab/dev_ws/src/abds_core_common/include/types.hpp:99:9:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kfloat abds_core::PointXYZIR::r[m[K’ [[01;35m[K-Wreorder[m[K]
+   99 |   float [01;35m[Kr[m[K{0.0F};
+      |         [01;35m[K^[m[K
+[01m[K/home/nayab/dev_ws/src/abds_core_common/include/types.hpp:89:3:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+   89 |   [01;35m[KPointXYZIR[m[K(PointXYZI pt)
+      |   [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/nayab/dev_ws/src/abds_core_common/include/types.hpp:[m[K At global scope:
+[01m[K/home/nayab/dev_ws/src/abds_core_common/include/types.hpp:132:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K-Wignored-qualifiers[m[K]
+  132 |   [01;35m[Kconst[m[K bool operator==(
+      |   [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/nayab/dev_ws/src/abds_core_common/include/types.hpp:6[m[K,
+                 from [01m[K/home/nayab/dev_ws/src/abds_core_common/include/data_storage/spatial_hash.hpp:4[m[K,
+                 from [01m[K/home/nayab/dev_ws/src/abds_core_common/include/data_storage/spatial_hash.cpp:1[m[K:
+[01m[K/home/nayab/dev_ws/src/abds_core_common/include/calculations.hpp:10:1:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K-Wignored-qualifiers[m[K]
+   10 | [01;35m[Kconst[m[K bool isInLimit(const T & target, const T & value, const T & limit)
+      | [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/nayab/dev_ws/src/abds_core_common/include/data_storage/spatial_hash.hpp:4[m[K,
+                 from [01m[K/home/nayab/dev_ws/src/abds_core_common/include/data_storage/spatial_hash.cpp:1[m[K:
+[01m[K/home/nayab/dev_ws/src/abds_core_common/include/types.hpp:103:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K-Wignored-qualifiers[m[K]
+  103 |   [01;35m[Kconst[m[K bool operator==(
+      |   [01;35m[K^~~~~[m[K
+[01m[K/home/nayab/dev_ws/src/abds_core_common/include/types.hpp:[m[K In constructor ‘[01m[Kabds_core::PointXYZIR::PointXYZIR(abds_core::PointXYZI)[m[K’:
+[01m[K/home/nayab/dev_ws/src/abds_core_common/include/types.hpp:100:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kabds_core::PointXYZIR::intensity[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+  100 |   float [01;35m[Kintensity[m[K{0.0F};
+      |         [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/nayab/dev_ws/src/abds_core_common/include/types.hpp:99:9:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kfloat abds_core::PointXYZIR::r[m[K’ [[01;35m[K-Wreorder[m[K]
+   99 |   float [01;35m[Kr[m[K{0.0F};
+      |         [01;35m[K^[m[K
+[01m[K/home/nayab/dev_ws/src/abds_core_common/include/types.hpp:89:3:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+   89 |   [01;35m[KPointXYZIR[m[K(PointXYZI pt)
+      |   [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/nayab/dev_ws/src/abds_core_common/include/types.hpp:[m[K At global scope:
+[01m[K/home/nayab/dev_ws/src/abds_core_common/include/types.hpp:132:3:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K-Wignored-qualifiers[m[K]
+  132 |   [01;35m[Kconst[m[K bool operator==(
+      |   [01;35m[K^~~~~[m[K
+[01m[K/home/nayab/dev_ws/src/abds_core_common/include/network/udp_client_server.cpp:[m[K In member function ‘[01m[Kint abds_core::udp_client_server::udp_server::timed_recv(unsigned char*, size_t, int)[m[K’:
+[01m[K/home/nayab/dev_ws/src/abds_core_common/include/network/udp_client_server.cpp:132:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 2 to restrict-qualified parameter aliases with arguments 3, 4 [[01;35m[K-Wrestrict[m[K]
+  132 |     int retval = select(m_socket + 1, [01;35m[K&s[m[K, [32m[K&s[m[K, [34m[K&s[m[K, &timeout);
+      |                                       [01;35m[K^~[m[K  [32m[K~~[m[K  [34m[K~~[m[K
+[01m[K/home/nayab/dev_ws/src/abds_core_common/include/network/udp_client_server.cpp:[m[K In lambda function:
+[01m[K/home/nayab/dev_ws/src/abds_core_common/include/network/udp_client_server.cpp:160:27:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kmsg[m[K’ [[01;35m[K-Wvla[m[K]
+  160 |             unsigned char [01;35m[Kmsg[m[K[max_size];
+      |                           [01;35m[K^~~[m[K
+[01m[K/home/nayab/dev_ws/src/abds_core_common/include/network/udp_client_server.cpp:[m[K In member function ‘[01m[Kint abds_core::udp_client_server::udp_server::stop_recv()[m[K’:
+[01m[K/home/nayab/dev_ws/src/abds_core_common/include/network/udp_client_server.cpp:174:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  174 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/nayab/dev_ws/src/abds_core_common/include/network/udp_client_server.cpp:[m[K In member function ‘[01m[Kint abds_core::udp_client_server::udp_server::async_recv(size_t, std::function<void(unsigned char*, long unsigned int)>)[m[K’:
+[01m[K/home/nayab/dev_ws/src/abds_core_common/include/network/udp_client_server.cpp:168:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  168 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
