@@ -26,6 +26,26 @@ rosidl_typesupport_c/visibility_control.h
 rosidl_typesupport_interface/macros.h
 /home/nayab/dev_ws/build/rc_interfaces/rosidl_typesupport_c/rc_interfaces/msg/rosidl_typesupport_interface/macros.h
 
+/home/nayab/dev_ws/build/rc_interfaces/rosidl_typesupport_c/rc_interfaces/msg/rc_status__type_support.cpp
+cstddef
+/home/nayab/dev_ws/build/rc_interfaces/rosidl_typesupport_c/rc_interfaces/msg/cstddef
+rosidl_runtime_c/message_type_support_struct.h
+/home/nayab/dev_ws/build/rc_interfaces/rosidl_typesupport_c/rc_interfaces/msg/rosidl_runtime_c/message_type_support_struct.h
+rc_interfaces/msg/rosidl_typesupport_c__visibility_control.h
+/home/nayab/dev_ws/build/rc_interfaces/rosidl_typesupport_c/rc_interfaces/msg/rc_interfaces/msg/rosidl_typesupport_c__visibility_control.h
+rc_interfaces/msg/detail/rc_status__struct.h
+/home/nayab/dev_ws/build/rc_interfaces/rosidl_typesupport_c/rc_interfaces/msg/rc_interfaces/msg/detail/rc_status__struct.h
+rosidl_typesupport_c/identifier.h
+/home/nayab/dev_ws/build/rc_interfaces/rosidl_typesupport_c/rc_interfaces/msg/rosidl_typesupport_c/identifier.h
+rosidl_typesupport_c/message_type_support_dispatch.h
+/home/nayab/dev_ws/build/rc_interfaces/rosidl_typesupport_c/rc_interfaces/msg/rosidl_typesupport_c/message_type_support_dispatch.h
+rosidl_typesupport_c/type_support_map.h
+/home/nayab/dev_ws/build/rc_interfaces/rosidl_typesupport_c/rc_interfaces/msg/rosidl_typesupport_c/type_support_map.h
+rosidl_typesupport_c/visibility_control.h
+/home/nayab/dev_ws/build/rc_interfaces/rosidl_typesupport_c/rc_interfaces/msg/rosidl_typesupport_c/visibility_control.h
+rosidl_typesupport_interface/macros.h
+/home/nayab/dev_ws/build/rc_interfaces/rosidl_typesupport_c/rc_interfaces/msg/rosidl_typesupport_interface/macros.h
+
 /opt/ros/foxy/include/geometry_msgs/msg/detail/accel__struct.h
 stdbool.h
 -
@@ -137,6 +157,14 @@ geometry_msgs/msg/detail/twist__struct.h
 rosidl_generator_c/rc_interfaces/msg/detail/geometry_msgs/msg/detail/twist__struct.h
 geometry_msgs/msg/detail/accel__struct.h
 rosidl_generator_c/rc_interfaces/msg/detail/geometry_msgs/msg/detail/accel__struct.h
+
+rosidl_generator_c/rc_interfaces/msg/detail/rc_status__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
 
 rosidl_typesupport_c/rc_interfaces/msg/rosidl_typesupport_c__visibility_control.h
 

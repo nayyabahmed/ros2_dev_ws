@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/nayab/dev_ws/build/rc_interfaces
 # Include the progress variables for this target.
 include CMakeFiles/rc_interfaces.dir/progress.make
 
+CMakeFiles/rc_interfaces: /home/nayab/dev_ws/src/rc_interfaces/msg/RcStatus.msg
 CMakeFiles/rc_interfaces: /home/nayab/dev_ws/src/rc_interfaces/msg/ImuRc.msg
 CMakeFiles/rc_interfaces: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/rc_interfaces: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl

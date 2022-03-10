@@ -106,4 +106,7 @@ CMakeFiles/rc_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/rc
  rosidl_generator_c/rc_interfaces/msg/detail/imu_rc__functions.h
  rosidl_generator_c/rc_interfaces/msg/detail/imu_rc__struct.h
  rosidl_generator_c/rc_interfaces/msg/detail/imu_rc__type_support.h
+ rosidl_generator_c/rc_interfaces/msg/detail/rc_status__functions.h
+ rosidl_generator_c/rc_interfaces/msg/detail/rc_status__struct.h
+ rosidl_generator_c/rc_interfaces/msg/detail/rc_status__type_support.h
  rosidl_generator_c/rc_interfaces/msg/rosidl_generator_c__visibility_control.h

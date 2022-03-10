@@ -56,8 +56,10 @@ include rc_interfaces__py/CMakeFiles/rc_interfaces__py.dir/progress.make
 rc_interfaces__py/CMakeFiles/rc_interfaces__py: rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 rc_interfaces__py/CMakeFiles/rc_interfaces__py: rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 rc_interfaces__py/CMakeFiles/rc_interfaces__py: rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_c.c
+rc_interfaces__py/CMakeFiles/rc_interfaces__py: rosidl_generator_py/rc_interfaces/msg/_rc_status.py
 rc_interfaces__py/CMakeFiles/rc_interfaces__py: rosidl_generator_py/rc_interfaces/msg/_imu_rc.py
 rc_interfaces__py/CMakeFiles/rc_interfaces__py: rosidl_generator_py/rc_interfaces/msg/__init__.py
+rc_interfaces__py/CMakeFiles/rc_interfaces__py: rosidl_generator_py/rc_interfaces/msg/_rc_status_s.c
 rc_interfaces__py/CMakeFiles/rc_interfaces__py: rosidl_generator_py/rc_interfaces/msg/_imu_rc_s.c
 
 
@@ -74,6 +76,7 @@ rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_fastrtp
 rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_msg.py.em
 rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_srv.py.em
+rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/rc_interfaces/msg/RcStatus.idl
 rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/rc_interfaces/msg/ImuRc.idl
 rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
@@ -145,11 +148,17 @@ rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_introsp
 rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_c.c: rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_c.c
 
+rosidl_generator_py/rc_interfaces/msg/_rc_status.py: rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rc_interfaces/msg/_rc_status.py
+
 rosidl_generator_py/rc_interfaces/msg/_imu_rc.py: rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rc_interfaces/msg/_imu_rc.py
 
 rosidl_generator_py/rc_interfaces/msg/__init__.py: rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rc_interfaces/msg/__init__.py
+
+rosidl_generator_py/rc_interfaces/msg/_rc_status_s.c: rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rc_interfaces/msg/_rc_status_s.c
 
 rosidl_generator_py/rc_interfaces/msg/_imu_rc_s.c: rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rc_interfaces/msg/_imu_rc_s.c
@@ -158,8 +167,10 @@ rc_interfaces__py: rc_interfaces__py/CMakeFiles/rc_interfaces__py
 rc_interfaces__py: rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 rc_interfaces__py: rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 rc_interfaces__py: rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_c.c
+rc_interfaces__py: rosidl_generator_py/rc_interfaces/msg/_rc_status.py
 rc_interfaces__py: rosidl_generator_py/rc_interfaces/msg/_imu_rc.py
 rc_interfaces__py: rosidl_generator_py/rc_interfaces/msg/__init__.py
+rc_interfaces__py: rosidl_generator_py/rc_interfaces/msg/_rc_status_s.c
 rc_interfaces__py: rosidl_generator_py/rc_interfaces/msg/_imu_rc_s.c
 rc_interfaces__py: rc_interfaces__py/CMakeFiles/rc_interfaces__py.dir/build.make
 

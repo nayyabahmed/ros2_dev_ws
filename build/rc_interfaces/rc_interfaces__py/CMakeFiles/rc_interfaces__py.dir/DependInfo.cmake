@@ -10,6 +10,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/nayab/dev_ws/build/rc_interfaces/rosidl_generator_py/rc_interfaces/msg/__init__.py" "/home/nayab/dev_ws/build/rc_interfaces/rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/nayab/dev_ws/build/rc_interfaces/rosidl_generator_py/rc_interfaces/msg/_imu_rc.py" "/home/nayab/dev_ws/build/rc_interfaces/rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/nayab/dev_ws/build/rc_interfaces/rosidl_generator_py/rc_interfaces/msg/_imu_rc_s.c" "/home/nayab/dev_ws/build/rc_interfaces/rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/nayab/dev_ws/build/rc_interfaces/rosidl_generator_py/rc_interfaces/msg/_rc_status.py" "/home/nayab/dev_ws/build/rc_interfaces/rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/nayab/dev_ws/build/rc_interfaces/rosidl_generator_py/rc_interfaces/msg/_rc_status_s.c" "/home/nayab/dev_ws/build/rc_interfaces/rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

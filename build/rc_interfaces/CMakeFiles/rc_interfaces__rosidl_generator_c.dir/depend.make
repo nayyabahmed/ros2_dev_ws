@@ -20,3 +20,9 @@ CMakeFiles/rc_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rc_interface
 CMakeFiles/rc_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rc_interfaces/msg/detail/imu_rc__functions.c.o: rosidl_generator_c/rc_interfaces/msg/detail/imu_rc__struct.h
 CMakeFiles/rc_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rc_interfaces/msg/detail/imu_rc__functions.c.o: rosidl_generator_c/rc_interfaces/msg/rosidl_generator_c__visibility_control.h
 
+CMakeFiles/rc_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rc_interfaces/msg/detail/rc_status__functions.c.o: rosidl_generator_c/rc_interfaces/msg/detail/rc_status__functions.c
+CMakeFiles/rc_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rc_interfaces/msg/detail/rc_status__functions.c.o: /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
+CMakeFiles/rc_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rc_interfaces/msg/detail/rc_status__functions.c.o: rosidl_generator_c/rc_interfaces/msg/detail/rc_status__functions.h
+CMakeFiles/rc_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rc_interfaces/msg/detail/rc_status__functions.c.o: rosidl_generator_c/rc_interfaces/msg/detail/rc_status__struct.h
+CMakeFiles/rc_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rc_interfaces/msg/detail/rc_status__functions.c.o: rosidl_generator_c/rc_interfaces/msg/rosidl_generator_c__visibility_control.h
+

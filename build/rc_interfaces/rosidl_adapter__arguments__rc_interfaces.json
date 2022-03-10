@@ -1,6 +1,7 @@
 {
   "package_name": "rc_interfaces",
   "non_idl_tuples": [
+    "/home/nayab/dev_ws/src/rc_interfaces:msg/RcStatus.msg",
     "/home/nayab/dev_ws/src/rc_interfaces:msg/ImuRc.msg"
   ]
 }

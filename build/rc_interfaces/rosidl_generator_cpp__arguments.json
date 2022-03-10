@@ -3,6 +3,7 @@
   "output_dir": "/home/nayab/dev_ws/build/rc_interfaces/rosidl_generator_cpp/rc_interfaces",
   "template_dir": "/opt/ros/foxy/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
+    "/home/nayab/dev_ws/build/rc_interfaces/rosidl_adapter/rc_interfaces:msg/RcStatus.idl",
     "/home/nayab/dev_ws/build/rc_interfaces/rosidl_adapter/rc_interfaces:msg/ImuRc.idl"
   ],
   "ros_interface_dependencies": [
@@ -84,6 +85,7 @@
     "/opt/ros/foxy/share/rosidl_generator_cpp/cmake/../resource/srv__builder.hpp.em",
     "/opt/ros/foxy/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/foxy/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
+    "/home/nayab/dev_ws/build/rc_interfaces/rosidl_adapter/rc_interfaces/msg/RcStatus.idl",
     "/home/nayab/dev_ws/build/rc_interfaces/rosidl_adapter/rc_interfaces/msg/ImuRc.idl",
     "/opt/ros/foxy/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl",

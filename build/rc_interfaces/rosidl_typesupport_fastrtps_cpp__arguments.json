@@ -3,6 +3,7 @@
   "output_dir": "/home/nayab/dev_ws/build/rc_interfaces/rosidl_typesupport_fastrtps_cpp/rc_interfaces",
   "template_dir": "/opt/ros/foxy/share/rosidl_typesupport_fastrtps_cpp/resource",
   "idl_tuples": [
+    "/home/nayab/dev_ws/build/rc_interfaces/rosidl_adapter/rc_interfaces:msg/RcStatus.idl",
     "/home/nayab/dev_ws/build/rc_interfaces/rosidl_adapter/rc_interfaces:msg/ImuRc.idl"
   ],
   "ros_interface_dependencies": [
@@ -77,6 +78,7 @@
     "/opt/ros/foxy/share/rosidl_typesupport_fastrtps_cpp/resource/msg__type_support.cpp.em",
     "/opt/ros/foxy/share/rosidl_typesupport_fastrtps_cpp/resource/srv__rosidl_typesupport_fastrtps_cpp.hpp.em",
     "/opt/ros/foxy/share/rosidl_typesupport_fastrtps_cpp/resource/srv__type_support.cpp.em",
+    "/home/nayab/dev_ws/build/rc_interfaces/rosidl_adapter/rc_interfaces/msg/RcStatus.idl",
     "/home/nayab/dev_ws/build/rc_interfaces/rosidl_adapter/rc_interfaces/msg/ImuRc.idl",
     "/opt/ros/foxy/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl",

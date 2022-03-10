@@ -13,6 +13,8 @@ import numpy as np
 #from tutorial_interfaces.msg import MpStatus
 
 from rc_interfaces.msg import ImuRc
+from rc_interfaces.msg import RcStatus
+
 # -*- coding: utf-8 -*-
 """Provides the DataBroadcasterReceiver class.
 
@@ -422,19 +424,21 @@ def main(args=None):
     # pub_accel = node.create_publisher( Accel,'rc_accel',  10)
     # pub_mp = node.create_publisher(MpStatus,'mp_status',10)
     pub_imu =node.create_publisher(ImuRc,'rc_imu',10)
+    pub_status =node.create_publisher(RcStatus,'rc_status',10)
 
     # rc_pose = Pose()
     # rc_twist = Twist()
     # rc_accel = Accel()
     # mp_status = MpStatus()
     rc_imu =ImuRc()
+    rc_status = RcStatus()
 
     count=1 #loop counter
 
     ip_addr='195.0.1.1'
     app=5
     port=2000
-    freq = 100
+    freq = 10
 
     roll_angle=0
     pitch_angle=0
@@ -447,7 +451,13 @@ def main(args=None):
     for x in dic_chan.values():
         channels.add(x)
 
+    dic_chan_status = { 'path_dist':(6,7),'test_index':(36,7),'test_phase':(106,7),'desire_speed':(102,6),'pf_test_true':(102,7),'max_path_err_left':(114,7),'max_path_err_right':(115,7),
+            "current_path_exit_index":(107,7),'dl_status_1':(0,99),'dl_status_2':(1,99),'dl_test_procedure_state':(2,99),'test_in_progress':(2,98),"ar_control_mode":(8,6),
+            "mp_status":(28,5),"g_sr_err_1":(11,98),"br_ar_err_2":(12,98),"cr_gr_err_3":(13,98),"sr_mp_err_4":(14,98),"syn_temp_err_5":(15,98),
+            "dl_Error_1":(23,98),"dl_Error_2":(24,98) }
 
+    for x in dic_chan_status.values():
+        channels.add(x)
     ##Set the IP address and Frequency at which the data needs to be transmitted
     dbr, channels, num_triggers= setupDataBroadcaster(ip_addr, freq, app, port,channels)
 
@@ -464,10 +474,10 @@ def main(args=None):
 
         qx, qy, qz, qw= quaternion_from_euler( math.radians(roll_angle), math.radians(pitch_angle), math.radians(yaw_angle) )
 
-        #print(data)
+        print(data)
         rc_imu.name= "RC Robot"
         rc_imu.msg_count = count
-
+        print(data[dic_chan['mp_time']][0])
         rc_imu.mp_time =data[dic_chan['mp_time']][0]
         rc_imu.mp_lat  =data[dic_chan['mp_lat']][0]
         rc_imu.mp_longt=data[dic_chan['mp_longt']][0]
@@ -496,11 +506,36 @@ def main(args=None):
 
         rc_imu.accel.angular.z =data[dic_chan['yaw_accel']][0]
 
+
+
+        rc_status.test_id       = data[dic_chan_status['test_id']][0]
+        rc_status.test_phase    =data[dic_chan_status['test_phase']][0]
+        rc_status.path_dist     =data[dic_chan_status['path_dist']][0]
+        rc_status.desire_speed  =data[dic_chan_status['desire_speed']][0]
+        rc_status.pf_test_true  =data[dic_chan_status['pf_test_true']][0]
+        rc_status.max_path_err_left =data[dic_chan_status['max_path_err_left']][0]
+        rc_status.max_path_err_right=data[dic_chan_status['max_path_err_right']][0]
+        rc_status.current_path_exit_index=data[dic_chan_status['current_path_exit_index']][0]
+        rc_status.dl_status_1       =data[dic_chan_status['dl_status_1']][0]
+        rc_status.dl_status_2       =data[dic_chan_status['dl_status_2']][0]
+        rc_status.dl_test_procedure_state=data[dic_chan_status['dl_test_procedure_state']][0]
+        rc_status.test_in_progress  =data[dic_chan_status['test_in_progress']][0]
+        rc_status.ar_control_mode   =data[dic_chan_status['ar_control_mode']][0]
+        rc_status.mp_status     =data[dic_chan_status['mp_status']][0]
+        rc_status.g_sr_err_1    =data[dic_chan_status['g_sr_err_1']][0]
+        rc_status.br_ar_err_2   =data[dic_chan_status['br_ar_err_2']][0]
+        rc_status.cr_gr_err_3   =data[dic_chan_status['cr_gr_err_3']][0]
+        rc_status.sr_mp_err_4   =data[dic_chan_status['test_phase']][0]
+        rc_status.syn_temp_err_5 =data[dic_chan_status['syn_temp_err_5']][0]
+        rc_status.dl_err_1       =data[dic_chan_status['dl_err_1']][0]
+        rc_status.dl_err_2       =data[dic_chan_status['dl_err_2']][0]
+
         # pub_pose.publish(rc_pose)
         # pub_twist.publish(rc_twist)
         # pub_accel.publish(rc_accel)
         # pub_mp.publish(mp_status)
         pub_imu.publish(rc_imu)
+        pub_status.publish(rc_status)
 
         print("publishing message number:",count)
         count+=1

@@ -1,0 +1,52 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from rc_interfaces/msg/RcStatus.msg
+// generated code does not contain a copyright notice
+
+
+module rc_interfaces {
+  module msg {
+    struct RcStatus {
+      uint16 test_index;
+
+      int16 test_phase;
+
+      float path_dist;
+
+      float desire_speed;
+
+      octet pf_test_true;
+
+      float max_path_err_left;
+
+      float max_path_err_right;
+
+      int16 current_path_exit_index;
+
+      octet dl_status_1;
+
+      octet dl_status_2;
+
+      octet dl_test_procedure_state;
+
+      octet test_in_progress;
+
+      int32 ar_control_mode;
+
+      int32 mp_status;
+
+      uint32 g_sr_err_1;
+
+      uint32 br_ar_err_2;
+
+      uint32 cr_gr_err_3;
+
+      uint32 sr_mp_err_4;
+
+      uint32 syn_temp_err_5;
+
+      uint32 dl_err_1;
+
+      uint32 dl_err_2;
+    };
+  };
+};

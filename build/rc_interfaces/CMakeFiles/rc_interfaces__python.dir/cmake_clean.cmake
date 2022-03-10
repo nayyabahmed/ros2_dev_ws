@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rc_interfaces__python.dir/rosidl_generator_py/rc_interfaces/msg/_imu_rc_s.c.o"
+  "CMakeFiles/rc_interfaces__python.dir/rosidl_generator_py/rc_interfaces/msg/_rc_status_s.c.o"
   "rosidl_generator_py/rc_interfaces/librc_interfaces__python.pdb"
   "rosidl_generator_py/rc_interfaces/librc_interfaces__python.so"
 )

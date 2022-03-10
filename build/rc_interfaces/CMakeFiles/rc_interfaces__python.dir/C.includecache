@@ -24,6 +24,20 @@ rosidl_runtime_c/string.h
 rosidl_runtime_c/string_functions.h
 /home/nayab/dev_ws/build/rc_interfaces/rosidl_generator_py/rc_interfaces/msg/rosidl_runtime_c/string_functions.h
 
+/home/nayab/dev_ws/build/rc_interfaces/rosidl_generator_py/rc_interfaces/msg/_rc_status_s.c
+Python.h
+-
+stdbool.h
+-
+numpy/ndarrayobject.h
+/home/nayab/dev_ws/build/rc_interfaces/rosidl_generator_py/rc_interfaces/msg/numpy/ndarrayobject.h
+rosidl_runtime_c/visibility_control.h
+/home/nayab/dev_ws/build/rc_interfaces/rosidl_generator_py/rc_interfaces/msg/rosidl_runtime_c/visibility_control.h
+rc_interfaces/msg/detail/rc_status__struct.h
+/home/nayab/dev_ws/build/rc_interfaces/rosidl_generator_py/rc_interfaces/msg/rc_interfaces/msg/detail/rc_status__struct.h
+rc_interfaces/msg/detail/rc_status__functions.h
+/home/nayab/dev_ws/build/rc_interfaces/rosidl_generator_py/rc_interfaces/msg/rc_interfaces/msg/detail/rc_status__functions.h
+
 /opt/ros/foxy/include/geometry_msgs/msg/detail/accel__struct.h
 stdbool.h
 -
@@ -703,6 +717,26 @@ geometry_msgs/msg/detail/twist__struct.h
 rosidl_generator_c/rc_interfaces/msg/detail/geometry_msgs/msg/detail/twist__struct.h
 geometry_msgs/msg/detail/accel__struct.h
 rosidl_generator_c/rc_interfaces/msg/detail/geometry_msgs/msg/detail/accel__struct.h
+
+rosidl_generator_c/rc_interfaces/msg/detail/rc_status__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+rosidl_generator_c/rc_interfaces/msg/detail/rosidl_runtime_c/visibility_control.h
+rc_interfaces/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/rc_interfaces/msg/detail/rc_interfaces/msg/rosidl_generator_c__visibility_control.h
+rc_interfaces/msg/detail/rc_status__struct.h
+rosidl_generator_c/rc_interfaces/msg/detail/rc_interfaces/msg/detail/rc_status__struct.h
+
+rosidl_generator_c/rc_interfaces/msg/detail/rc_status__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
 
 rosidl_generator_c/rc_interfaces/msg/rosidl_generator_c__visibility_control.h
 

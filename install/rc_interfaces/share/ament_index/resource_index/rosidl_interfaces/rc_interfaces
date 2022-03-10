@@ -1,2 +1,4 @@
 msg/ImuRc.idl
 msg/ImuRc.msg
+msg/RcStatus.idl
+msg/RcStatus.msg
