@@ -434,7 +434,7 @@ def main(args=None):
     ip_addr='195.0.1.1'
     app=5
     port=2000
-    freq = 10
+    freq = 100
 
     roll_angle=0
     pitch_angle=0
