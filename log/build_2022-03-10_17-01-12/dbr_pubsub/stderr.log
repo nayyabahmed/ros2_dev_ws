@@ -1,0 +1,5 @@
+  File "/home/nayab/dev_ws/install/dbr_pubsub/lib/python3.8/site-packages/dbr_pubsub/dbr_pub.py", line 553
+    count+=1dl_Error_2
+            ^
+SyntaxError: invalid syntax
+

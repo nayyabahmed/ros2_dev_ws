@@ -1,0 +1,24 @@
+[1.397s] Invoking command in '/home/nayab/dev_ws/src/dbr_pubsub': PYTHONPATH=/home/nayab/dev_ws/install/dbr_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/dbr_pubsub build --build-base /home/nayab/dev_ws/build/dbr_pubsub/build install --prefix /home/nayab/dev_ws/install/dbr_pubsub --record /home/nayab/dev_ws/build/dbr_pubsub/install.log --single-version-externally-managed
+[1.682s] running egg_info
+[1.683s] writing ../../build/dbr_pubsub/dbr_pubsub.egg-info/PKG-INFO
+[1.683s] writing dependency_links to ../../build/dbr_pubsub/dbr_pubsub.egg-info/dependency_links.txt
+[1.683s] writing entry points to ../../build/dbr_pubsub/dbr_pubsub.egg-info/entry_points.txt
+[1.684s] writing requirements to ../../build/dbr_pubsub/dbr_pubsub.egg-info/requires.txt
+[1.684s] writing top-level names to ../../build/dbr_pubsub/dbr_pubsub.egg-info/top_level.txt
+[1.738s] reading manifest file '../../build/dbr_pubsub/dbr_pubsub.egg-info/SOURCES.txt'
+[1.741s] writing manifest file '../../build/dbr_pubsub/dbr_pubsub.egg-info/SOURCES.txt'
+[1.741s] running build
+[1.741s] running build_py
+[1.741s] copying dbr_pubsub/dbr_pub.py -> /home/nayab/dev_ws/build/dbr_pubsub/build/lib/dbr_pubsub
+[1.743s] running install
+[1.744s] running install_lib
+[1.745s] copying /home/nayab/dev_ws/build/dbr_pubsub/build/lib/dbr_pubsub/dbr_pub.py -> /home/nayab/dev_ws/install/dbr_pubsub/lib/python3.8/site-packages/dbr_pubsub
+[1.746s] byte-compiling /home/nayab/dev_ws/install/dbr_pubsub/lib/python3.8/site-packages/dbr_pubsub/dbr_pub.py to dbr_pub.cpython-38.pyc
+[1.751s] running install_data
+[1.755s] running install_egg_info
+[1.761s] removing '/home/nayab/dev_ws/install/dbr_pubsub/lib/python3.8/site-packages/dbr_pubsub-0.0.0-py3.8.egg-info' (and everything under it)
+[1.761s] Copying ../../build/dbr_pubsub/dbr_pubsub.egg-info to /home/nayab/dev_ws/install/dbr_pubsub/lib/python3.8/site-packages/dbr_pubsub-0.0.0-py3.8.egg-info
+[1.762s] running install_scripts
+[1.785s] Installing dbr_pub script to /home/nayab/dev_ws/install/dbr_pubsub/lib/dbr_pubsub
+[1.785s] writing list of installed files to '/home/nayab/dev_ws/build/dbr_pubsub/install.log'
+[1.830s] Invoked command in '/home/nayab/dev_ws/src/dbr_pubsub' returned '0': PYTHONPATH=/home/nayab/dev_ws/install/dbr_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/dbr_pubsub build --build-base /home/nayab/dev_ws/build/dbr_pubsub/build install --prefix /home/nayab/dev_ws/install/dbr_pubsub --record /home/nayab/dev_ws/build/dbr_pubsub/install.log --single-version-externally-managed

@@ -24,7 +24,7 @@ AB Dynamics robot system using the data broadcaster.
 import socket
 import sys
 from struct import unpack #This module performs conversions between Python values and C structs represented as Python bytes objects
-
+from struct import pack
 decode_data = {0: ('i', 4),  # int32
                1: ('I', 4),  # uint32
                2: ('q', 8),  # int64
@@ -446,15 +446,19 @@ def main(args=None):
 
     dic_chan={'x_pos':(5,0),'y_pos':(5,1),'z_pos':(5,2),'roll':(5,9),'pitch':(5,10),'yaw':(5,11),'x_vel':(5,3),
                 'y_vel':(5,4),'z_vel':(5,5),'roll_vel':(5,12),'pitch_vel':(5,13),'yaw_vel':(5,14),'x_accel':(5,6),
-                'y_accel':(5,7),'z_accel':(5,8),'yaw_accel':(5,17),'mp_time':(5,18),'mp_lat':(5,31),'mp_longt':(5,32),'mp_bearing':(5,33)}
+                'y_accel':(5,7),'z_accel':(5,8),'yaw_accel':(5,17),'mp_time':(5,18),'mp_lat':(5,31),'mp_longt':(5,32),'mp_bearing':(5,33),
+                'path_dist':(7,6) , 'test_index':(7,36), 'test_phase':(7,106), 'desire_speed':(6,102),'pf_test_true':(7,102)
+             }
     channels = set()  # create a set for channels
     for x in dic_chan.values():
         channels.add(x)
 
-    dic_chan_status = { 'path_dist':(6,7),'test_index':(36,7),'test_phase':(106,7),'desire_speed':(102,6),'pf_test_true':(102,7),'max_path_err_left':(114,7),'max_path_err_right':(115,7),
-            "current_path_exit_index":(107,7),'dl_status_1':(0,99),'dl_status_2':(1,99),'dl_test_procedure_state':(2,99),'test_in_progress':(2,98),"ar_control_mode":(8,6),
-            "mp_status":(28,5),"g_sr_err_1":(11,98),"br_ar_err_2":(12,98),"cr_gr_err_3":(13,98),"sr_mp_err_4":(14,98),"syn_temp_err_5":(15,98),
-            "dl_Error_1":(23,98),"dl_Error_2":(24,98) }
+
+
+    dic_chan_status = { 'path_dist':(7,6) , 'test_index':(7,36), 'test_phase':(7,106), 'desire_speed':(6,102), 'pf_test_true':(7,102),'max_path_err_left':(7,114),'max_path_err_right':(7,115),
+            "current_path_exit_index":(7,107),'dl_status_1':(99,0),'dl_status_2':(99,1),'dl_test_procedure_state':(99,2),'test_in_progress':(98,2),"ar_control_mode":(6,8),
+            "mp_status":(5,28),"g_sr_err_1":(98,11),"br_ar_err_2":(98,12),"cr_gr_err_3":(98,13),"sr_mp_err_4":(98,14),"syn_temp_err_5":(98,15),
+            "dl_err_1":(98,23),"dl_err_2":(98,24) }
 
     for x in dic_chan_status.values():
         channels.add(x)
@@ -474,10 +478,10 @@ def main(args=None):
 
         qx, qy, qz, qw= quaternion_from_euler( math.radians(roll_angle), math.radians(pitch_angle), math.radians(yaw_angle) )
 
-        print(data)
+        #print(data)
         rc_imu.name= "RC Robot"
         rc_imu.msg_count = count
-        print(data[dic_chan['mp_time']][0])
+        #print(data[dic_chan['mp_time']][0])
         rc_imu.mp_time =data[dic_chan['mp_time']][0]
         rc_imu.mp_lat  =data[dic_chan['mp_lat']][0]
         rc_imu.mp_longt=data[dic_chan['mp_longt']][0]
@@ -506,20 +510,27 @@ def main(args=None):
 
         rc_imu.accel.angular.z =data[dic_chan['yaw_accel']][0]
 
+        # print(data[dic_chan['pf_test_true']][0])
+        # print(type(data[dic_chan['pf_test_true']][0]))
+        # print(pack("B", data[dic_chan_status['pf_test_true']][0] ))
+        # rc_imu.test_index    = data[dic_chan['test_index']][0]
+        # rc_imu.test_phase    =data[dic_chan['test_phase']][0]
+        # rc_imu.path_dist     =data[dic_chan['path_dist']][0]
+        # rc_imu.desire_speed  =data[dic_chan['desire_speed']][0]
+        # rc_imu.pf_test_true  =data[dic_chan['pf_test_true']][0]
 
-
-        rc_status.test_id       = data[dic_chan_status['test_id']][0]
+        rc_status.test_index    =data[dic_chan_status['test_index']][0]
         rc_status.test_phase    =data[dic_chan_status['test_phase']][0]
         rc_status.path_dist     =data[dic_chan_status['path_dist']][0]
         rc_status.desire_speed  =data[dic_chan_status['desire_speed']][0]
-        rc_status.pf_test_true  =data[dic_chan_status['pf_test_true']][0]
+        rc_status.pf_test_true  =pack("B", data[dic_chan_status['pf_test_true']][0] )
         rc_status.max_path_err_left =data[dic_chan_status['max_path_err_left']][0]
         rc_status.max_path_err_right=data[dic_chan_status['max_path_err_right']][0]
         rc_status.current_path_exit_index=data[dic_chan_status['current_path_exit_index']][0]
-        rc_status.dl_status_1       =data[dic_chan_status['dl_status_1']][0]
-        rc_status.dl_status_2       =data[dic_chan_status['dl_status_2']][0]
-        rc_status.dl_test_procedure_state=data[dic_chan_status['dl_test_procedure_state']][0]
-        rc_status.test_in_progress  =data[dic_chan_status['test_in_progress']][0]
+        rc_status.dl_status_1       =pack("B", data[dic_chan_status['dl_status_1']][0] )
+        rc_status.dl_status_2       =pack("B", data[dic_chan_status['dl_status_2']][0] )
+        rc_status.dl_test_procedure_state=pack("B", data[dic_chan_status['dl_test_procedure_state']][0])
+        rc_status.test_in_progress  =pack("B", data[dic_chan_status['test_in_progress']][0])
         rc_status.ar_control_mode   =data[dic_chan_status['ar_control_mode']][0]
         rc_status.mp_status     =data[dic_chan_status['mp_status']][0]
         rc_status.g_sr_err_1    =data[dic_chan_status['g_sr_err_1']][0]
@@ -535,6 +546,7 @@ def main(args=None):
         # pub_accel.publish(rc_accel)
         # pub_mp.publish(mp_status)
         pub_imu.publish(rc_imu)
+
         pub_status.publish(rc_status)
 
         print("publishing message number:",count)

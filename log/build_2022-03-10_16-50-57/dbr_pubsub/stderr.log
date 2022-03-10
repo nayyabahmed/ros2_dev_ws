@@ -1,0 +1,5 @@
+  File "/home/nayab/dev_ws/install/dbr_pubsub/lib/python3.8/site-packages/dbr_pubsub/dbr_pub.py", line 458
+    dic_chan_status = { 'path_dist':(7,6) , 'test_index':(7,36), 'test_phase':(7,106), 'desire_speed':(6,102)'pf_test_true':(7,102),'max_path_err_left':(7,114),'max_path_err_right':(7,115),
+                                                                                                             ^
+SyntaxError: invalid syntax
+
