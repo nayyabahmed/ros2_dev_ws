@@ -1,0 +1,5 @@
+  File "/home/nayab/dev_ws/install/rc_data_emulator/lib/python3.8/site-packages/rc_data_emulator/rc_data_emu.py", line 659
+    ushmfile = '~/python_programs/rc_global_def\ushm definitions.pmh'
+               ^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 31-32: truncated \uXXXX escape
+

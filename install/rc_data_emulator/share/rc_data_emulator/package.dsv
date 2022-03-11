@@ -1,0 +1,6 @@
+source;share/rc_data_emulator/hook/pythonpath.ps1
+source;share/rc_data_emulator/hook/pythonpath.dsv
+source;share/rc_data_emulator/hook/pythonpath.sh
+source;share/rc_data_emulator/hook/ament_prefix_path.ps1
+source;share/rc_data_emulator/hook/ament_prefix_path.dsv
+source;share/rc_data_emulator/hook/ament_prefix_path.sh

@@ -1,0 +1,21 @@
+[1.411s] Invoking command in '/home/nayab/dev_ws/src/my_package': PYTHONPATH=/home/nayab/dev_ws/install/my_package/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_package build --build-base /home/nayab/dev_ws/build/my_package/build install --prefix /home/nayab/dev_ws/install/my_package --record /home/nayab/dev_ws/build/my_package/install.log --single-version-externally-managed
+[1.679s] running egg_info
+[1.680s] writing ../../build/my_package/my_package.egg-info/PKG-INFO
+[1.680s] writing dependency_links to ../../build/my_package/my_package.egg-info/dependency_links.txt
+[1.681s] writing entry points to ../../build/my_package/my_package.egg-info/entry_points.txt
+[1.681s] writing requirements to ../../build/my_package/my_package.egg-info/requires.txt
+[1.681s] writing top-level names to ../../build/my_package/my_package.egg-info/top_level.txt
+[1.716s] reading manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'
+[1.718s] writing manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'
+[1.718s] running build
+[1.718s] running build_py
+[1.718s] running install
+[1.720s] running install_lib
+[1.722s] running install_data
+[1.723s] running install_egg_info
+[1.726s] removing '/home/nayab/dev_ws/install/my_package/lib/python3.8/site-packages/my_package-0.0.0-py3.8.egg-info' (and everything under it)
+[1.727s] Copying ../../build/my_package/my_package.egg-info to /home/nayab/dev_ws/install/my_package/lib/python3.8/site-packages/my_package-0.0.0-py3.8.egg-info
+[1.728s] running install_scripts
+[1.747s] Installing my_node script to /home/nayab/dev_ws/install/my_package/lib/my_package
+[1.747s] writing list of installed files to '/home/nayab/dev_ws/build/my_package/install.log'
+[1.839s] Invoked command in '/home/nayab/dev_ws/src/my_package' returned '0': PYTHONPATH=/home/nayab/dev_ws/install/my_package/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_package build --build-base /home/nayab/dev_ws/build/my_package/build install --prefix /home/nayab/dev_ws/install/my_package --record /home/nayab/dev_ws/build/my_package/install.log --single-version-externally-managed

@@ -1,0 +1,24 @@
+[0.966s] Invoking command in '/home/nayab/dev_ws/src/rc_data_emulator': PYTHONPATH=/home/nayab/dev_ws/install/rc_data_emulator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/rc_data_emulator build --build-base /home/nayab/dev_ws/build/rc_data_emulator/build install --prefix /home/nayab/dev_ws/install/rc_data_emulator --record /home/nayab/dev_ws/build/rc_data_emulator/install.log --single-version-externally-managed
+[1.239s] running egg_info
+[1.240s] writing ../../build/rc_data_emulator/rc_data_emulator.egg-info/PKG-INFO
+[1.240s] writing dependency_links to ../../build/rc_data_emulator/rc_data_emulator.egg-info/dependency_links.txt
+[1.240s] writing entry points to ../../build/rc_data_emulator/rc_data_emulator.egg-info/entry_points.txt
+[1.240s] writing requirements to ../../build/rc_data_emulator/rc_data_emulator.egg-info/requires.txt
+[1.241s] writing top-level names to ../../build/rc_data_emulator/rc_data_emulator.egg-info/top_level.txt
+[1.275s] reading manifest file '../../build/rc_data_emulator/rc_data_emulator.egg-info/SOURCES.txt'
+[1.276s] writing manifest file '../../build/rc_data_emulator/rc_data_emulator.egg-info/SOURCES.txt'
+[1.277s] running build
+[1.277s] running build_py
+[1.277s] copying rc_data_emulator/rc_data_emu.py -> /home/nayab/dev_ws/build/rc_data_emulator/build/lib/rc_data_emulator
+[1.277s] running install
+[1.278s] running install_lib
+[1.279s] copying /home/nayab/dev_ws/build/rc_data_emulator/build/lib/rc_data_emulator/rc_data_emu.py -> /home/nayab/dev_ws/install/rc_data_emulator/lib/python3.8/site-packages/rc_data_emulator
+[1.279s] byte-compiling /home/nayab/dev_ws/install/rc_data_emulator/lib/python3.8/site-packages/rc_data_emulator/rc_data_emu.py to rc_data_emu.cpython-38.pyc
+[1.284s] running install_data
+[1.284s] running install_egg_info
+[1.286s] removing '/home/nayab/dev_ws/install/rc_data_emulator/lib/python3.8/site-packages/rc_data_emulator-0.0.0-py3.8.egg-info' (and everything under it)
+[1.287s] Copying ../../build/rc_data_emulator/rc_data_emulator.egg-info to /home/nayab/dev_ws/install/rc_data_emulator/lib/python3.8/site-packages/rc_data_emulator-0.0.0-py3.8.egg-info
+[1.287s] running install_scripts
+[1.305s] Installing rc_dem script to /home/nayab/dev_ws/install/rc_data_emulator/lib/rc_data_emulator
+[1.305s] writing list of installed files to '/home/nayab/dev_ws/build/rc_data_emulator/install.log'
+[1.334s] Invoked command in '/home/nayab/dev_ws/src/rc_data_emulator' returned '0': PYTHONPATH=/home/nayab/dev_ws/install/rc_data_emulator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/rc_data_emulator build --build-base /home/nayab/dev_ws/build/rc_data_emulator/build install --prefix /home/nayab/dev_ws/install/rc_data_emulator --record /home/nayab/dev_ws/build/rc_data_emulator/install.log --single-version-externally-managed

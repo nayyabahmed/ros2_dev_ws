@@ -1,0 +1,3 @@
+[console_scripts]
+rc_emu = rc_data_emulator.rc_data_emu:main
+
