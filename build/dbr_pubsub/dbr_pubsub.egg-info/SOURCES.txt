@@ -9,6 +9,7 @@ setup.py
 ../../build/dbr_pubsub/dbr_pubsub.egg-info/top_level.txt
 ../../build/dbr_pubsub/dbr_pubsub.egg-info/zip-safe
 dbr_pubsub/__init__.py
+dbr_pubsub/dbr_module.py
 dbr_pubsub/dbr_pub.py
 resource/dbr_pubsub
 test/test_copyright.py
