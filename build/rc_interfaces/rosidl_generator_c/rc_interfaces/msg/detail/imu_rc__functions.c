@@ -10,8 +10,8 @@
 
 
 // Include directives for member types
-// Member `name`
-#include "rosidl_runtime_c/string_functions.h"
+// Member `header`
+#include "std_msgs/msg/detail/header__functions.h"
 // Member `pose`
 #include "geometry_msgs/msg/detail/pose__functions.h"
 // Member `twist`
@@ -25,8 +25,8 @@ rc_interfaces__msg__ImuRc__init(rc_interfaces__msg__ImuRc * msg)
   if (!msg) {
     return false;
   }
-  // name
-  if (!rosidl_runtime_c__String__init(&msg->name)) {
+  // header
+  if (!std_msgs__msg__Header__init(&msg->header)) {
     rc_interfaces__msg__ImuRc__fini(msg);
     return false;
   }
@@ -60,8 +60,8 @@ rc_interfaces__msg__ImuRc__fini(rc_interfaces__msg__ImuRc * msg)
   if (!msg) {
     return;
   }
-  // name
-  rosidl_runtime_c__String__fini(&msg->name);
+  // header
+  std_msgs__msg__Header__fini(&msg->header);
   // msg_count
   // mp_time
   // mp_lat

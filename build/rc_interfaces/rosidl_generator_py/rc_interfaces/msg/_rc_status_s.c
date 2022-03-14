@@ -16,6 +16,10 @@
 #include "rc_interfaces/msg/detail/rc_status__struct.h"
 #include "rc_interfaces/msg/detail/rc_status__functions.h"
 
+ROSIDL_GENERATOR_C_IMPORT
+bool std_msgs__msg__header__convert_from_py(PyObject * _pymsg, void * _ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * std_msgs__msg__header__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool rc_interfaces__msg__rc_status__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -50,6 +54,17 @@ bool rc_interfaces__msg__rc_status__convert_from_py(PyObject * _pymsg, void * _r
     assert(strncmp("rc_interfaces.msg._rc_status.RcStatus", full_classname_dest, 37) == 0);
   }
   rc_interfaces__msg__RcStatus * ros_message = _ros_message;
+  {  // header
+    PyObject * field = PyObject_GetAttrString(_pymsg, "header");
+    if (!field) {
+      return false;
+    }
+    if (!std_msgs__msg__header__convert_from_py(field, &ros_message->header)) {
+      Py_DECREF(field);
+      return false;
+    }
+    Py_DECREF(field);
+  }
   {  // test_index
     PyObject * field = PyObject_GetAttrString(_pymsg, "test_index");
     if (!field) {
@@ -66,6 +81,15 @@ bool rc_interfaces__msg__rc_status__convert_from_py(PyObject * _pymsg, void * _r
     }
     assert(PyLong_Check(field));
     ros_message->test_phase = (int16_t)PyLong_AsLong(field);
+    Py_DECREF(field);
+  }
+  {  // mpf_phase
+    PyObject * field = PyObject_GetAttrString(_pymsg, "mpf_phase");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->mpf_phase = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
   {  // path_dist
@@ -261,6 +285,20 @@ PyObject * rc_interfaces__msg__rc_status__convert_to_py(void * raw_ros_message)
     }
   }
   rc_interfaces__msg__RcStatus * ros_message = (rc_interfaces__msg__RcStatus *)raw_ros_message;
+  {  // header
+    PyObject * field = NULL;
+    field = std_msgs__msg__header__convert_to_py(&ros_message->header);
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "header", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
   {  // test_index
     PyObject * field = NULL;
     field = PyLong_FromUnsignedLong(ros_message->test_index);
@@ -277,6 +315,17 @@ PyObject * rc_interfaces__msg__rc_status__convert_to_py(void * raw_ros_message)
     field = PyLong_FromLong(ros_message->test_phase);
     {
       int rc = PyObject_SetAttrString(_pymessage, "test_phase", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // mpf_phase
+    PyObject * field = NULL;
+    field = PyLong_FromLong(ros_message->mpf_phase);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "mpf_phase", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

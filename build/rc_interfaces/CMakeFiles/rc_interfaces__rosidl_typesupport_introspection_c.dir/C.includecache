@@ -23,8 +23,10 @@ rc_interfaces/msg/detail/imu_rc__functions.h
 /home/nayab/dev_ws/build/rc_interfaces/rosidl_typesupport_introspection_c/rc_interfaces/msg/detail/rc_interfaces/msg/detail/imu_rc__functions.h
 rc_interfaces/msg/detail/imu_rc__struct.h
 /home/nayab/dev_ws/build/rc_interfaces/rosidl_typesupport_introspection_c/rc_interfaces/msg/detail/rc_interfaces/msg/detail/imu_rc__struct.h
-rosidl_runtime_c/string_functions.h
-/home/nayab/dev_ws/build/rc_interfaces/rosidl_typesupport_introspection_c/rc_interfaces/msg/detail/rosidl_runtime_c/string_functions.h
+std_msgs/msg/header.h
+/home/nayab/dev_ws/build/rc_interfaces/rosidl_typesupport_introspection_c/rc_interfaces/msg/detail/std_msgs/msg/header.h
+std_msgs/msg/detail/header__rosidl_typesupport_introspection_c.h
+/home/nayab/dev_ws/build/rc_interfaces/rosidl_typesupport_introspection_c/rc_interfaces/msg/detail/std_msgs/msg/detail/header__rosidl_typesupport_introspection_c.h
 geometry_msgs/msg/pose.h
 /home/nayab/dev_ws/build/rc_interfaces/rosidl_typesupport_introspection_c/rc_interfaces/msg/detail/geometry_msgs/msg/pose.h
 geometry_msgs/msg/detail/pose__rosidl_typesupport_introspection_c.h
@@ -55,6 +57,18 @@ rc_interfaces/msg/detail/rc_status__functions.h
 /home/nayab/dev_ws/build/rc_interfaces/rosidl_typesupport_introspection_c/rc_interfaces/msg/detail/rc_interfaces/msg/detail/rc_status__functions.h
 rc_interfaces/msg/detail/rc_status__struct.h
 /home/nayab/dev_ws/build/rc_interfaces/rosidl_typesupport_introspection_c/rc_interfaces/msg/detail/rc_interfaces/msg/detail/rc_status__struct.h
+std_msgs/msg/header.h
+/home/nayab/dev_ws/build/rc_interfaces/rosidl_typesupport_introspection_c/rc_interfaces/msg/detail/std_msgs/msg/header.h
+std_msgs/msg/detail/header__rosidl_typesupport_introspection_c.h
+/home/nayab/dev_ws/build/rc_interfaces/rosidl_typesupport_introspection_c/rc_interfaces/msg/detail/std_msgs/msg/detail/header__rosidl_typesupport_introspection_c.h
+
+/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
 
 /opt/ros/foxy/include/geometry_msgs/msg/accel.h
 geometry_msgs/msg/detail/accel__struct.h
@@ -246,14 +260,6 @@ stddef.h
 rosidl_runtime_c/primitives_sequence.h
 /opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h
 
-/opt/ros/foxy/include/rosidl_runtime_c/string_functions.h
-stddef.h
--
-rosidl_runtime_c/string.h
-/opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/string.h
-rosidl_runtime_c/visibility_control.h
-/opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
-
 /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
 
 /opt/ros/foxy/include/rosidl_typesupport_interface/macros.h
@@ -282,6 +288,58 @@ rosidl_typesupport_introspection_c/visibility_control.h
 
 /opt/ros/foxy/include/rosidl_typesupport_introspection_c/visibility_control.h
 
+/opt/ros/foxy/include/std_msgs/msg/detail/header__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+/opt/ros/foxy/include/std_msgs/msg/detail/rosidl_runtime_c/visibility_control.h
+std_msgs/msg/rosidl_generator_c__visibility_control.h
+/opt/ros/foxy/include/std_msgs/msg/detail/std_msgs/msg/rosidl_generator_c__visibility_control.h
+std_msgs/msg/detail/header__struct.h
+/opt/ros/foxy/include/std_msgs/msg/detail/std_msgs/msg/detail/header__struct.h
+
+/opt/ros/foxy/include/std_msgs/msg/detail/header__rosidl_typesupport_introspection_c.h
+rosidl_runtime_c/message_type_support_struct.h
+/opt/ros/foxy/include/std_msgs/msg/detail/rosidl_runtime_c/message_type_support_struct.h
+rosidl_typesupport_interface/macros.h
+/opt/ros/foxy/include/std_msgs/msg/detail/rosidl_typesupport_interface/macros.h
+std_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+/opt/ros/foxy/include/std_msgs/msg/detail/std_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+
+/opt/ros/foxy/include/std_msgs/msg/detail/header__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+builtin_interfaces/msg/detail/time__struct.h
+/opt/ros/foxy/include/std_msgs/msg/detail/builtin_interfaces/msg/detail/time__struct.h
+rosidl_runtime_c/string.h
+/opt/ros/foxy/include/std_msgs/msg/detail/rosidl_runtime_c/string.h
+
+/opt/ros/foxy/include/std_msgs/msg/detail/header__type_support.h
+rosidl_typesupport_interface/macros.h
+/opt/ros/foxy/include/std_msgs/msg/detail/rosidl_typesupport_interface/macros.h
+std_msgs/msg/rosidl_generator_c__visibility_control.h
+/opt/ros/foxy/include/std_msgs/msg/detail/std_msgs/msg/rosidl_generator_c__visibility_control.h
+rosidl_runtime_c/message_type_support_struct.h
+/opt/ros/foxy/include/std_msgs/msg/detail/rosidl_runtime_c/message_type_support_struct.h
+
+/opt/ros/foxy/include/std_msgs/msg/header.h
+std_msgs/msg/detail/header__struct.h
+/opt/ros/foxy/include/std_msgs/msg/std_msgs/msg/detail/header__struct.h
+std_msgs/msg/detail/header__functions.h
+/opt/ros/foxy/include/std_msgs/msg/std_msgs/msg/detail/header__functions.h
+std_msgs/msg/detail/header__type_support.h
+/opt/ros/foxy/include/std_msgs/msg/std_msgs/msg/detail/header__type_support.h
+
+/opt/ros/foxy/include/std_msgs/msg/rosidl_generator_c__visibility_control.h
+
+/opt/ros/foxy/include/std_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+
 rosidl_generator_c/rc_interfaces/msg/detail/imu_rc__functions.h
 stdbool.h
 -
@@ -301,8 +359,8 @@ stddef.h
 -
 stdint.h
 -
-rosidl_runtime_c/string.h
-rosidl_generator_c/rc_interfaces/msg/detail/rosidl_runtime_c/string.h
+std_msgs/msg/detail/header__struct.h
+rosidl_generator_c/rc_interfaces/msg/detail/std_msgs/msg/detail/header__struct.h
 geometry_msgs/msg/detail/pose__struct.h
 rosidl_generator_c/rc_interfaces/msg/detail/geometry_msgs/msg/detail/pose__struct.h
 geometry_msgs/msg/detail/twist__struct.h
@@ -329,6 +387,8 @@ stddef.h
 -
 stdint.h
 -
+std_msgs/msg/detail/header__struct.h
+rosidl_generator_c/rc_interfaces/msg/detail/std_msgs/msg/detail/header__struct.h
 
 rosidl_generator_c/rc_interfaces/msg/rosidl_generator_c__visibility_control.h
 

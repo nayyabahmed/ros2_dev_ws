@@ -2,13 +2,18 @@
 // with input from rc_interfaces/msg/RcStatus.msg
 // generated code does not contain a copyright notice
 
+#include "std_msgs/msg/Header.idl"
 
 module rc_interfaces {
   module msg {
     struct RcStatus {
+      std_msgs::msg::Header header;
+
       uint16 test_index;
 
       int16 test_phase;
+
+      int32 mpf_phase;
 
       float path_dist;
 

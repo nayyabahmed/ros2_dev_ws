@@ -5,11 +5,12 @@
 #include "geometry_msgs/msg/Accel.idl"
 #include "geometry_msgs/msg/Pose.idl"
 #include "geometry_msgs/msg/Twist.idl"
+#include "std_msgs/msg/Header.idl"
 
 module rc_interfaces {
   module msg {
     struct ImuRc {
-      string name;
+      std_msgs::msg::Header header;
 
       int32 msg_count;
 

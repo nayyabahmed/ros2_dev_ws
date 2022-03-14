@@ -39,14 +39,14 @@ void ImuRc_fini_function(void * message_memory)
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember ImuRc_message_member_array[10] = {
   {
-    "name",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
+    "header",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    nullptr,  // members of sub message
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<std_msgs::msg::Header>(),  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(rc_interfaces::msg::ImuRc, name),  // bytes offset in struct
+    offsetof(rc_interfaces::msg::ImuRc, header),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer

@@ -16,6 +16,29 @@
 
 
 // forward declaration of message dependencies and their conversion functions
+namespace std_msgs
+{
+namespace msg
+{
+namespace typesupport_fastrtps_cpp
+{
+bool cdr_serialize(
+  const std_msgs::msg::Header &,
+  eprosima::fastcdr::Cdr &);
+bool cdr_deserialize(
+  eprosima::fastcdr::Cdr &,
+  std_msgs::msg::Header &);
+size_t get_serialized_size(
+  const std_msgs::msg::Header &,
+  size_t current_alignment);
+size_t
+max_serialized_size_Header(
+  bool & full_bounded,
+  size_t current_alignment);
+}  // namespace typesupport_fastrtps_cpp
+}  // namespace msg
+}  // namespace std_msgs
+
 
 namespace rc_interfaces
 {
@@ -32,10 +55,16 @@ cdr_serialize(
   const rc_interfaces::msg::RcStatus & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
+  // Member: header
+  std_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
+    ros_message.header,
+    cdr);
   // Member: test_index
   cdr << ros_message.test_index;
   // Member: test_phase
   cdr << ros_message.test_phase;
+  // Member: mpf_phase
+  cdr << ros_message.mpf_phase;
   // Member: path_dist
   cdr << ros_message.path_dist;
   // Member: desire_speed
@@ -83,11 +112,18 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   rc_interfaces::msg::RcStatus & ros_message)
 {
+  // Member: header
+  std_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
+    cdr, ros_message.header);
+
   // Member: test_index
   cdr >> ros_message.test_index;
 
   // Member: test_phase
   cdr >> ros_message.test_phase;
+
+  // Member: mpf_phase
+  cdr >> ros_message.mpf_phase;
 
   // Member: path_dist
   cdr >> ros_message.path_dist;
@@ -162,6 +198,11 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
+  // Member: header
+
+  current_alignment +=
+    std_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
+    ros_message.header, current_alignment);
   // Member: test_index
   {
     size_t item_size = sizeof(ros_message.test_index);
@@ -171,6 +212,12 @@ get_serialized_size(
   // Member: test_phase
   {
     size_t item_size = sizeof(ros_message.test_phase);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: mpf_phase
+  {
+    size_t item_size = sizeof(ros_message.mpf_phase);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -307,6 +354,18 @@ max_serialized_size_RcStatus(
   (void)full_bounded;
 
 
+  // Member: header
+  {
+    size_t array_size = 1;
+
+
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        std_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_Header(
+        full_bounded, current_alignment);
+    }
+  }
+
   // Member: test_index
   {
     size_t array_size = 1;
@@ -321,6 +380,14 @@ max_serialized_size_RcStatus(
 
     current_alignment += array_size * sizeof(uint16_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
+  }
+
+  // Member: mpf_phase
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   // Member: path_dist

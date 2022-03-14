@@ -14,6 +14,10 @@
 #include <vector>
 
 
+// Include directives for member types
+// Member 'header'
+#include "std_msgs/msg/detail/header__struct.hpp"
+
 #ifndef _WIN32
 # define DEPRECATED__rc_interfaces__msg__RcStatus __attribute__((deprecated))
 #else
@@ -33,12 +37,14 @@ struct RcStatus_
   using Type = RcStatus_<ContainerAllocator>;
 
   explicit RcStatus_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : header(_init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->test_index = 0;
       this->test_phase = 0;
+      this->mpf_phase = 0l;
       this->path_dist = 0.0f;
       this->desire_speed = 0.0f;
       this->pf_test_true = 0;
@@ -62,13 +68,14 @@ struct RcStatus_
   }
 
   explicit RcStatus_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : header(_alloc, _init)
   {
-    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->test_index = 0;
       this->test_phase = 0;
+      this->mpf_phase = 0l;
       this->path_dist = 0.0f;
       this->desire_speed = 0.0f;
       this->pf_test_true = 0;
@@ -92,12 +99,18 @@ struct RcStatus_
   }
 
   // field types and members
+  using _header_type =
+    std_msgs::msg::Header_<ContainerAllocator>;
+  _header_type header;
   using _test_index_type =
     uint16_t;
   _test_index_type test_index;
   using _test_phase_type =
     int16_t;
   _test_phase_type test_phase;
+  using _mpf_phase_type =
+    int32_t;
+  _mpf_phase_type mpf_phase;
   using _path_dist_type =
     float;
   _path_dist_type path_dist;
@@ -157,6 +170,12 @@ struct RcStatus_
   _dl_err_2_type dl_err_2;
 
   // setters for named parameter idiom
+  Type & set__header(
+    const std_msgs::msg::Header_<ContainerAllocator> & _arg)
+  {
+    this->header = _arg;
+    return *this;
+  }
   Type & set__test_index(
     const uint16_t & _arg)
   {
@@ -167,6 +186,12 @@ struct RcStatus_
     const int16_t & _arg)
   {
     this->test_phase = _arg;
+    return *this;
+  }
+  Type & set__mpf_phase(
+    const int32_t & _arg)
+  {
+    this->mpf_phase = _arg;
     return *this;
   }
   Type & set__path_dist(
@@ -326,10 +351,16 @@ struct RcStatus_
   // comparison operators
   bool operator==(const RcStatus_ & other) const
   {
+    if (this->header != other.header) {
+      return false;
+    }
     if (this->test_index != other.test_index) {
       return false;
     }
     if (this->test_phase != other.test_phase) {
+      return false;
+    }
+    if (this->mpf_phase != other.mpf_phase) {
       return false;
     }
     if (this->path_dist != other.path_dist) {

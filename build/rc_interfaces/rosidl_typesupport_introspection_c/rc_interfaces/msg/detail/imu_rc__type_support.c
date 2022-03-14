@@ -13,8 +13,10 @@
 
 
 // Include directives for member types
-// Member `name`
-#include "rosidl_runtime_c/string_functions.h"
+// Member `header`
+#include "std_msgs/msg/header.h"
+// Member `header`
+#include "std_msgs/msg/detail/header__rosidl_typesupport_introspection_c.h"
 // Member `pose`
 #include "geometry_msgs/msg/pose.h"
 // Member `pose`
@@ -49,14 +51,14 @@ void ImuRc__rosidl_typesupport_introspection_c__ImuRc_fini_function(void * messa
 
 static rosidl_typesupport_introspection_c__MessageMember ImuRc__rosidl_typesupport_introspection_c__ImuRc_message_member_array[10] = {
   {
-    "name",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    "header",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    NULL,  // members of sub message
+    NULL,  // members of sub message (initialized later)
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(rc_interfaces__msg__ImuRc, name),  // bytes offset in struct
+    offsetof(rc_interfaces__msg__ImuRc, header),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -221,6 +223,8 @@ static rosidl_message_type_support_t ImuRc__rosidl_typesupport_introspection_c__
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_rc_interfaces
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, rc_interfaces, msg, ImuRc)() {
+  ImuRc__rosidl_typesupport_introspection_c__ImuRc_message_member_array[0].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, std_msgs, msg, Header)();
   ImuRc__rosidl_typesupport_introspection_c__ImuRc_message_member_array[7].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, geometry_msgs, msg, Pose)();
   ImuRc__rosidl_typesupport_introspection_c__ImuRc_message_member_array[8].members_ =

@@ -16,6 +16,29 @@
 
 
 // forward declaration of message dependencies and their conversion functions
+namespace std_msgs
+{
+namespace msg
+{
+namespace typesupport_fastrtps_cpp
+{
+bool cdr_serialize(
+  const std_msgs::msg::Header &,
+  eprosima::fastcdr::Cdr &);
+bool cdr_deserialize(
+  eprosima::fastcdr::Cdr &,
+  std_msgs::msg::Header &);
+size_t get_serialized_size(
+  const std_msgs::msg::Header &,
+  size_t current_alignment);
+size_t
+max_serialized_size_Header(
+  bool & full_bounded,
+  size_t current_alignment);
+}  // namespace typesupport_fastrtps_cpp
+}  // namespace msg
+}  // namespace std_msgs
+
 namespace geometry_msgs
 {
 namespace msg
@@ -101,8 +124,10 @@ cdr_serialize(
   const rc_interfaces::msg::ImuRc & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: name
-  cdr << ros_message.name;
+  // Member: header
+  std_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
+    ros_message.header,
+    cdr);
   // Member: msg_count
   cdr << ros_message.msg_count;
   // Member: mp_time
@@ -136,8 +161,9 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   rc_interfaces::msg::ImuRc & ros_message)
 {
-  // Member: name
-  cdr >> ros_message.name;
+  // Member: header
+  std_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
+    cdr, ros_message.header);
 
   // Member: msg_count
   cdr >> ros_message.msg_count;
@@ -185,10 +211,11 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: name
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.name.size() + 1);
+  // Member: header
+
+  current_alignment +=
+    std_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
+    ros_message.header, current_alignment);
   // Member: msg_count
   {
     size_t item_size = sizeof(ros_message.msg_count);
@@ -259,15 +286,15 @@ max_serialized_size_ImuRc(
   (void)full_bounded;
 
 
-  // Member: name
+  // Member: header
   {
     size_t array_size = 1;
 
-    full_bounded = false;
+
     for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
+      current_alignment +=
+        std_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_Header(
+        full_bounded, current_alignment);
     }
   }
 

@@ -1,5 +1,7 @@
+std_msgs/Header header
 uint16 test_index
 int16 test_phase
+int32 mpf_phase
 float32 path_dist
 float32 desire_speed
 byte pf_test_true

@@ -52,6 +52,10 @@ class Metaclass_ImuRc(type):
             if Twist.__class__._TYPE_SUPPORT is None:
                 Twist.__class__.__import_type_support__()
 
+            from std_msgs.msg import Header
+            if Header.__class__._TYPE_SUPPORT is None:
+                Header.__class__.__import_type_support__()
+
     @classmethod
     def __prepare__(cls, name, bases, **kwargs):
         # list constant names here so that they appear in the help text of
@@ -65,7 +69,7 @@ class ImuRc(metaclass=Metaclass_ImuRc):
     """Message class 'ImuRc'."""
 
     __slots__ = [
-        '_name',
+        '_header',
         '_msg_count',
         '_mp_time',
         '_mp_lat',
@@ -78,7 +82,7 @@ class ImuRc(metaclass=Metaclass_ImuRc):
     ]
 
     _fields_and_field_types = {
-        'name': 'string',
+        'header': 'std_msgs/Header',
         'msg_count': 'int32',
         'mp_time': 'double',
         'mp_lat': 'float',
@@ -91,7 +95,7 @@ class ImuRc(metaclass=Metaclass_ImuRc):
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.UnboundedString(),  # noqa: E501
+        rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Header'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
@@ -107,7 +111,8 @@ class ImuRc(metaclass=Metaclass_ImuRc):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.name = kwargs.get('name', str())
+        from std_msgs.msg import Header
+        self.header = kwargs.get('header', Header())
         self.msg_count = kwargs.get('msg_count', int())
         self.mp_time = kwargs.get('mp_time', float())
         self.mp_lat = kwargs.get('mp_lat', float())
@@ -150,7 +155,7 @@ class ImuRc(metaclass=Metaclass_ImuRc):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.name != other.name:
+        if self.header != other.header:
             return False
         if self.msg_count != other.msg_count:
             return False
@@ -178,17 +183,18 @@ class ImuRc(metaclass=Metaclass_ImuRc):
         return copy(cls._fields_and_field_types)
 
     @property
-    def name(self):
-        """Message field 'name'."""
-        return self._name
+    def header(self):
+        """Message field 'header'."""
+        return self._header
 
-    @name.setter
-    def name(self, value):
+    @header.setter
+    def header(self, value):
         if __debug__:
+            from std_msgs.msg import Header
             assert \
-                isinstance(value, str), \
-                "The 'name' field must be of type 'str'"
-        self._name = value
+                isinstance(value, Header), \
+                "The 'header' field must be a sub message of type 'Header'"
+        self._header = value
 
     @property
     def msg_count(self):

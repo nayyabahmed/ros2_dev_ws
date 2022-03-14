@@ -9,14 +9,24 @@
 #include <string.h>
 
 
+// Include directives for member types
+// Member `header`
+#include "std_msgs/msg/detail/header__functions.h"
+
 bool
 rc_interfaces__msg__RcStatus__init(rc_interfaces__msg__RcStatus * msg)
 {
   if (!msg) {
     return false;
   }
+  // header
+  if (!std_msgs__msg__Header__init(&msg->header)) {
+    rc_interfaces__msg__RcStatus__fini(msg);
+    return false;
+  }
   // test_index
   // test_phase
+  // mpf_phase
   // path_dist
   // desire_speed
   // pf_test_true
@@ -45,8 +55,11 @@ rc_interfaces__msg__RcStatus__fini(rc_interfaces__msg__RcStatus * msg)
   if (!msg) {
     return;
   }
+  // header
+  std_msgs__msg__Header__fini(&msg->header);
   // test_index
   // test_phase
+  // mpf_phase
   // path_dist
   // desire_speed
   // pf_test_true

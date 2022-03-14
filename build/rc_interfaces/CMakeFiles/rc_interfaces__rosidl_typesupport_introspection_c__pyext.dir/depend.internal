@@ -3,6 +3,7 @@
 
 CMakeFiles/rc_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o
  /home/nayab/dev_ws/build/rc_interfaces/rosidl_generator_py/rc_interfaces/_rc_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+ /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
  /opt/ros/foxy/include/geometry_msgs/msg/detail/accel__struct.h
  /opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.h
  /opt/ros/foxy/include/geometry_msgs/msg/detail/pose__struct.h
@@ -16,6 +17,7 @@ CMakeFiles/rc_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_g
  /opt/ros/foxy/include/rosidl_runtime_c/string.h
  /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
  /opt/ros/foxy/include/rosidl_typesupport_interface/macros.h
+ /opt/ros/foxy/include/std_msgs/msg/detail/header__struct.h
  /usr/include/python3.8/Python.h
  /usr/include/python3.8/abstract.h
  /usr/include/python3.8/bltinmodule.h

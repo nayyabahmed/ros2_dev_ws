@@ -455,7 +455,7 @@ def main(args=None):
 
 
 
-    dic_chan_status = { 'path_dist':(7,6) , 'test_index':(7,36), 'test_phase':(7,106), 'desire_speed':(6,102), 'pf_test_true':(7,102),'max_path_err_left':(7,114),'max_path_err_right':(7,115),
+    dic_chan_status = {  'mpf_phase':(7,13) ,'path_dist':(7,6) , 'test_index':(7,36), 'test_phase':(7,106), 'desire_speed':(6,102), 'pf_test_true':(7,102),'max_path_err_left':(7,114),'max_path_err_right':(7,115),
             "current_path_exit_index":(7,107),'dl_status_1':(99,0),'dl_status_2':(99,1),'dl_test_procedure_state':(99,2),'test_in_progress':(98,2),"ar_control_mode":(6,8),
             "mp_status":(5,28),"g_sr_err_1":(98,11),"br_ar_err_2":(98,12),"cr_gr_err_3":(98,13),"sr_mp_err_4":(98,14),"syn_temp_err_5":(98,15),
             "dl_err_1":(98,23),"dl_err_2":(98,24) }
@@ -479,7 +479,8 @@ def main(args=None):
         qx, qy, qz, qw= quaternion_from_euler( math.radians(roll_angle), math.radians(pitch_angle), math.radians(yaw_angle) )
 
         #print(data)
-        rc_imu.name= "RC Robot"
+        rc_imu.header.frame_id= "mp_frame"
+        rc_imu.header.stamp = node.get_clock().now().to_msg()
         rc_imu.msg_count = count
         #print(data[dic_chan['mp_time']][0])
         rc_imu.mp_time =data[dic_chan['mp_time']][0]
@@ -510,18 +511,13 @@ def main(args=None):
 
         rc_imu.accel.angular.z =data[dic_chan['yaw_accel']][0]
 
-        # print(data[dic_chan['pf_test_true']][0])
-        # print(type(data[dic_chan['pf_test_true']][0]))
-        # print(pack("B", data[dic_chan_status['pf_test_true']][0] ))
-        # rc_imu.test_index    = data[dic_chan['test_index']][0]
-        # rc_imu.test_phase    =data[dic_chan['test_phase']][0]
-        # rc_imu.path_dist     =data[dic_chan['path_dist']][0]
-        # rc_imu.desire_speed  =data[dic_chan['desire_speed']][0]
-        # rc_imu.pf_test_true  =data[dic_chan['pf_test_true']][0]
-
+        
+        rc_status.header.frame_id= "mp_frame"
+        rc_status.header.stamp = node.get_clock().now().to_msg()
         rc_status.test_index    =data[dic_chan_status['test_index']][0]
         rc_status.test_phase    =data[dic_chan_status['test_phase']][0]
         rc_status.path_dist     =data[dic_chan_status['path_dist']][0]
+        rc_status.mpf_phase     =data[dic_chan_status['mpf_phase']][0]
         rc_status.desire_speed  =data[dic_chan_status['desire_speed']][0]
         rc_status.pf_test_true  =pack("B", data[dic_chan_status['pf_test_true']][0] )
         rc_status.max_path_err_left =data[dic_chan_status['max_path_err_left']][0]
@@ -536,7 +532,7 @@ def main(args=None):
         rc_status.g_sr_err_1    =data[dic_chan_status['g_sr_err_1']][0]
         rc_status.br_ar_err_2   =data[dic_chan_status['br_ar_err_2']][0]
         rc_status.cr_gr_err_3   =data[dic_chan_status['cr_gr_err_3']][0]
-        rc_status.sr_mp_err_4   =data[dic_chan_status['test_phase']][0]
+        rc_status.sr_mp_err_4   =data[dic_chan_status['sr_mp_err_4']][0]
         rc_status.syn_temp_err_5 =data[dic_chan_status['syn_temp_err_5']][0]
         rc_status.dl_err_1       =data[dic_chan_status['dl_err_1']][0]
         rc_status.dl_err_2       =data[dic_chan_status['dl_err_2']][0]

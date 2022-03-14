@@ -18,8 +18,8 @@ extern "C"
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'name'
-#include "rosidl_runtime_c/string.h"
+// Member 'header'
+#include "std_msgs/msg/detail/header__struct.h"
 // Member 'pose'
 #include "geometry_msgs/msg/detail/pose__struct.h"
 // Member 'twist'
@@ -30,7 +30,7 @@ extern "C"
 // Struct defined in msg/ImuRc in the package rc_interfaces.
 typedef struct rc_interfaces__msg__ImuRc
 {
-  rosidl_runtime_c__String name;
+  std_msgs__msg__Header header;
   int32_t msg_count;
   double mp_time;
   float mp_lat;

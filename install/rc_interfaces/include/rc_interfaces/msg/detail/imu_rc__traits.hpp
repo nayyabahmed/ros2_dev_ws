@@ -11,6 +11,8 @@
 #include <type_traits>
 
 // Include directives for member types
+// Member 'header'
+#include "std_msgs/msg/detail/header__traits.hpp"
 // Member 'pose'
 #include "geometry_msgs/msg/detail/pose__traits.hpp"
 // Member 'twist'
@@ -35,11 +37,11 @@ inline const char * name<rc_interfaces::msg::ImuRc>()
 
 template<>
 struct has_fixed_size<rc_interfaces::msg::ImuRc>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, has_fixed_size<geometry_msgs::msg::Accel>::value && has_fixed_size<geometry_msgs::msg::Pose>::value && has_fixed_size<geometry_msgs::msg::Twist>::value && has_fixed_size<std_msgs::msg::Header>::value> {};
 
 template<>
 struct has_bounded_size<rc_interfaces::msg::ImuRc>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, has_bounded_size<geometry_msgs::msg::Accel>::value && has_bounded_size<geometry_msgs::msg::Pose>::value && has_bounded_size<geometry_msgs::msg::Twist>::value && has_bounded_size<std_msgs::msg::Header>::value> {};
 
 template<>
 struct is_message<rc_interfaces::msg::ImuRc>

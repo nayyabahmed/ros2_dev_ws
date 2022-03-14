@@ -324,16 +324,32 @@ private:
   ::rc_interfaces::msg::RcStatus msg_;
 };
 
+class Init_RcStatus_mpf_phase
+{
+public:
+  explicit Init_RcStatus_mpf_phase(::rc_interfaces::msg::RcStatus & msg)
+  : msg_(msg)
+  {}
+  Init_RcStatus_path_dist mpf_phase(::rc_interfaces::msg::RcStatus::_mpf_phase_type arg)
+  {
+    msg_.mpf_phase = std::move(arg);
+    return Init_RcStatus_path_dist(msg_);
+  }
+
+private:
+  ::rc_interfaces::msg::RcStatus msg_;
+};
+
 class Init_RcStatus_test_phase
 {
 public:
   explicit Init_RcStatus_test_phase(::rc_interfaces::msg::RcStatus & msg)
   : msg_(msg)
   {}
-  Init_RcStatus_path_dist test_phase(::rc_interfaces::msg::RcStatus::_test_phase_type arg)
+  Init_RcStatus_mpf_phase test_phase(::rc_interfaces::msg::RcStatus::_test_phase_type arg)
   {
     msg_.test_phase = std::move(arg);
-    return Init_RcStatus_path_dist(msg_);
+    return Init_RcStatus_mpf_phase(msg_);
   }
 
 private:
@@ -343,13 +359,29 @@ private:
 class Init_RcStatus_test_index
 {
 public:
-  Init_RcStatus_test_index()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  explicit Init_RcStatus_test_index(::rc_interfaces::msg::RcStatus & msg)
+  : msg_(msg)
   {}
   Init_RcStatus_test_phase test_index(::rc_interfaces::msg::RcStatus::_test_index_type arg)
   {
     msg_.test_index = std::move(arg);
     return Init_RcStatus_test_phase(msg_);
+  }
+
+private:
+  ::rc_interfaces::msg::RcStatus msg_;
+};
+
+class Init_RcStatus_header
+{
+public:
+  Init_RcStatus_header()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_RcStatus_test_index header(::rc_interfaces::msg::RcStatus::_header_type arg)
+  {
+    msg_.header = std::move(arg);
+    return Init_RcStatus_test_index(msg_);
   }
 
 private:
@@ -367,7 +399,7 @@ template<>
 inline
 auto build<::rc_interfaces::msg::RcStatus>()
 {
-  return rc_interfaces::msg::builder::Init_RcStatus_test_index();
+  return rc_interfaces::msg::builder::Init_RcStatus_header();
 }
 
 }  // namespace rc_interfaces

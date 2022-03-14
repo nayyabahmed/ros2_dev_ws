@@ -164,15 +164,15 @@ private:
   ::rc_interfaces::msg::ImuRc msg_;
 };
 
-class Init_ImuRc_name
+class Init_ImuRc_header
 {
 public:
-  Init_ImuRc_name()
+  Init_ImuRc_header()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_ImuRc_msg_count name(::rc_interfaces::msg::ImuRc::_name_type arg)
+  Init_ImuRc_msg_count header(::rc_interfaces::msg::ImuRc::_header_type arg)
   {
-    msg_.name = std::move(arg);
+    msg_.header = std::move(arg);
     return Init_ImuRc_msg_count(msg_);
   }
 
@@ -191,7 +191,7 @@ template<>
 inline
 auto build<::rc_interfaces::msg::ImuRc>()
 {
-  return rc_interfaces::msg::builder::Init_ImuRc_name();
+  return rc_interfaces::msg::builder::Init_ImuRc_header();
 }
 
 }  // namespace rc_interfaces

@@ -15,6 +15,8 @@
 
 
 // Include directives for member types
+// Member 'header'
+#include "std_msgs/msg/detail/header__struct.hpp"
 // Member 'pose'
 #include "geometry_msgs/msg/detail/pose__struct.hpp"
 // Member 'twist'
@@ -41,14 +43,14 @@ struct ImuRc_
   using Type = ImuRc_<ContainerAllocator>;
 
   explicit ImuRc_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : pose(_init),
+  : header(_init),
+    pose(_init),
     twist(_init),
     accel(_init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->name = "";
       this->msg_count = 0l;
       this->mp_time = 0.0;
       this->mp_lat = 0.0f;
@@ -59,7 +61,7 @@ struct ImuRc_
   }
 
   explicit ImuRc_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : name(_alloc),
+  : header(_alloc, _init),
     pose(_alloc, _init),
     twist(_alloc, _init),
     accel(_alloc, _init)
@@ -67,7 +69,6 @@ struct ImuRc_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->name = "";
       this->msg_count = 0l;
       this->mp_time = 0.0;
       this->mp_lat = 0.0f;
@@ -78,9 +79,9 @@ struct ImuRc_
   }
 
   // field types and members
-  using _name_type =
-    std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>;
-  _name_type name;
+  using _header_type =
+    std_msgs::msg::Header_<ContainerAllocator>;
+  _header_type header;
   using _msg_count_type =
     int32_t;
   _msg_count_type msg_count;
@@ -110,10 +111,10 @@ struct ImuRc_
   _accel_type accel;
 
   // setters for named parameter idiom
-  Type & set__name(
-    const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other> & _arg)
+  Type & set__header(
+    const std_msgs::msg::Header_<ContainerAllocator> & _arg)
   {
-    this->name = _arg;
+    this->header = _arg;
     return *this;
   }
   Type & set__msg_count(
@@ -213,7 +214,7 @@ struct ImuRc_
   // comparison operators
   bool operator==(const ImuRc_ & other) const
   {
-    if (this->name != other.name) {
+    if (this->header != other.header) {
       return false;
     }
     if (this->msg_count != other.msg_count) {

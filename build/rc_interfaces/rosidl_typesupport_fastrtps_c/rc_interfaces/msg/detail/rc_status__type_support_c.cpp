@@ -34,8 +34,22 @@ extern "C"
 {
 #endif
 
+#include "std_msgs/msg/detail/header__functions.h"  // header
 
 // forward declare type support functions
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_rc_interfaces
+size_t get_serialized_size_std_msgs__msg__Header(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_rc_interfaces
+size_t max_serialized_size_std_msgs__msg__Header(
+  bool & full_bounded,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_rc_interfaces
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, std_msgs, msg, Header)();
 
 
 using _RcStatus__ros_msg_type = rc_interfaces__msg__RcStatus;
@@ -49,6 +63,20 @@ static bool _RcStatus__cdr_serialize(
     return false;
   }
   const _RcStatus__ros_msg_type * ros_message = static_cast<const _RcStatus__ros_msg_type *>(untyped_ros_message);
+  // Field name: header
+  {
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, std_msgs, msg, Header
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->header, cdr))
+    {
+      return false;
+    }
+  }
+
   // Field name: test_index
   {
     cdr << ros_message->test_index;
@@ -57,6 +85,11 @@ static bool _RcStatus__cdr_serialize(
   // Field name: test_phase
   {
     cdr << ros_message->test_phase;
+  }
+
+  // Field name: mpf_phase
+  {
+    cdr << ros_message->mpf_phase;
   }
 
   // Field name: path_dist
@@ -166,6 +199,20 @@ static bool _RcStatus__cdr_deserialize(
     return false;
   }
   _RcStatus__ros_msg_type * ros_message = static_cast<_RcStatus__ros_msg_type *>(untyped_ros_message);
+  // Field name: header
+  {
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, std_msgs, msg, Header
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->header))
+    {
+      return false;
+    }
+  }
+
   // Field name: test_index
   {
     cdr >> ros_message->test_index;
@@ -174,6 +221,11 @@ static bool _RcStatus__cdr_deserialize(
   // Field name: test_phase
   {
     cdr >> ros_message->test_phase;
+  }
+
+  // Field name: mpf_phase
+  {
+    cdr >> ros_message->mpf_phase;
   }
 
   // Field name: path_dist
@@ -288,6 +340,10 @@ size_t get_serialized_size_rc_interfaces__msg__RcStatus(
   (void)padding;
   (void)wchar_size;
 
+  // field.name header
+
+  current_alignment += get_serialized_size_std_msgs__msg__Header(
+    &(ros_message->header), current_alignment);
   // field.name test_index
   {
     size_t item_size = sizeof(ros_message->test_index);
@@ -297,6 +353,12 @@ size_t get_serialized_size_rc_interfaces__msg__RcStatus(
   // field.name test_phase
   {
     size_t item_size = sizeof(ros_message->test_phase);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name mpf_phase
+  {
+    size_t item_size = sizeof(ros_message->mpf_phase);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -438,6 +500,17 @@ size_t max_serialized_size_rc_interfaces__msg__RcStatus(
   (void)wchar_size;
   (void)full_bounded;
 
+  // member: header
+  {
+    size_t array_size = 1;
+
+
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        max_serialized_size_std_msgs__msg__Header(
+        full_bounded, current_alignment);
+    }
+  }
   // member: test_index
   {
     size_t array_size = 1;
@@ -451,6 +524,13 @@ size_t max_serialized_size_rc_interfaces__msg__RcStatus(
 
     current_alignment += array_size * sizeof(uint16_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
+  }
+  // member: mpf_phase
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
   // member: path_dist
   {

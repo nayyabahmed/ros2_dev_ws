@@ -12,6 +12,12 @@
 #include "rc_interfaces/msg/detail/rc_status__struct.h"
 
 
+// Include directives for member types
+// Member `header`
+#include "std_msgs/msg/header.h"
+// Member `header`
+#include "std_msgs/msg/detail/header__rosidl_typesupport_introspection_c.h"
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -31,7 +37,22 @@ void RcStatus__rosidl_typesupport_introspection_c__RcStatus_fini_function(void *
   rc_interfaces__msg__RcStatus__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember RcStatus__rosidl_typesupport_introspection_c__RcStatus_message_member_array[21] = {
+static rosidl_typesupport_introspection_c__MessageMember RcStatus__rosidl_typesupport_introspection_c__RcStatus_message_member_array[23] = {
+  {
+    "header",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message (initialized later)
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(rc_interfaces__msg__RcStatus, header),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
+  },
   {
     "test_index",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT16,  // type
@@ -56,6 +77,21 @@ static rosidl_typesupport_introspection_c__MessageMember RcStatus__rosidl_typesu
     0,  // array size
     false,  // is upper bound
     offsetof(rc_interfaces__msg__RcStatus, test_phase),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "mpf_phase",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(rc_interfaces__msg__RcStatus, mpf_phase),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -352,7 +388,7 @@ static rosidl_typesupport_introspection_c__MessageMember RcStatus__rosidl_typesu
 static const rosidl_typesupport_introspection_c__MessageMembers RcStatus__rosidl_typesupport_introspection_c__RcStatus_message_members = {
   "rc_interfaces__msg",  // message namespace
   "RcStatus",  // message name
-  21,  // number of fields
+  23,  // number of fields
   sizeof(rc_interfaces__msg__RcStatus),
   RcStatus__rosidl_typesupport_introspection_c__RcStatus_message_member_array,  // message members
   RcStatus__rosidl_typesupport_introspection_c__RcStatus_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -370,6 +406,8 @@ static rosidl_message_type_support_t RcStatus__rosidl_typesupport_introspection_
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_rc_interfaces
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, rc_interfaces, msg, RcStatus)() {
+  RcStatus__rosidl_typesupport_introspection_c__RcStatus_message_member_array[0].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, std_msgs, msg, Header)();
   if (!RcStatus__rosidl_typesupport_introspection_c__RcStatus_message_type_support_handle.typesupport_identifier) {
     RcStatus__rosidl_typesupport_introspection_c__RcStatus_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;

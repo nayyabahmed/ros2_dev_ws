@@ -37,8 +37,7 @@ extern "C"
 #include "geometry_msgs/msg/detail/accel__functions.h"  // accel
 #include "geometry_msgs/msg/detail/pose__functions.h"  // pose
 #include "geometry_msgs/msg/detail/twist__functions.h"  // twist
-#include "rosidl_runtime_c/string.h"  // name
-#include "rosidl_runtime_c/string_functions.h"  // name
+#include "std_msgs/msg/detail/header__functions.h"  // header
 
 // forward declare type support functions
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_rc_interfaces
@@ -80,6 +79,19 @@ size_t max_serialized_size_geometry_msgs__msg__Twist(
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_rc_interfaces
 const rosidl_message_type_support_t *
   ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Twist)();
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_rc_interfaces
+size_t get_serialized_size_std_msgs__msg__Header(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_rc_interfaces
+size_t max_serialized_size_std_msgs__msg__Header(
+  bool & full_bounded,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_rc_interfaces
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, std_msgs, msg, Header)();
 
 
 using _ImuRc__ros_msg_type = rc_interfaces__msg__ImuRc;
@@ -93,18 +105,18 @@ static bool _ImuRc__cdr_serialize(
     return false;
   }
   const _ImuRc__ros_msg_type * ros_message = static_cast<const _ImuRc__ros_msg_type *>(untyped_ros_message);
-  // Field name: name
+  // Field name: header
   {
-    const rosidl_runtime_c__String * str = &ros_message->name;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, std_msgs, msg, Header
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->header, cdr))
+    {
       return false;
     }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
-      return false;
-    }
-    cdr << str->data;
   }
 
   // Field name: msg_count
@@ -191,18 +203,16 @@ static bool _ImuRc__cdr_deserialize(
     return false;
   }
   _ImuRc__ros_msg_type * ros_message = static_cast<_ImuRc__ros_msg_type *>(untyped_ros_message);
-  // Field name: name
+  // Field name: header
   {
-    std::string tmp;
-    cdr >> tmp;
-    if (!ros_message->name.data) {
-      rosidl_runtime_c__String__init(&ros_message->name);
-    }
-    bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->name,
-      tmp.c_str());
-    if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'name'\n");
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, std_msgs, msg, Header
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->header))
+    {
       return false;
     }
   }
@@ -296,10 +306,10 @@ size_t get_serialized_size_rc_interfaces__msg__ImuRc(
   (void)padding;
   (void)wchar_size;
 
-  // field.name name
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->name.size + 1);
+  // field.name header
+
+  current_alignment += get_serialized_size_std_msgs__msg__Header(
+    &(ros_message->header), current_alignment);
   // field.name msg_count
   {
     size_t item_size = sizeof(ros_message->msg_count);
@@ -372,15 +382,15 @@ size_t max_serialized_size_rc_interfaces__msg__ImuRc(
   (void)wchar_size;
   (void)full_bounded;
 
-  // member: name
+  // member: header
   {
     size_t array_size = 1;
 
-    full_bounded = false;
+
     for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
+      current_alignment +=
+        max_serialized_size_std_msgs__msg__Header(
+        full_bounded, current_alignment);
     }
   }
   // member: msg_count

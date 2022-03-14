@@ -16,9 +16,10 @@
 #include "rc_interfaces/msg/detail/imu_rc__struct.h"
 #include "rc_interfaces/msg/detail/imu_rc__functions.h"
 
-#include "rosidl_runtime_c/string.h"
-#include "rosidl_runtime_c/string_functions.h"
-
+ROSIDL_GENERATOR_C_IMPORT
+bool std_msgs__msg__header__convert_from_py(PyObject * _pymsg, void * _ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * std_msgs__msg__header__convert_to_py(void * raw_ros_message);
 ROSIDL_GENERATOR_C_IMPORT
 bool geometry_msgs__msg__pose__convert_from_py(PyObject * _pymsg, void * _ros_message);
 ROSIDL_GENERATOR_C_IMPORT
@@ -65,19 +66,15 @@ bool rc_interfaces__msg__imu_rc__convert_from_py(PyObject * _pymsg, void * _ros_
     assert(strncmp("rc_interfaces.msg._imu_rc.ImuRc", full_classname_dest, 31) == 0);
   }
   rc_interfaces__msg__ImuRc * ros_message = _ros_message;
-  {  // name
-    PyObject * field = PyObject_GetAttrString(_pymsg, "name");
+  {  // header
+    PyObject * field = PyObject_GetAttrString(_pymsg, "header");
     if (!field) {
       return false;
     }
-    assert(PyUnicode_Check(field));
-    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
-    if (!encoded_field) {
+    if (!std_msgs__msg__header__convert_from_py(field, &ros_message->header)) {
       Py_DECREF(field);
       return false;
     }
-    rosidl_runtime_c__String__assign(&ros_message->name, PyBytes_AS_STRING(encoded_field));
-    Py_DECREF(encoded_field);
     Py_DECREF(field);
   }
   {  // msg_count
@@ -189,17 +186,14 @@ PyObject * rc_interfaces__msg__imu_rc__convert_to_py(void * raw_ros_message)
     }
   }
   rc_interfaces__msg__ImuRc * ros_message = (rc_interfaces__msg__ImuRc *)raw_ros_message;
-  {  // name
+  {  // header
     PyObject * field = NULL;
-    field = PyUnicode_DecodeUTF8(
-      ros_message->name.data,
-      strlen(ros_message->name.data),
-      "strict");
+    field = std_msgs__msg__header__convert_to_py(&ros_message->header);
     if (!field) {
       return NULL;
     }
     {
-      int rc = PyObject_SetAttrString(_pymessage, "name", field);
+      int rc = PyObject_SetAttrString(_pymessage, "header", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

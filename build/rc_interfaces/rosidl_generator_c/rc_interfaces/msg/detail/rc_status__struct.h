@@ -17,11 +17,17 @@ extern "C"
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'header'
+#include "std_msgs/msg/detail/header__struct.h"
+
 // Struct defined in msg/RcStatus in the package rc_interfaces.
 typedef struct rc_interfaces__msg__RcStatus
 {
+  std_msgs__msg__Header header;
   uint16_t test_index;
   int16_t test_phase;
+  int32_t mpf_phase;
   float path_dist;
   float desire_speed;
   uint8_t pf_test_true;

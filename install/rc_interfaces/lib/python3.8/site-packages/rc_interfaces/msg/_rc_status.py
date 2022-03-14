@@ -40,6 +40,10 @@ class Metaclass_RcStatus(type):
             cls._TYPE_SUPPORT = module.type_support_msg__msg__rc_status
             cls._DESTROY_ROS_MESSAGE = module.destroy_ros_message_msg__msg__rc_status
 
+            from std_msgs.msg import Header
+            if Header.__class__._TYPE_SUPPORT is None:
+                Header.__class__.__import_type_support__()
+
     @classmethod
     def __prepare__(cls, name, bases, **kwargs):
         # list constant names here so that they appear in the help text of
@@ -53,8 +57,10 @@ class RcStatus(metaclass=Metaclass_RcStatus):
     """Message class 'RcStatus'."""
 
     __slots__ = [
+        '_header',
         '_test_index',
         '_test_phase',
+        '_mpf_phase',
         '_path_dist',
         '_desire_speed',
         '_pf_test_true',
@@ -77,8 +83,10 @@ class RcStatus(metaclass=Metaclass_RcStatus):
     ]
 
     _fields_and_field_types = {
+        'header': 'std_msgs/Header',
         'test_index': 'uint16',
         'test_phase': 'int16',
+        'mpf_phase': 'int32',
         'path_dist': 'float',
         'desire_speed': 'float',
         'pf_test_true': 'octet',
@@ -101,8 +109,10 @@ class RcStatus(metaclass=Metaclass_RcStatus):
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Header'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint16'),  # noqa: E501
         rosidl_parser.definition.BasicType('int16'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('octet'),  # noqa: E501
@@ -128,8 +138,11 @@ class RcStatus(metaclass=Metaclass_RcStatus):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
+        from std_msgs.msg import Header
+        self.header = kwargs.get('header', Header())
         self.test_index = kwargs.get('test_index', int())
         self.test_phase = kwargs.get('test_phase', int())
+        self.mpf_phase = kwargs.get('mpf_phase', int())
         self.path_dist = kwargs.get('path_dist', float())
         self.desire_speed = kwargs.get('desire_speed', float())
         self.pf_test_true = kwargs.get('pf_test_true', bytes([0]))
@@ -179,9 +192,13 @@ class RcStatus(metaclass=Metaclass_RcStatus):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
+        if self.header != other.header:
+            return False
         if self.test_index != other.test_index:
             return False
         if self.test_phase != other.test_phase:
+            return False
+        if self.mpf_phase != other.mpf_phase:
             return False
         if self.path_dist != other.path_dist:
             return False
@@ -229,6 +246,20 @@ class RcStatus(metaclass=Metaclass_RcStatus):
         return copy(cls._fields_and_field_types)
 
     @property
+    def header(self):
+        """Message field 'header'."""
+        return self._header
+
+    @header.setter
+    def header(self, value):
+        if __debug__:
+            from std_msgs.msg import Header
+            assert \
+                isinstance(value, Header), \
+                "The 'header' field must be a sub message of type 'Header'"
+        self._header = value
+
+    @property
     def test_index(self):
         """Message field 'test_index'."""
         return self._test_index
@@ -257,6 +288,21 @@ class RcStatus(metaclass=Metaclass_RcStatus):
             assert value >= -32768 and value < 32768, \
                 "The 'test_phase' field must be an integer in [-32768, 32767]"
         self._test_phase = value
+
+    @property
+    def mpf_phase(self):
+        """Message field 'mpf_phase'."""
+        return self._mpf_phase
+
+    @mpf_phase.setter
+    def mpf_phase(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'mpf_phase' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'mpf_phase' field must be an integer in [-2147483648, 2147483647]"
+        self._mpf_phase = value
 
     @property
     def path_dist(self):

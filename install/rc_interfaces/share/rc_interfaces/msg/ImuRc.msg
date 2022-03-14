@@ -1,4 +1,4 @@
-string name
+std_msgs/Header header
 int32 msg_count
 float64 mp_time
 float32 mp_lat
