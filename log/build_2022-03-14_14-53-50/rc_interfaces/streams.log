@@ -1,0 +1,15 @@
+[0.276s] Invoking command in '/home/nayab/dev_ws/build/rc_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/nayab/dev_ws/build/rc_interfaces -- -j4 -l4
+[0.330s] [  2%] Built target rc_interfaces__cpp
+[0.331s] [ 12%] Built target rc_interfaces__rosidl_generator_c
+[0.366s] [ 23%] Built target rc_interfaces__rosidl_typesupport_introspection_cpp
+[0.368s] [ 33%] Built target rc_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.374s] [ 53%] Built target rc_interfaces__rosidl_typesupport_introspection_c
+[0.374s] [ 53%] Built target rc_interfaces__rosidl_typesupport_cpp
+[0.396s] [ 64%] Built target rc_interfaces__rosidl_typesupport_c
+[0.409s] [ 74%] Built target rc_interfaces__rosidl_typesupport_fastrtps_c
+[0.431s] [ 74%] Built target rc_interfaces
+[0.453s] [ 76%] Built target rc_interfaces__py
+[0.487s] [ 84%] Built target rc_interfaces__python
+[0.515s] [100%] Built target rc_interfaces__rosidl_typesupport_c__pyext
+[0.515s] [100%] Built target rc_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.515s] [100%] Built target rc_interfaces__rosidl_typesupport_introspection_c__pyext

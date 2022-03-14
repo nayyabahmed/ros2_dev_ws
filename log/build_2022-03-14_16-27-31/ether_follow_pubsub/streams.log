@@ -1,0 +1,29 @@
+[1.219s] Invoking command in '/home/nayab/dev_ws/src/ether_follow_pubsub': PYTHONPATH=/home/nayab/dev_ws/install/ether_follow_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/ether_follow_pubsub build --build-base /home/nayab/dev_ws/build/ether_follow_pubsub/build install --prefix /home/nayab/dev_ws/install/ether_follow_pubsub --record /home/nayab/dev_ws/build/ether_follow_pubsub/install.log --single-version-externally-managed
+[1.487s] running egg_info
+[1.488s] writing ../../build/ether_follow_pubsub/ether_follow_pubsub.egg-info/PKG-INFO
+[1.488s] writing dependency_links to ../../build/ether_follow_pubsub/ether_follow_pubsub.egg-info/dependency_links.txt
+[1.488s] writing entry points to ../../build/ether_follow_pubsub/ether_follow_pubsub.egg-info/entry_points.txt
+[1.489s] writing requirements to ../../build/ether_follow_pubsub/ether_follow_pubsub.egg-info/requires.txt
+[1.489s] writing top-level names to ../../build/ether_follow_pubsub/ether_follow_pubsub.egg-info/top_level.txt
+[1.529s] reading manifest file '../../build/ether_follow_pubsub/ether_follow_pubsub.egg-info/SOURCES.txt'
+[1.531s] writing manifest file '../../build/ether_follow_pubsub/ether_follow_pubsub.egg-info/SOURCES.txt'
+[1.531s] running build
+[1.531s] running build_py
+[1.531s] copying ether_follow_pubsub/external_follow.py -> /home/nayab/dev_ws/build/ether_follow_pubsub/build/lib/ether_follow_pubsub
+[1.531s] copying ether_follow_pubsub/external_follow_module.py -> /home/nayab/dev_ws/build/ether_follow_pubsub/build/lib/ether_follow_pubsub
+[1.531s] running install
+[1.532s] running install_lib
+[1.532s] copying /home/nayab/dev_ws/build/ether_follow_pubsub/build/lib/ether_follow_pubsub/external_follow.py -> /home/nayab/dev_ws/install/ether_follow_pubsub/lib/python3.8/site-packages/ether_follow_pubsub
+[1.532s] copying /home/nayab/dev_ws/build/ether_follow_pubsub/build/lib/ether_follow_pubsub/external_follow_module.py -> /home/nayab/dev_ws/install/ether_follow_pubsub/lib/python3.8/site-packages/ether_follow_pubsub
+[1.533s] byte-compiling /home/nayab/dev_ws/install/ether_follow_pubsub/lib/python3.8/site-packages/ether_follow_pubsub/external_follow.py to external_follow.cpython-38.pyc
+[1.535s] byte-compiling /home/nayab/dev_ws/install/ether_follow_pubsub/lib/python3.8/site-packages/ether_follow_pubsub/external_follow_module.py to external_follow_module.cpython-38.pyc
+[1.536s] running install_data
+[1.537s] running install_egg_info
+[1.541s] removing '/home/nayab/dev_ws/install/ether_follow_pubsub/lib/python3.8/site-packages/ether_follow_pubsub-0.0.0-py3.8.egg-info' (and everything under it)
+[1.541s] Copying ../../build/ether_follow_pubsub/ether_follow_pubsub.egg-info to /home/nayab/dev_ws/install/ether_follow_pubsub/lib/python3.8/site-packages/ether_follow_pubsub-0.0.0-py3.8.egg-info
+[1.543s] running install_scripts
+[1.564s] Installing efollow_pub script to /home/nayab/dev_ws/install/ether_follow_pubsub/lib/ether_follow_pubsub
+[1.564s] Installing efollow_sub script to /home/nayab/dev_ws/install/ether_follow_pubsub/lib/ether_follow_pubsub
+[1.565s] Installing external_follow script to /home/nayab/dev_ws/install/ether_follow_pubsub/lib/ether_follow_pubsub
+[1.565s] writing list of installed files to '/home/nayab/dev_ws/build/ether_follow_pubsub/install.log'
+[1.812s] Invoked command in '/home/nayab/dev_ws/src/ether_follow_pubsub' returned '0': PYTHONPATH=/home/nayab/dev_ws/install/ether_follow_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/ether_follow_pubsub build --build-base /home/nayab/dev_ws/build/ether_follow_pubsub/build install --prefix /home/nayab/dev_ws/install/ether_follow_pubsub --record /home/nayab/dev_ws/build/ether_follow_pubsub/install.log --single-version-externally-managed

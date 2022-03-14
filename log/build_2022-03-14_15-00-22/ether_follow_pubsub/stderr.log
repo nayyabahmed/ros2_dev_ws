@@ -1,0 +1,5 @@
+  File "/home/nayab/dev_ws/install/ether_follow_pubsub/lib/python3.8/site-packages/ether_follow_pubsub/ether_follow_sub.py", line 49
+    subscription = g_node.create_subscription(EtherMessage, 'ether_follow'', efollow_callback, 10)
+                                                                                                 ^
+SyntaxError: EOL while scanning string literal
+

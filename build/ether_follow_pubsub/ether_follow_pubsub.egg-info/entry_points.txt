@@ -1,0 +1,5 @@
+[console_scripts]
+efollow_pub = ether_follow_pubsub.ether_follow_pub:main
+efollow_sub = ether_follow_pubsub.ether_follow_sub:main
+external_follow = ether_follow_pubsub.external_follow:main
+

@@ -10,6 +10,7 @@ setup.py
 ../../build/rc_data_emulator/rc_data_emulator.egg-info/zip-safe
 rc_data_emulator/__init__.py
 rc_data_emulator/rc_data_emu.py
+rc_data_emulator/rc_emu_module.py
 resource/rc_data_emulator
 test/test_copyright.py
 test/test_flake8.py

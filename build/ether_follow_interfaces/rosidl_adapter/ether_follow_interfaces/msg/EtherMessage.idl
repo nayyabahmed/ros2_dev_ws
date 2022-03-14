@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ether_follow_interfaces/msg/EtherMessage.msg
+// generated code does not contain a copyright notice
+
+
+module ether_follow_interfaces {
+  module msg {
+    struct EtherMessage {
+      string ip_address;
+
+      uint8 version;
+
+      double steering_cmd;
+
+      double brake_cmd;
+
+      double accel_cmd;
+
+      int8 gear_cmd;
+    };
+  };
+};

@@ -1,0 +1,4 @@
+source;share/ether_follow_interfaces/environment/ament_prefix_path.sh
+source;share/ether_follow_interfaces/environment/library_path.sh
+source;share/ether_follow_interfaces/environment/path.sh
+source;share/ether_follow_interfaces/environment/pythonpath.sh

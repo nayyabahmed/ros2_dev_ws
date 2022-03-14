@@ -1,0 +1,33 @@
+[1.046s] Invoking command in '/home/nayab/dev_ws/src/ether_follow_pubsub': PYTHONPATH=/home/nayab/dev_ws/install/ether_follow_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/ether_follow_pubsub build --build-base /home/nayab/dev_ws/build/ether_follow_pubsub/build install --prefix /home/nayab/dev_ws/install/ether_follow_pubsub --record /home/nayab/dev_ws/build/ether_follow_pubsub/install.log --single-version-externally-managed
+[1.335s] running egg_info
+[1.337s] writing ../../build/ether_follow_pubsub/ether_follow_pubsub.egg-info/PKG-INFO
+[1.337s] writing dependency_links to ../../build/ether_follow_pubsub/ether_follow_pubsub.egg-info/dependency_links.txt
+[1.338s] writing entry points to ../../build/ether_follow_pubsub/ether_follow_pubsub.egg-info/entry_points.txt
+[1.338s] writing requirements to ../../build/ether_follow_pubsub/ether_follow_pubsub.egg-info/requires.txt
+[1.338s] writing top-level names to ../../build/ether_follow_pubsub/ether_follow_pubsub.egg-info/top_level.txt
+[1.374s] reading manifest file '../../build/ether_follow_pubsub/ether_follow_pubsub.egg-info/SOURCES.txt'
+[1.376s] writing manifest file '../../build/ether_follow_pubsub/ether_follow_pubsub.egg-info/SOURCES.txt'
+[1.376s] running build
+[1.376s] running build_py
+[1.376s] copying ether_follow_pubsub/ether_follow_sub.py -> /home/nayab/dev_ws/build/ether_follow_pubsub/build/lib/ether_follow_pubsub
+[1.377s] copying ether_follow_pubsub/ether_follow_pub.py -> /home/nayab/dev_ws/build/ether_follow_pubsub/build/lib/ether_follow_pubsub
+[1.377s] running install
+[1.379s] running install_lib
+[1.380s] copying /home/nayab/dev_ws/build/ether_follow_pubsub/build/lib/ether_follow_pubsub/ether_follow_sub.py -> /home/nayab/dev_ws/install/ether_follow_pubsub/lib/python3.8/site-packages/ether_follow_pubsub
+[1.381s] copying /home/nayab/dev_ws/build/ether_follow_pubsub/build/lib/ether_follow_pubsub/ether_follow_pub.py -> /home/nayab/dev_ws/install/ether_follow_pubsub/lib/python3.8/site-packages/ether_follow_pubsub
+[1.382s] byte-compiling /home/nayab/dev_ws/install/ether_follow_pubsub/lib/python3.8/site-packages/ether_follow_pubsub/ether_follow_sub.py to ether_follow_sub.cpython-38.pyc
+[1.383s]   File "/home/nayab/dev_ws/install/ether_follow_pubsub/lib/python3.8/site-packages/ether_follow_pubsub/ether_follow_sub.py", line 49
+[1.384s]     subscription = g_node.create_subscription(EtherMessage, 'ether_follow'', efollow_callback, 10)
+[1.384s]                                                                                                  ^
+[1.384s] SyntaxError: EOL while scanning string literal
+[1.384s] 
+[1.384s] byte-compiling /home/nayab/dev_ws/install/ether_follow_pubsub/lib/python3.8/site-packages/ether_follow_pubsub/ether_follow_pub.py to ether_follow_pub.cpython-38.pyc
+[1.385s] running install_data
+[1.386s] running install_egg_info
+[1.388s] removing '/home/nayab/dev_ws/install/ether_follow_pubsub/lib/python3.8/site-packages/ether_follow_pubsub-0.0.0-py3.8.egg-info' (and everything under it)
+[1.388s] Copying ../../build/ether_follow_pubsub/ether_follow_pubsub.egg-info to /home/nayab/dev_ws/install/ether_follow_pubsub/lib/python3.8/site-packages/ether_follow_pubsub-0.0.0-py3.8.egg-info
+[1.389s] running install_scripts
+[1.408s] Installing efollow_pub script to /home/nayab/dev_ws/install/ether_follow_pubsub/lib/ether_follow_pubsub
+[1.408s] Installing efollow_sub script to /home/nayab/dev_ws/install/ether_follow_pubsub/lib/ether_follow_pubsub
+[1.409s] writing list of installed files to '/home/nayab/dev_ws/build/ether_follow_pubsub/install.log'
+[1.619s] Invoked command in '/home/nayab/dev_ws/src/ether_follow_pubsub' returned '0': PYTHONPATH=/home/nayab/dev_ws/install/ether_follow_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/ether_follow_pubsub build --build-base /home/nayab/dev_ws/build/ether_follow_pubsub/build install --prefix /home/nayab/dev_ws/install/ether_follow_pubsub --record /home/nayab/dev_ws/build/ether_follow_pubsub/install.log --single-version-externally-managed

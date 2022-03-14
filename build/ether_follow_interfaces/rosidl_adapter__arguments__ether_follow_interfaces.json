@@ -1,0 +1,6 @@
+{
+  "package_name": "ether_follow_interfaces",
+  "non_idl_tuples": [
+    "/home/nayab/dev_ws/src/ether_follow_interfaces:msg/EtherMessage.msg"
+  ]
+}
