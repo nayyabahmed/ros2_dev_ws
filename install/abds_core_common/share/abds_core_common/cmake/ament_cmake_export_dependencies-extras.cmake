@@ -1,6 +1,6 @@
 # generated from ament_cmake_export_dependencies/cmake/ament_cmake_export_dependencies-extras.cmake.in
 
-set(_exported_dependencies "rosidl_runtime_c;rosidl_typesupport_interface;geographic_msgs;geometry_msgs;std_msgs;rclcpp")
+set(_exported_dependencies "rosidl_runtime_c;rosidl_typesupport_interface;geometry_msgs;std_msgs;rclcpp")
 
 find_package(ament_cmake_libraries QUIET REQUIRED)
 

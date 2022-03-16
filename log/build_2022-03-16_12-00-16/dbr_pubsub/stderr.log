@@ -1,0 +1,5 @@
+  File "/home/nayab/dev_ws/install/dbr_pubsub/lib/python3.8/site-packages/dbr_pubsub/dbr_pub.py", line 74
+    self.dbr = dbr_gen(self.ip_addr,self.freq, self.app, self.port):
+                                                                   ^
+SyntaxError: invalid syntax
+

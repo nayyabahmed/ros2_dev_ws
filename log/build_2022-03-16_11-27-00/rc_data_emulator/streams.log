@@ -1,0 +1,21 @@
+[0.598s] Invoking command in '/home/nayab/dev_ws/src/rc_data_emulator': AMENT_PREFIX_PATH=/home/nayab/dev_ws/install/abds_core_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nayab/dev_ws/install/abds_core_common:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/nayab/dev_ws/install/abds_core_common/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nayab/dev_ws/install/rc_data_emulator/lib/python3.8/site-packages:/home/nayab/dev_ws/install/abds_core_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/rc_data_emulator build --build-base /home/nayab/dev_ws/build/rc_data_emulator/build install --prefix /home/nayab/dev_ws/install/rc_data_emulator --record /home/nayab/dev_ws/build/rc_data_emulator/install.log --single-version-externally-managed
+[0.770s] running egg_info
+[0.771s] writing ../../build/rc_data_emulator/rc_data_emulator.egg-info/PKG-INFO
+[0.771s] writing dependency_links to ../../build/rc_data_emulator/rc_data_emulator.egg-info/dependency_links.txt
+[0.773s] writing entry points to ../../build/rc_data_emulator/rc_data_emulator.egg-info/entry_points.txt
+[0.773s] writing requirements to ../../build/rc_data_emulator/rc_data_emulator.egg-info/requires.txt
+[0.774s] writing top-level names to ../../build/rc_data_emulator/rc_data_emulator.egg-info/top_level.txt
+[0.799s] reading manifest file '../../build/rc_data_emulator/rc_data_emulator.egg-info/SOURCES.txt'
+[0.801s] writing manifest file '../../build/rc_data_emulator/rc_data_emulator.egg-info/SOURCES.txt'
+[0.802s] running build
+[0.802s] running build_py
+[0.802s] running install
+[0.803s] running install_lib
+[0.804s] running install_data
+[0.804s] running install_egg_info
+[0.805s] removing '/home/nayab/dev_ws/install/rc_data_emulator/lib/python3.8/site-packages/rc_data_emulator-0.0.0-py3.8.egg-info' (and everything under it)
+[0.806s] Copying ../../build/rc_data_emulator/rc_data_emulator.egg-info to /home/nayab/dev_ws/install/rc_data_emulator/lib/python3.8/site-packages/rc_data_emulator-0.0.0-py3.8.egg-info
+[0.809s] running install_scripts
+[0.821s] Installing rc_emu script to /home/nayab/dev_ws/install/rc_data_emulator/lib/rc_data_emulator
+[0.822s] writing list of installed files to '/home/nayab/dev_ws/build/rc_data_emulator/install.log'
+[0.840s] Invoked command in '/home/nayab/dev_ws/src/rc_data_emulator' returned '0': AMENT_PREFIX_PATH=/home/nayab/dev_ws/install/abds_core_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nayab/dev_ws/install/abds_core_common:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/nayab/dev_ws/install/abds_core_common/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nayab/dev_ws/install/rc_data_emulator/lib/python3.8/site-packages:/home/nayab/dev_ws/install/abds_core_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/rc_data_emulator build --build-base /home/nayab/dev_ws/build/rc_data_emulator/build install --prefix /home/nayab/dev_ws/install/rc_data_emulator --record /home/nayab/dev_ws/build/rc_data_emulator/install.log --single-version-externally-managed
