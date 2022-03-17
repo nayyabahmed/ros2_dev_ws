@@ -1,0 +1,5 @@
+  File "/home/nayab/dev_ws/install/rc_data_emulator/lib/python3.8/site-packages/rc_data_emulator/rc_data_emu.py", line 63
+    elif (test_phase=br_abort_from_cs):
+                    ^
+SyntaxError: invalid syntax
+

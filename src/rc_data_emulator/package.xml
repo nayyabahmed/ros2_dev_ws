@@ -6,6 +6,8 @@
   <description>TODO: Package description</description>
   <maintainer email="nayyabahmed@hotmail.com">nayab</maintainer>
   <license>TODO: License declaration</license>
+  
+  <exec_depend>ros2launch</exec_depend>
 
   <depend>abds_core_common</depend>
   <test_depend>ament_copyright</test_depend>

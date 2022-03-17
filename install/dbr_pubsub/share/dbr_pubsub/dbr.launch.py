@@ -9,11 +9,23 @@ def generate_launch_description():
         executable = "dbr_pub",
         parameters = [
             {'ip_address': '195.0.1.1'},
-            {'frequency': 50},
+            {'frequency': 10},
             {'port': 2000}
         ]
     )
 
+    dbr_emu_node = Node(
+        package ="rc_data_emulator",
+        executable = "rc_emu",
+        parameters = [
+            {'ip_address': '195.0.1.1'},
+            {'ushm_file':  r'/home/nayab/python_programs/rc_global_def/ushm definitions.pmh'}
+        ]
+    )
+
+
+
     ld.add_action(dbr_pub_node)
+    ld.add_action(dbr_emu_node)
 
     return ld
