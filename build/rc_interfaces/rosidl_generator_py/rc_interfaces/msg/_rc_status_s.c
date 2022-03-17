@@ -263,6 +263,15 @@ bool rc_interfaces__msg__rc_status__convert_from_py(PyObject * _pymsg, void * _r
     ros_message->dl_err_2 = PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
+  {  // dl_test_data_loaded
+    PyObject * field = PyObject_GetAttrString(_pymsg, "dl_test_data_loaded");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->dl_test_data_loaded = (uint16_t)PyLong_AsUnsignedLong(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -550,6 +559,17 @@ PyObject * rc_interfaces__msg__rc_status__convert_to_py(void * raw_ros_message)
     field = PyLong_FromUnsignedLong(ros_message->dl_err_2);
     {
       int rc = PyObject_SetAttrString(_pymessage, "dl_err_2", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // dl_test_data_loaded
+    PyObject * field = NULL;
+    field = PyLong_FromUnsignedLong(ros_message->dl_test_data_loaded);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "dl_test_data_loaded", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

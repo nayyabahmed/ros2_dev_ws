@@ -47,6 +47,7 @@ typedef struct rc_interfaces__msg__RcStatus
   uint32_t syn_temp_err_5;
   uint32_t dl_err_1;
   uint32_t dl_err_2;
+  uint16_t dl_test_data_loaded;
 } rc_interfaces__msg__RcStatus;
 
 // Struct for a sequence of rc_interfaces__msg__RcStatus.

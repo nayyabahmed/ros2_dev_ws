@@ -64,6 +64,7 @@ struct RcStatus_
       this->syn_temp_err_5 = 0ul;
       this->dl_err_1 = 0ul;
       this->dl_err_2 = 0ul;
+      this->dl_test_data_loaded = 0;
     }
   }
 
@@ -95,6 +96,7 @@ struct RcStatus_
       this->syn_temp_err_5 = 0ul;
       this->dl_err_1 = 0ul;
       this->dl_err_2 = 0ul;
+      this->dl_test_data_loaded = 0;
     }
   }
 
@@ -168,6 +170,9 @@ struct RcStatus_
   using _dl_err_2_type =
     uint32_t;
   _dl_err_2_type dl_err_2;
+  using _dl_test_data_loaded_type =
+    uint16_t;
+  _dl_test_data_loaded_type dl_test_data_loaded;
 
   // setters for named parameter idiom
   Type & set__header(
@@ -308,6 +313,12 @@ struct RcStatus_
     this->dl_err_2 = _arg;
     return *this;
   }
+  Type & set__dl_test_data_loaded(
+    const uint16_t & _arg)
+  {
+    this->dl_test_data_loaded = _arg;
+    return *this;
+  }
 
   // constant declarations
 
@@ -418,6 +429,9 @@ struct RcStatus_
       return false;
     }
     if (this->dl_err_2 != other.dl_err_2) {
+      return false;
+    }
+    if (this->dl_test_data_loaded != other.dl_test_data_loaded) {
       return false;
     }
     return true;

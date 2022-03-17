@@ -52,6 +52,8 @@ module rc_interfaces {
       uint32 dl_err_1;
 
       uint32 dl_err_2;
+
+      uint16 dl_test_data_loaded;
     };
   };
 };

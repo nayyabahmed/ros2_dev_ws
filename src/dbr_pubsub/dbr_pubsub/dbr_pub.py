@@ -76,7 +76,7 @@ class ImuPub(Node):
 
 
         self.dic_chan_status = {  'mpf_phase':(7,13) ,'path_dist':(7,6) , 'test_index':(7,36), 'test_phase':(7,106), 'desire_speed':(6,102), 'pf_test_true':(7,102),'max_path_err_left':(7,114),'max_path_err_right':(7,115),
-                "current_path_exit_index":(7,107),'dl_status_1':(99,0),'dl_status_2':(99,1),'dl_test_procedure_state':(99,2),'test_in_progress':(98,2),"ar_control_mode":(6,8),
+                "current_path_exit_index":(7,107),'dl_test_data_loaded':(99,9),'dl_status_1':(99,0),'dl_status_2':(99,1),'dl_test_procedure_state':(99,2),'test_in_progress':(98,2),"ar_control_mode":(6,8),
                 "mp_status":(5,28),"g_sr_err_1":(98,11),"br_ar_err_2":(98,12),"cr_gr_err_3":(98,13),"sr_mp_err_4":(98,14),"syn_temp_err_5":(98,15),
                 "dl_err_1":(98,23),"dl_err_2":(98,24) }
 
@@ -153,6 +153,7 @@ class ImuPub(Node):
         self.rc_status.syn_temp_err_5 =data[self.dic_chan_status['syn_temp_err_5']][0]
         self.rc_status.dl_err_1       =data[self.dic_chan_status['dl_err_1']][0]
         self.rc_status.dl_err_2       =data[self.dic_chan_status['dl_err_2']][0]
+        self.dl_test_data_loaded       =data[self.dic_chan_status['dl_test_data_loaded']][0]
 
     def timer_call(self):
         self.data_update()

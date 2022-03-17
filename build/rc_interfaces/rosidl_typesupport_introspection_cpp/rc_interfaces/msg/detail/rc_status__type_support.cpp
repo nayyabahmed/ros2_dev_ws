@@ -37,7 +37,7 @@ void RcStatus_fini_function(void * message_memory)
   typed_message->~RcStatus();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember RcStatus_message_member_array[23] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember RcStatus_message_member_array[24] = {
   {
     "header",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
@@ -382,13 +382,28 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember RcStatus_mess
     nullptr,  // get_const(index) function pointer
     nullptr,  // get(index) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "dl_test_data_loaded",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT16,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(rc_interfaces::msg::RcStatus, dl_test_data_loaded),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers RcStatus_message_members = {
   "rc_interfaces::msg",  // message namespace
   "RcStatus",  // message name
-  23,  // number of fields
+  24,  // number of fields
   sizeof(rc_interfaces::msg::RcStatus),
   RcStatus_message_member_array,  // message members
   RcStatus_init_function,  // function to initialize message memory (memory has to be allocated)

@@ -46,6 +46,7 @@ rc_interfaces__msg__RcStatus__init(rc_interfaces__msg__RcStatus * msg)
   // syn_temp_err_5
   // dl_err_1
   // dl_err_2
+  // dl_test_data_loaded
   return true;
 }
 
@@ -79,6 +80,7 @@ rc_interfaces__msg__RcStatus__fini(rc_interfaces__msg__RcStatus * msg)
   // syn_temp_err_5
   // dl_err_1
   // dl_err_2
+  // dl_test_data_loaded
 }
 
 rc_interfaces__msg__RcStatus *

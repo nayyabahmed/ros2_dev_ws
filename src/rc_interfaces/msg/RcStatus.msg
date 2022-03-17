@@ -21,3 +21,4 @@ uint32 sr_mp_err_4
 uint32 syn_temp_err_5
 uint32 dl_err_1
 uint32 dl_err_2
+uint16 dl_test_data_loaded

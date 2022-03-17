@@ -20,16 +20,32 @@ namespace msg
 namespace builder
 {
 
+class Init_RcStatus_dl_test_data_loaded
+{
+public:
+  explicit Init_RcStatus_dl_test_data_loaded(::rc_interfaces::msg::RcStatus & msg)
+  : msg_(msg)
+  {}
+  ::rc_interfaces::msg::RcStatus dl_test_data_loaded(::rc_interfaces::msg::RcStatus::_dl_test_data_loaded_type arg)
+  {
+    msg_.dl_test_data_loaded = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::rc_interfaces::msg::RcStatus msg_;
+};
+
 class Init_RcStatus_dl_err_2
 {
 public:
   explicit Init_RcStatus_dl_err_2(::rc_interfaces::msg::RcStatus & msg)
   : msg_(msg)
   {}
-  ::rc_interfaces::msg::RcStatus dl_err_2(::rc_interfaces::msg::RcStatus::_dl_err_2_type arg)
+  Init_RcStatus_dl_test_data_loaded dl_err_2(::rc_interfaces::msg::RcStatus::_dl_err_2_type arg)
   {
     msg_.dl_err_2 = std::move(arg);
-    return std::move(msg_);
+    return Init_RcStatus_dl_test_data_loaded(msg_);
   }
 
 private:

@@ -80,6 +80,7 @@ class RcStatus(metaclass=Metaclass_RcStatus):
         '_syn_temp_err_5',
         '_dl_err_1',
         '_dl_err_2',
+        '_dl_test_data_loaded',
     ]
 
     _fields_and_field_types = {
@@ -106,6 +107,7 @@ class RcStatus(metaclass=Metaclass_RcStatus):
         'syn_temp_err_5': 'uint32',
         'dl_err_1': 'uint32',
         'dl_err_2': 'uint32',
+        'dl_test_data_loaded': 'uint16',
     }
 
     SLOT_TYPES = (
@@ -132,6 +134,7 @@ class RcStatus(metaclass=Metaclass_RcStatus):
         rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint16'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -162,6 +165,7 @@ class RcStatus(metaclass=Metaclass_RcStatus):
         self.syn_temp_err_5 = kwargs.get('syn_temp_err_5', int())
         self.dl_err_1 = kwargs.get('dl_err_1', int())
         self.dl_err_2 = kwargs.get('dl_err_2', int())
+        self.dl_test_data_loaded = kwargs.get('dl_test_data_loaded', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -237,6 +241,8 @@ class RcStatus(metaclass=Metaclass_RcStatus):
         if self.dl_err_1 != other.dl_err_1:
             return False
         if self.dl_err_2 != other.dl_err_2:
+            return False
+        if self.dl_test_data_loaded != other.dl_test_data_loaded:
             return False
         return True
 
@@ -580,3 +586,18 @@ class RcStatus(metaclass=Metaclass_RcStatus):
             assert value >= 0 and value < 4294967296, \
                 "The 'dl_err_2' field must be an unsigned integer in [0, 4294967295]"
         self._dl_err_2 = value
+
+    @property
+    def dl_test_data_loaded(self):
+        """Message field 'dl_test_data_loaded'."""
+        return self._dl_test_data_loaded
+
+    @dl_test_data_loaded.setter
+    def dl_test_data_loaded(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'dl_test_data_loaded' field must be of type 'int'"
+            assert value >= 0 and value < 65536, \
+                "The 'dl_test_data_loaded' field must be an unsigned integer in [0, 65535]"
+        self._dl_test_data_loaded = value

@@ -643,3 +643,59 @@ class DPRclient:
         else:
             data = ''
         return data
+
+        
+def test_dpr():
+    """Test function for DPRclient class."""
+    # ip_address='195.0.1.1'
+    # ushmfile = r'/home/nayab/python_programs/rc_global_def/ushm definitions.pmh'
+    #
+    # dpr = DPRclient(ip_address, ushmfile)
+    print(dpr.endianness)
+    print(dpr['iDigTrigCAN15'])
+    dpr['iDigTrigCAN15'] = True
+    print(dpr['iDigTrigCAN15'])
+
+    print(dpr.system('ls -l'))
+    dpr.get_var('pmC_SerialNo')
+    dpr.set_var('pmC_SerialNo', 1245)
+    dpr.get_var('pmC_SerialNo')
+
+    print('pmPMACbuildVersion = ' + str(dpr['pmPMACbuildVersion']))
+    print('pmPMACisDevVersion = ' + str(dpr['pmPMACisDevVersion']))
+    print('pmC_SerialNo = ' + str(dpr['pmC_SerialNo']))
+    print('pmC_ADC8Sensitivity = ' + str(dpr['pmC_ADC8Sensitivity']))
+    print('pmC_DAC1Offset = ' + str(dpr['pmC_DAC1Offset']))
+    print('pmXnode = ' + str(dpr['pmXnode']))
+    print('pmXnode = ' + str(dpr['pmXnode(1)']))
+    dpr['pmXnode(1)'] = 123.456
+    print('pmXnode = ' + str(dpr['pmXnode']))
+
+    pmLatitudeInt = dpr.get_var('pmLatitudeInt')
+    pmLatitudeFract = dpr.get_var('pmLatitudeFract')
+    pmLongitudeInt = dpr.get_var('pmLongitudeInt')
+    pmLongitudeFract = dpr.get_var('pmLongitudeFract')
+    pmXaxisDatumBearing = dpr.get_var('pmXaxisDatumBearing')
+    pmSetOverrideSpeed = dpr.get_var('pmSetOverrideSpeed')
+    pmDesiredOverrideSpeed= dpr.get_var('pmDesiredOverrideSpeed')
+
+    datumLat = pmLatitudeInt * 0.001 + pmLatitudeFract * 0.001
+    datumLong = pmLongitudeInt * 0.001 + pmLongitudeFract * 0.001
+    print('Datum at: ' + str(datumLat) + ':' + str(datumLong) + ' Aligned: ' + str(pmXaxisDatumBearing))
+
+
+    print("The overide speed var was set to:",pmSetOverrideSpeed)
+    dpr.set_var('pmSetOverrideSpeed', 1)
+    pmSetOverrideSpeed = dpr.get_var('pmSetOverrideSpeed')
+    print("The overide speed var is now set to:", pmSetOverrideSpeed)
+
+    print(pmDesiredOverrideSpeed)
+    dpr.set_var('pmDesiredOverrideSpeed', 30)
+    pmDesiredOverrideSpeed = dpr.get_var('pmDesiredOverrideSpeed')
+    print(pmDesiredOverrideSpeed)
+
+    while True:
+        serial_no = dpr['pmC_SerialNo']
+        print('pmC_SerialNo = ' + str(serial_no))
+        dpr['pmC_SerialNo'] = serial_no - 1
+        break

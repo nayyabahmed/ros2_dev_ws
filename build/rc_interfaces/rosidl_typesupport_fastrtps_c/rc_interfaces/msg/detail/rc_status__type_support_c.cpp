@@ -187,6 +187,11 @@ static bool _RcStatus__cdr_serialize(
     cdr << ros_message->dl_err_2;
   }
 
+  // Field name: dl_test_data_loaded
+  {
+    cdr << ros_message->dl_test_data_loaded;
+  }
+
   return true;
 }
 
@@ -321,6 +326,11 @@ static bool _RcStatus__cdr_deserialize(
   // Field name: dl_err_2
   {
     cdr >> ros_message->dl_err_2;
+  }
+
+  // Field name: dl_test_data_loaded
+  {
+    cdr >> ros_message->dl_test_data_loaded;
   }
 
   return true;
@@ -473,6 +483,12 @@ size_t get_serialized_size_rc_interfaces__msg__RcStatus(
   // field.name dl_err_2
   {
     size_t item_size = sizeof(ros_message->dl_err_2);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name dl_test_data_loaded
+  {
+    size_t item_size = sizeof(ros_message->dl_test_data_loaded);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -659,6 +675,13 @@ size_t max_serialized_size_rc_interfaces__msg__RcStatus(
 
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: dl_test_data_loaded
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint16_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
   }
 
   return current_alignment - initial_alignment;
