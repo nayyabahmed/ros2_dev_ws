@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import rclpy
+from time import sleep
 from rclpy.node import Node
 # from std_msgs.msg import String
 from std_msgs.msg import Bool
@@ -75,9 +76,12 @@ class DataEmu(Node):
 
         if ((msg.data>=0) and  (msg.data<=100)):  #check if given overide speed is within the range
             if (current_override_speed!=msg.data):
-                self.dpre.set_var('pmSetOverrideSpeed', 1)
                 self.dpre.set_var('pmDesiredOverrideSpeed', msg.data)
-                self.get_logger().info("Setting the overide speed to: %d" %msg.data)
+                current_override_speed=self.dpre.get_var('pmDesiredOverrideSpeed')
+                self.get_logger().info("Current overide speed after setting is %d" % current_override_speed)
+                self.dpre.set_var('pmSetOverrideSpeed', 1)
+
+
 
 
     def abort_cmd_callback(self,msg):
