@@ -81,6 +81,7 @@ class DataBroadcasterReceiver:
         # Create socket and bind to any IP Address (and the return port we
         # specify)
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         self.sock.bind(("0.0.0.0", self.return_port))
         self.sock.settimeout(timeout)
 

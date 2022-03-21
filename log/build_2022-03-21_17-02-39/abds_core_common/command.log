@@ -1,0 +1,4 @@
+Invoking command in '/home/nayab/dev_ws/build/abds_core_common': /usr/bin/cmake --build /home/nayab/dev_ws/build/abds_core_common -- -j4 -l4
+Invoked command in '/home/nayab/dev_ws/build/abds_core_common' returned '0': /usr/bin/cmake --build /home/nayab/dev_ws/build/abds_core_common -- -j4 -l4
+Invoking command in '/home/nayab/dev_ws/build/abds_core_common': /usr/bin/cmake --install /home/nayab/dev_ws/build/abds_core_common
+Invoked command in '/home/nayab/dev_ws/build/abds_core_common' returned '0': /usr/bin/cmake --install /home/nayab/dev_ws/build/abds_core_common

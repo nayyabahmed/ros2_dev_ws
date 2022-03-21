@@ -1,0 +1,4 @@
+Invoking command in '/home/nayab/dev_ws/build/ether_follow_interfaces': /usr/bin/cmake --build /home/nayab/dev_ws/build/ether_follow_interfaces -- -j4 -l4
+Invoked command in '/home/nayab/dev_ws/build/ether_follow_interfaces' returned '0': /usr/bin/cmake --build /home/nayab/dev_ws/build/ether_follow_interfaces -- -j4 -l4
+Invoking command in '/home/nayab/dev_ws/build/ether_follow_interfaces': /usr/bin/cmake --install /home/nayab/dev_ws/build/ether_follow_interfaces
+Invoked command in '/home/nayab/dev_ws/build/ether_follow_interfaces' returned '0': /usr/bin/cmake --install /home/nayab/dev_ws/build/ether_follow_interfaces

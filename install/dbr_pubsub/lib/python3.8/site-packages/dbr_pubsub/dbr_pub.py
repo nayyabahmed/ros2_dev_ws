@@ -160,7 +160,8 @@ class ImuPub(Node):
 
         self.pub_imu_.publish(self.rc_imu)
         self.pub_status_.publish(self.rc_status)
-        self.get_logger().info("Publishing at frequency:%d message number: %d " %(self.freq, self.count) )
+        if (self.count==1):
+            self.get_logger().info("Publishing at frequency:%d message number: %d " %(self.freq, self.count) )
         #print("Publishing message number:",self.count)
         self.count+=1
 
