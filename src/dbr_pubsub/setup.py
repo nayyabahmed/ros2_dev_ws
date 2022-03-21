@@ -24,6 +24,7 @@ setup(
     entry_points={
         'console_scripts': [
         'dbr_pub = dbr_pubsub.dbr_pub:main',
+        'rc_emu = rc_data_emulator.rc_data_emu:main',
         ],
     },
 )

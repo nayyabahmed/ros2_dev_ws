@@ -15,7 +15,7 @@ def generate_launch_description():
     )
 
     dbr_emu_node = Node(
-        package ="rc_data_emulator",
+        package ="dbr_pubsub",
         executable = "rc_emu",
         parameters = [
             {'ip_address': '195.0.1.1'},

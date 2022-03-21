@@ -11,6 +11,8 @@ setup.py
 dbr_pubsub/__init__.py
 dbr_pubsub/dbr_module.py
 dbr_pubsub/dbr_pub.py
+dbr_pubsub/rc_data_emu.py
+dbr_pubsub/rc_emu_module.py
 launch/dbr.launch.py
 resource/dbr_pubsub
 test/test_copyright.py
