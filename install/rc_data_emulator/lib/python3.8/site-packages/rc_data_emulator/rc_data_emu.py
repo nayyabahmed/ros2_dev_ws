@@ -38,12 +38,11 @@ class DataEmu(Node):
         self.dpre = DPRclient(self.ip_address, self.ushmfile)
 
     def rc_status_callback(self,msg):
-        test_state =msg.dl_test_procedure_state
+        test_state= int.from_bytes(msg.dl_test_procedure_state,"big")
         test_phase = msg.mpf_phase
         # print("Test state is:",int.from_bytes(test_state,"big"))
         # print("Test phase is:",test_phase)
-        test_state= int.from_bytes(test_state,"big")
-
+        #condions
         rapid_stopping=8
         e_stopping =9
         not_active =0
@@ -58,8 +57,6 @@ class DataEmu(Node):
             self.abort_flag =False
         elif (test_state==not_active):
             self.abort_flag =False
-        elif (test_state==e_stopping):
-            self.abort_flag =False
         elif (test_phase==br_doing_abort_stop):
             self.abort_flag =False
         elif (test_phase==br_abort_from_cs):
@@ -69,10 +66,6 @@ class DataEmu(Node):
         else:
             self.abort_flag =True
 
-
-
-
-
     def vcmd_callback(self,msg):
         self.get_logger().info(
             'Received desired speed percentage: "%d"' % msg.data)
@@ -80,33 +73,37 @@ class DataEmu(Node):
         current_override_speed = self.dpre.get_var('pmDesiredOverrideSpeed')
         print("Current overide speed:",current_override_speed)
 
-        if ((msg.data>=0) and  (msg.data<=100)):
+        if ((msg.data>=0) and  (msg.data<=100)):  #check if given overide speed is within the range
             if (current_override_speed!=msg.data):
                 self.dpre.set_var('pmSetOverrideSpeed', 1)
                 self.dpre.set_var('pmDesiredOverrideSpeed', msg.data)
-                print("setting the overide speed to:",msg.data)
+                self.get_logger().info("Setting the overide speed to: %d" %msg.data)
 
 
     def abort_cmd_callback(self,msg):
-        print("Current abort command received", msg.data)
+        # print("Current abort command received", msg.data)
         self.get_logger().info(
             'Current abort command received: "%d"' % msg.data)
-        autonomousCommand= self.dpre.get_var('autonomousCommand')
-        if (self.abort_flag):
-            print("abort flag is true")
-        else:
-            print("abort flag is false")
 
-        if (msg.data and self.abort_flag):
-            print("setting autonomousCommand to:",4)
-            self.get_logger().info(
-                'setting autonomousCommand to: "%d"' % 4)
-            self.dpre.set_var('autonomousCommand', 4)
-            autonomousCommand=self.dpre.get_var('autonomousCommand')
-            print(autonomousCommand)
+        autonomousCommand= self.dpre.get_var('autonomousCommand')
+
+        # if (self.abort_flag):
+        #     print("abort flag is true")
         # else:
-        #     if (autonomousCommand != 0):
-        #         self.dpre.set_var('autonomousCommand', 0)
+        #     print("abort flag is false")
+        if (autonomousCommand!=4):
+            if (msg.data and self.abort_flag): # cehck if both conditions are true
+                # print("setting autonomousCommand to:",4)
+                self.get_logger().info(
+                    'Setting autonomousCommand to: "%d"' % 4)
+                self.dpre.set_var('autonomousCommand', 4)
+
+                # autonomousCommand=self.dpre.get_var('autonomousCommand')
+                # print(autonomousCommand)
+            # else:
+            #     if (autonomousCommand != 0):
+            #         self.dpre.set_var('autonomousCommand', 0)
+
 
 
 
