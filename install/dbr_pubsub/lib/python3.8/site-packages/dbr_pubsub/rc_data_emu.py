@@ -8,6 +8,7 @@ from std_msgs.msg import Float32
 from rc_interfaces.msg import RcStatus
 
 from dbr_pubsub.rc_emu_module import *
+from abds_msgs.msg import VehicleCommand
 
 #from abds_core_common.msg import VehicleCommand
 # ip_address='195.0.1.1'
@@ -22,7 +23,7 @@ from dbr_pubsub.rc_emu_module import *
 class DataEmu(Node):
     def __init__(self):
         super().__init__('data_emu_node')
-        self.vcmd_sub_      =self.create_subscription(Float32, 'vcmd', self.vcmd_callback, 10)
+        self.vcmd_sub_      =self.create_subscription(VehicleCommand ,'vcmd', self.vcmd_callback, 10)
         self.abort_cmd_sub_ =self.create_subscription(Bool, 'abort_cmd', self.abort_cmd_callback, 10)
         self.rc_status_sub_ =self.create_subscription(RcStatus, 'rc_status', self.rc_status_callback, 10)
 
@@ -37,6 +38,8 @@ class DataEmu(Node):
         self.ushmfile   = self.get_parameter('ushm_file').get_parameter_value().string_value
         # self.ushmfile = r'/home/nayab/python_programs/rc_global_def/ushm definitions.pmh'
         self.dpre = DPRclient(self.ip_address, self.ushmfile)
+
+        self.sent_daccel_val= self.dpre.get_var('maxSpeedDecrease')
 
     def rc_status_callback(self,msg):
         test_state= int.from_bytes(msg.dl_test_procedure_state,"big")
@@ -69,16 +72,31 @@ class DataEmu(Node):
 
     def vcmd_callback(self,msg):
         self.get_logger().info(
-            'Received desired speed percentage: "%d"' % msg.data)
+            'Received desired speed percentage: "%d"' % msg.velocity_modifier)
 
         current_override_speed = self.dpre.get_var('pmDesiredOverrideSpeed')
         print("Current overide speed:",current_override_speed)
 
-        if ((msg.data>=0) and  (msg.data<=100)):  #check if given overide speed is within the range
-            if (current_override_speed!=msg.data):
-                self.dpre.set_var('pmDesiredOverrideSpeed', msg.data)
+        #current_daccel = self.dpre.get_var('pmBrNormalDecel')
+
+        received_daccel=-(msg.long_accel)
+        if received_daccel<1.0:
+            received_daccel=1.0
+        if received_daccel>5.0:
+            received_daccel=5.0
+
+
+        if ((msg.velocity_modifier>=0) and  (msg.velocity_modifier<=100)):  #check if given overide speed is within the range
+            if ( (current_override_speed!=msg.velocity_modifier) or (abs(self.sent_daccel_val- received_daccel) > 0.1) ):
+
+                self.dpre.set_var('pmDesiredOverrideSpeed', msg.velocity_modifier)
+                self.dpre.set_var('maxSpeedDecrease',received_daccel)
+                self.sent_daccel_val=received_daccel
+
                 current_override_speed=self.dpre.get_var('pmDesiredOverrideSpeed')
-                self.get_logger().info("Current overide speed after setting is %d" % current_override_speed)
+                self.dpre.get_var('maxSpeedDecrease')
+                self.get_logger().info("Current overide speed after setting is %d " % current_override_speed )
+                self.get_logger().info("Current speed de-acceleration after setting is %d " % self.dpre.get_var('maxSpeedDecrease') )
                 self.dpre.set_var('pmSetOverrideSpeed', 1)
 
 

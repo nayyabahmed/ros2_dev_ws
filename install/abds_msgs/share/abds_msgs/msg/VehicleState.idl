@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from abds_msgs/msg/VehicleState.msg
+// generated code does not contain a copyright notice
+
+#include "abds_msgs/msg/TrajectoryPoint.idl"
+#include "geometry_msgs/msg/Transform.idl"
+#include "std_msgs/msg/Header.idl"
+
+module abds_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      " vehicle state msg")
+    struct VehicleState {
+      std_msgs::msg::Header header;
+
+      abds_msgs::msg::TrajectoryPoint state;
+
+      geometry_msgs::msg::Transform delta;
+    };
+  };
+};

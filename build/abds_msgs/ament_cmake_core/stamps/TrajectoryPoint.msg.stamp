@@ -1,0 +1,17 @@
+builtin_interfaces/Duration time_from_start
+#geographic_msgs/GeoPose datum
+# rad
+float32 datum_bearing
+geometry_msgs/Pose pose
+# m 
+float32 dist_along_path
+# m/s
+float32 longitudinal_velocity
+# m/s
+float32 lateral_velocity
+# m/s^2
+float32 acceleration
+# rad/s
+float32 heading_rate
+# 1/m
+float32 instantanious_curvature

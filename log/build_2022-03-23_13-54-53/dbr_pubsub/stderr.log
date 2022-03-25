@@ -1,0 +1,5 @@
+  File "/home/nayab/dev_ws/install/dbr_pubsub/lib/python3.8/site-packages/dbr_pubsub/rc_data_emu.py", line 100
+    ``
+    ^
+SyntaxError: invalid syntax
+

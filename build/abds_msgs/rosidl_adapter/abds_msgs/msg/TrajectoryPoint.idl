@@ -1,0 +1,45 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from abds_msgs/msg/TrajectoryPoint.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Duration.idl"
+#include "geometry_msgs/msg/Pose.idl"
+
+module abds_msgs {
+  module msg {
+    struct TrajectoryPoint {
+      builtin_interfaces::msg::Duration time_from_start;
+
+      @verbatim (language="comment", text=
+        "geographic_msgs/GeoPose datum" "\n"
+        " rad")
+      float datum_bearing;
+
+      geometry_msgs::msg::Pose pose;
+
+      @verbatim (language="comment", text=
+        " m")
+      float dist_along_path;
+
+      @verbatim (language="comment", text=
+        " m/s")
+      float longitudinal_velocity;
+
+      @verbatim (language="comment", text=
+        " m/s")
+      float lateral_velocity;
+
+      @verbatim (language="comment", text=
+        " m/s^2")
+      float acceleration;
+
+      @verbatim (language="comment", text=
+        " rad/s")
+      float heading_rate;
+
+      @verbatim (language="comment", text=
+        " 1/m")
+      float instantanious_curvature;
+    };
+  };
+};

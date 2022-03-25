@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from abds_msgs/msg/TestState.msg
+// generated code does not contain a copyright notice
+
+
+module abds_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      " test state msg")
+    struct TestState {
+      int32 test_id;
+
+      int32 test_phase;
+
+      int32 test_state;
+
+      float path_distance;
+
+      float deceleration_rate;
+
+      float abort_deceleration_rate;
+
+      float desired_speed;
+    };
+  };
+};

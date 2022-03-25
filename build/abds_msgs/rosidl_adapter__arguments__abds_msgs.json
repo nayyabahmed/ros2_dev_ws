@@ -1,0 +1,12 @@
+{
+  "package_name": "abds_msgs",
+  "non_idl_tuples": [
+    "/home/nayab/dev_ws/src/abds_msgs:msg/BoundingBox.msg",
+    "/home/nayab/dev_ws/src/abds_msgs:msg/BoundingBoxes.msg",
+    "/home/nayab/dev_ws/src/abds_msgs:msg/TrajectoryPoint.msg",
+    "/home/nayab/dev_ws/src/abds_msgs:msg/Trajectory.msg",
+    "/home/nayab/dev_ws/src/abds_msgs:msg/VehicleCommand.msg",
+    "/home/nayab/dev_ws/src/abds_msgs:msg/VehicleState.msg",
+    "/home/nayab/dev_ws/src/abds_msgs:msg/TestState.msg"
+  ]
+}

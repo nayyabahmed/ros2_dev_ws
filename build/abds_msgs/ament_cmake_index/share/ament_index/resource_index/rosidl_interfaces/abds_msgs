@@ -1,0 +1,14 @@
+msg/BoundingBox.idl
+msg/BoundingBox.msg
+msg/BoundingBoxes.idl
+msg/BoundingBoxes.msg
+msg/TestState.idl
+msg/TestState.msg
+msg/Trajectory.idl
+msg/Trajectory.msg
+msg/TrajectoryPoint.idl
+msg/TrajectoryPoint.msg
+msg/VehicleCommand.idl
+msg/VehicleCommand.msg
+msg/VehicleState.idl
+msg/VehicleState.msg
