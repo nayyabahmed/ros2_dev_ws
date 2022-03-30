@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nayab/dev_ws/src/abd_robot_comms/src/numeric_analysis.c
+numeric_analysis.h
+/home/nayab/dev_ws/src/abd_robot_comms/src/numeric_analysis.h
+
+/home/nayab/dev_ws/src/abd_robot_comms/src/numeric_analysis.h
+math.h
+-
+

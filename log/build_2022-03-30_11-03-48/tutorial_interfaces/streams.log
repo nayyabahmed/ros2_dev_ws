@@ -1,0 +1,15 @@
+[0.020s] Invoking command in '/home/nayab/dev_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/nayab/dev_ws/build/tutorial_interfaces -- -j4 -l4
+[0.084s] [  2%] Built target tutorial_interfaces__cpp
+[0.094s] [ 12%] Built target tutorial_interfaces__rosidl_generator_c
+[0.145s] [ 23%] Built target tutorial_interfaces__rosidl_typesupport_cpp
+[0.148s] [ 33%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.153s] [ 43%] Built target tutorial_interfaces__rosidl_typesupport_introspection_cpp
+[0.166s] [ 53%] Built target tutorial_interfaces__rosidl_typesupport_c
+[0.178s] [ 64%] Built target tutorial_interfaces__rosidl_typesupport_introspection_c
+[0.184s] [ 74%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_c
+[0.206s] [ 74%] Built target tutorial_interfaces
+[0.230s] [ 76%] Built target tutorial_interfaces__py
+[0.261s] [ 84%] Built target tutorial_interfaces__python
+[0.294s] [ 89%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.295s] [ 94%] Built target tutorial_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.299s] [100%] Built target tutorial_interfaces__rosidl_typesupport_c__pyext

@@ -1,0 +1,84 @@
+[0.033s] Invoking command in '/home/nayab/dev_ws/build/abd_robot_comms': AMENT_PREFIX_PATH=/home/nayab/dev_ws/install/rc_interfaces:/home/nayab/dev_ws/install/abds_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nayab/dev_ws/install/rc_interfaces:/home/nayab/dev_ws/install/abds_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/nayab/dev_ws/install/rc_interfaces/lib:/home/nayab/dev_ws/install/abds_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nayab/dev_ws/install/rc_interfaces/lib/python3.8/site-packages:/home/nayab/dev_ws/install/abds_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/nayab/dev_ws/src/abd_robot_comms -DCMAKE_INSTALL_PREFIX=/home/nayab/dev_ws/install/abd_robot_comms
+[0.127s] -- The C compiler identification is GNU 9.4.0
+[0.181s] -- The CXX compiler identification is GNU 9.4.0
+[0.186s] -- Check for working C compiler: /usr/bin/cc
+[0.260s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.261s] -- Detecting C compiler ABI info
+[0.331s] -- Detecting C compiler ABI info - done
+[0.338s] -- Detecting C compile features
+[0.339s] -- Detecting C compile features - done
+[0.341s] -- Check for working CXX compiler: /usr/bin/c++
+[0.426s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.426s] -- Detecting CXX compiler ABI info
+[0.521s] -- Detecting CXX compiler ABI info - done
+[0.521s] -- Detecting CXX compile features
+[0.521s] -- Detecting CXX compile features - done
+[0.522s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.553s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.553s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.778s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.847s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.857s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.958s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.985s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.075s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.156s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.159s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.160s] -- Looking for pthread.h
+[1.226s] -- Looking for pthread.h - found
+[1.226s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.293s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.293s] -- Looking for pthread_create in pthreads
+[1.350s] -- Looking for pthread_create in pthreads - not found
+[1.350s] -- Looking for pthread_create in pthread
+[1.413s] -- Looking for pthread_create in pthread - found
+[1.414s] -- Found Threads: TRUE  
+[1.587s] -- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[1.698s] -- Found abds_msgs: 0.0.0 (/home/nayab/dev_ws/install/abds_msgs/share/abds_msgs/cmake)
+[1.766s] -- Found rc_interfaces: 0.0.0 (/home/nayab/dev_ws/install/rc_interfaces/share/rc_interfaces/cmake)
+[1.868s] -- Configuring done
+[1.884s] -- Generating done
+[1.886s] -- Build files have been written to: /home/nayab/dev_ws/build/abd_robot_comms
+[1.897s] Invoked command in '/home/nayab/dev_ws/build/abd_robot_comms' returned '0': AMENT_PREFIX_PATH=/home/nayab/dev_ws/install/rc_interfaces:/home/nayab/dev_ws/install/abds_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nayab/dev_ws/install/rc_interfaces:/home/nayab/dev_ws/install/abds_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/nayab/dev_ws/install/rc_interfaces/lib:/home/nayab/dev_ws/install/abds_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nayab/dev_ws/install/rc_interfaces/lib/python3.8/site-packages:/home/nayab/dev_ws/install/abds_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/nayab/dev_ws/src/abd_robot_comms -DCMAKE_INSTALL_PREFIX=/home/nayab/dev_ws/install/abd_robot_comms
+[1.900s] Invoking command in '/home/nayab/dev_ws/build/abd_robot_comms': AMENT_PREFIX_PATH=/home/nayab/dev_ws/install/rc_interfaces:/home/nayab/dev_ws/install/abds_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nayab/dev_ws/install/rc_interfaces:/home/nayab/dev_ws/install/abds_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/nayab/dev_ws/install/rc_interfaces/lib:/home/nayab/dev_ws/install/abds_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nayab/dev_ws/install/rc_interfaces/lib/python3.8/site-packages:/home/nayab/dev_ws/install/abds_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nayab/dev_ws/build/abd_robot_comms -- -j4 -l4
+[1.932s] [35m[1mScanning dependencies of target network_utils[0m
+[1.932s] [35m[1mScanning dependencies of target numeric_analysis[0m
+[1.932s] [35m[1mScanning dependencies of target comms[0m
+[1.945s] [ 30%] [32mBuilding C object CMakeFiles/numeric_analysis.dir/src/numeric_analysis.c.o[0m
+[1.945s] [ 30%] [32mBuilding C object CMakeFiles/comms.dir/src/comms.c.o[0m
+[1.945s] [ 30%] [32mBuilding C object CMakeFiles/network_utils.dir/src/network_utils.c.o[0m
+[1.993s] [ 40%] [32m[1mLinking C static library libnumeric_analysis.a[0m
+[2.015s] [ 50%] [32m[1mLinking C static library libcomms.a[0m
+[2.024s] [ 50%] Built target numeric_analysis
+[2.033s] [35m[1mScanning dependencies of target pf_segment_functions[0m
+[2.042s] [ 60%] [32mBuilding C object CMakeFiles/pf_segment_functions.dir/src/pf_segment_functions.c.o[0m
+[2.042s] [ 60%] Built target comms
+[2.078s] [ 70%] [32m[1mLinking C static library libnetwork_utils.a[0m
+[2.107s] [ 70%] Built target network_utils
+[2.114s] [ 80%] [32m[1mLinking C static library libpf_segment_functions.a[0m
+[2.139s] [ 80%] Built target pf_segment_functions
+[2.148s] [35m[1mScanning dependencies of target trajectory_calculator[0m
+[2.340s] [ 90%] [32mBuilding CXX object CMakeFiles/trajectory_calculator.dir/src/trajectory_calculator.cpp.o[0m
+[9.973s] [100%] [32m[1mLinking CXX executable trajectory_calculator[0m
+[10.289s] [100%] Built target trajectory_calculator
+[10.302s] Invoked command in '/home/nayab/dev_ws/build/abd_robot_comms' returned '0': AMENT_PREFIX_PATH=/home/nayab/dev_ws/install/rc_interfaces:/home/nayab/dev_ws/install/abds_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nayab/dev_ws/install/rc_interfaces:/home/nayab/dev_ws/install/abds_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/nayab/dev_ws/install/rc_interfaces/lib:/home/nayab/dev_ws/install/abds_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nayab/dev_ws/install/rc_interfaces/lib/python3.8/site-packages:/home/nayab/dev_ws/install/abds_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nayab/dev_ws/build/abd_robot_comms -- -j4 -l4
+[10.337s] Invoking command in '/home/nayab/dev_ws/build/abd_robot_comms': AMENT_PREFIX_PATH=/home/nayab/dev_ws/install/rc_interfaces:/home/nayab/dev_ws/install/abds_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nayab/dev_ws/install/rc_interfaces:/home/nayab/dev_ws/install/abds_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/nayab/dev_ws/install/rc_interfaces/lib:/home/nayab/dev_ws/install/abds_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nayab/dev_ws/install/rc_interfaces/lib/python3.8/site-packages:/home/nayab/dev_ws/install/abds_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/nayab/dev_ws/build/abd_robot_comms
+[10.344s] -- Install configuration: ""
+[10.344s] -- Installing: /home/nayab/dev_ws/install/abd_robot_comms/lib/abd_robot_comms/trajectory_calculator
+[10.350s] -- Set runtime path of "/home/nayab/dev_ws/install/abd_robot_comms/lib/abd_robot_comms/trajectory_calculator" to ""
+[10.350s] -- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/ament_index/resource_index/package_run_dependencies/abd_robot_comms
+[10.351s] -- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/ament_index/resource_index/parent_prefix_path/abd_robot_comms
+[10.351s] -- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/environment/ament_prefix_path.sh
+[10.351s] -- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/environment/ament_prefix_path.dsv
+[10.351s] -- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/environment/path.sh
+[10.352s] -- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/environment/path.dsv
+[10.352s] -- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/local_setup.bash
+[10.352s] -- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/local_setup.sh
+[10.353s] -- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/local_setup.zsh
+[10.353s] -- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/local_setup.dsv
+[10.353s] -- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/package.dsv
+[10.354s] -- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/ament_index/resource_index/packages/abd_robot_comms
+[10.355s] -- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/cmake/abd_robot_commsConfig.cmake
+[10.355s] -- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/cmake/abd_robot_commsConfig-version.cmake
+[10.356s] -- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/package.xml
+[10.359s] Invoked command in '/home/nayab/dev_ws/build/abd_robot_comms' returned '0': AMENT_PREFIX_PATH=/home/nayab/dev_ws/install/rc_interfaces:/home/nayab/dev_ws/install/abds_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nayab/dev_ws/install/rc_interfaces:/home/nayab/dev_ws/install/abds_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/nayab/dev_ws/install/rc_interfaces/lib:/home/nayab/dev_ws/install/abds_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nayab/dev_ws/install/rc_interfaces/lib/python3.8/site-packages:/home/nayab/dev_ws/install/abds_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/nayab/dev_ws/build/abd_robot_comms

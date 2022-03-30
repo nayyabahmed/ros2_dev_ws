@@ -1,0 +1,4 @@
+source;share/abd_robot_comms/local_setup.bash
+source;share/abd_robot_comms/local_setup.dsv
+source;share/abd_robot_comms/local_setup.sh
+source;share/abd_robot_comms/local_setup.zsh

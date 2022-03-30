@@ -1,0 +1,4 @@
+Invoking command in '/home/nayab/dev_ws/build/abds_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/nayab/dev_ws/build/abds_msgs -- -j4 -l4
+Invoked command in '/home/nayab/dev_ws/build/abds_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/nayab/dev_ws/build/abds_msgs -- -j4 -l4
+Invoking command in '/home/nayab/dev_ws/build/abds_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/nayab/dev_ws/build/abds_msgs
+Invoked command in '/home/nayab/dev_ws/build/abds_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/nayab/dev_ws/build/abds_msgs

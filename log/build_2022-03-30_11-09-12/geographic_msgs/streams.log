@@ -1,0 +1,45 @@
+[0.037s] Invoking command in '/home/nayab/dev_ws/build/geographic_msgs': /usr/bin/cmake /home/nayab/dev_ws/src/geographic_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/nayab/dev_ws/install/geographic_msgs
+[0.281s] -- Using CATKIN_DEVEL_PREFIX: /home/nayab/dev_ws/build/geographic_msgs/devel
+[0.282s] -- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
+[0.282s] -- This workspace overlays: /opt/ros/noetic
+[0.282s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.282s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.282s] -- Using Debian Python package layout
+[0.282s] -- Using empy: /usr/lib/python3/dist-packages/em.py
+[0.282s] -- Using CATKIN_ENABLE_TESTING: ON
+[0.282s] -- Call enable_testing()
+[0.282s] -- Using CATKIN_TEST_RESULTS_DIR: /home/nayab/dev_ws/build/geographic_msgs/test_results
+[0.282s] -- Forcing gtest/gmock from source, though one was otherwise available.
+[0.282s] -- Found gtest sources under '/usr/src/googletest': gtests will be built
+[0.282s] -- Found gmock sources under '/usr/src/googletest': gmock will be built
+[0.282s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[0.282s] -- Using Python nosetests: /usr/bin/nosetests3
+[0.301s] -- catkin 0.8.10
+[0.302s] -- BUILD_SHARED_LIBS is on
+[0.569s] Traceback (most recent call last):
+[0.569s]   File "/home/nayab/dev_ws/build/geographic_msgs/catkin_generated/generate_cached_setup.py", line 22, in <module>
+[0.569s]     code = generate_environment_script('/home/nayab/dev_ws/build/geographic_msgs/devel/env.sh')
+[0.569s]   File "/opt/ros/noetic/lib/python3/dist-packages/catkin/environment_cache.py", line 63, in generate_environment_script
+[0.569s]     env_after = ast.literal_eval(output.decode('utf8'))
+[0.569s]   File "/usr/lib/python3.8/ast.py", line 59, in literal_eval
+[0.569s]     node_or_string = parse(node_or_string, mode='eval')
+[0.570s]   File "/usr/lib/python3.8/ast.py", line 47, in parse
+[0.570s]     return compile(source, filename, mode, flags,
+[0.570s]   File "<unknown>", line 1
+[0.570s]     ROS_DISTRO was set to 'foxy' before. Please make sure that the environment does not mix paths from different distributions.
+[0.570s]                ^
+[0.570s] SyntaxError: invalid syntax
+[0.588s] CMake Error at /opt/ros/noetic/share/catkin/cmake/safe_execute_process.cmake:11 (message):
+[0.588s]   execute_process(/usr/bin/python3
+[0.588s]   "/home/nayab/dev_ws/build/geographic_msgs/catkin_generated/generate_cached_setup.py")
+[0.589s]   returned error code 1
+[0.589s] Call Stack (most recent call first):
+[0.589s]   /opt/ros/noetic/share/catkin/cmake/all.cmake:208 (safe_execute_process)
+[0.589s]   /opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:20 (include)
+[0.590s]   CMakeLists.txt:4 (find_package)
+[0.590s] 
+[0.593s] 
+[0.594s] -- Configuring incomplete, errors occurred!
+[0.595s] See also "/home/nayab/dev_ws/build/geographic_msgs/CMakeFiles/CMakeOutput.log".
+[0.595s] See also "/home/nayab/dev_ws/build/geographic_msgs/CMakeFiles/CMakeError.log".
+[0.597s] Invoked command in '/home/nayab/dev_ws/build/geographic_msgs' returned '1': /usr/bin/cmake /home/nayab/dev_ws/src/geographic_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/nayab/dev_ws/install/geographic_msgs

@@ -1,0 +1,16 @@
+/home/nayab/dev_ws/install/abd_robot_comms/lib/abd_robot_comms/trajectory_calculator
+/home/nayab/dev_ws/install/abd_robot_comms/share/ament_index/resource_index/package_run_dependencies/abd_robot_comms
+/home/nayab/dev_ws/install/abd_robot_comms/share/ament_index/resource_index/parent_prefix_path/abd_robot_comms
+/home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/environment/ament_prefix_path.sh
+/home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/environment/ament_prefix_path.dsv
+/home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/environment/path.sh
+/home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/environment/path.dsv
+/home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/local_setup.bash
+/home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/local_setup.sh
+/home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/local_setup.zsh
+/home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/local_setup.dsv
+/home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/package.dsv
+/home/nayab/dev_ws/install/abd_robot_comms/share/ament_index/resource_index/packages/abd_robot_comms
+/home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/cmake/abd_robot_commsConfig.cmake
+/home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/cmake/abd_robot_commsConfig-version.cmake
+/home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/package.xml
