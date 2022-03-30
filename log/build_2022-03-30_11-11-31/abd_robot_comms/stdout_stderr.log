@@ -1,0 +1,78 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/foxy/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+-- Found abds_msgs: 0.0.0 (/home/nayab/dev_ws/install/abds_msgs/share/abds_msgs/cmake)
+-- Found rc_interfaces: 0.0.0 (/home/nayab/dev_ws/install/rc_interfaces/share/rc_interfaces/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nayab/dev_ws/build/abd_robot_comms
+[35m[1mScanning dependencies of target network_utils[0m
+[35m[1mScanning dependencies of target numeric_analysis[0m
+[35m[1mScanning dependencies of target comms[0m
+[ 30%] [32mBuilding C object CMakeFiles/numeric_analysis.dir/src/numeric_analysis.c.o[0m
+[ 30%] [32mBuilding C object CMakeFiles/comms.dir/src/comms.c.o[0m
+[ 30%] [32mBuilding C object CMakeFiles/network_utils.dir/src/network_utils.c.o[0m
+[ 40%] [32m[1mLinking C static library libnumeric_analysis.a[0m
+[ 50%] [32m[1mLinking C static library libcomms.a[0m
+[ 50%] Built target numeric_analysis
+[35m[1mScanning dependencies of target pf_segment_functions[0m
+[ 60%] [32mBuilding C object CMakeFiles/pf_segment_functions.dir/src/pf_segment_functions.c.o[0m
+[ 60%] Built target comms
+[ 70%] [32m[1mLinking C static library libnetwork_utils.a[0m
+[ 70%] Built target network_utils
+[ 80%] [32m[1mLinking C static library libpf_segment_functions.a[0m
+[ 80%] Built target pf_segment_functions
+[35m[1mScanning dependencies of target trajectory_calculator[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/trajectory_calculator.dir/src/trajectory_calculator.cpp.o[0m
+[100%] [32m[1mLinking CXX executable trajectory_calculator[0m
+[100%] Built target trajectory_calculator
+-- Install configuration: ""
+-- Installing: /home/nayab/dev_ws/install/abd_robot_comms/lib/abd_robot_comms/trajectory_calculator
+-- Set runtime path of "/home/nayab/dev_ws/install/abd_robot_comms/lib/abd_robot_comms/trajectory_calculator" to ""
+-- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/ament_index/resource_index/package_run_dependencies/abd_robot_comms
+-- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/ament_index/resource_index/parent_prefix_path/abd_robot_comms
+-- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/environment/ament_prefix_path.sh
+-- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/environment/ament_prefix_path.dsv
+-- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/environment/path.sh
+-- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/environment/path.dsv
+-- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/local_setup.bash
+-- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/local_setup.sh
+-- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/local_setup.zsh
+-- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/local_setup.dsv
+-- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/package.dsv
+-- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/ament_index/resource_index/packages/abd_robot_comms
+-- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/cmake/abd_robot_commsConfig.cmake
+-- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/cmake/abd_robot_commsConfig-version.cmake
+-- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/package.xml

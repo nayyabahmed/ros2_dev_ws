@@ -1,0 +1,2 @@
+source;share/abd_robot_comms/environment/ament_prefix_path.sh
+source;share/abd_robot_comms/environment/path.sh

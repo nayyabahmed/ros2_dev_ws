@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nayab/dev_ws/src/abd_robot_comms/src/numeric_analysis.h
+math.h
+-
+
+/home/nayab/dev_ws/src/abd_robot_comms/src/pf_segment_functions.c
+pf_segment_functions.h
+/home/nayab/dev_ws/src/abd_robot_comms/src/pf_segment_functions.h
+
+/home/nayab/dev_ws/src/abd_robot_comms/src/pf_segment_functions.h
+stddef.h
+-
+math.h
+-
+stdio.h
+-
+numeric_analysis.h
+/home/nayab/dev_ws/src/abd_robot_comms/src/numeric_analysis.h
+pf_structures.h
+/home/nayab/dev_ws/src/abd_robot_comms/src/pf_structures.h
+
+/home/nayab/dev_ws/src/abd_robot_comms/src/pf_structures.h
+stdint.h
+-
+

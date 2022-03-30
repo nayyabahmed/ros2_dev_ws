@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnumeric_analysis.a  CMakeFiles/numeric_analysis.dir/src/numeric_analysis.c.o
+/usr/bin/ranlib libnumeric_analysis.a
