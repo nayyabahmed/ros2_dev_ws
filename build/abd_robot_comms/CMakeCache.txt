@@ -343,6 +343,9 @@ fastrtps_cmake_module_DIR:PATH=/opt/ros/foxy/share/fastrtps_cmake_module/cmake
 //The directory containing a CMake configuration file for foonathan_memory.
 foonathan_memory_DIR:PATH=/opt/ros/foxy/lib/foonathan_memory/cmake
 
+//The directory containing a CMake configuration file for geographic_msgs.
+geographic_msgs_DIR:PATH=/opt/ros/foxy/share/geographic_msgs/cmake
+
 //The directory containing a CMake configuration file for geometry_msgs.
 geometry_msgs_DIR:PATH=/opt/ros/foxy/share/geometry_msgs/cmake
 
@@ -453,6 +456,9 @@ std_msgs_DIR:PATH=/opt/ros/foxy/share/std_msgs/cmake
 
 //The directory containing a CMake configuration file for tracetools.
 tracetools_DIR:PATH=/opt/ros/foxy/share/tracetools/cmake
+
+//The directory containing a CMake configuration file for unique_identifier_msgs.
+unique_identifier_msgs_DIR:PATH=/opt/ros/foxy/share/unique_identifier_msgs/cmake
 
 //The directory containing a CMake configuration file for visualization_msgs.
 visualization_msgs_DIR:PATH=/opt/ros/foxy/share/visualization_msgs/cmake

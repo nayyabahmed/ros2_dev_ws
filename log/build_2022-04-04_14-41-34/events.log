@@ -1,0 +1,129 @@
+[0.000000] (-) TimerEvent: {}
+[0.000964] (-) JobUnselected: {'identifier': 'abds_core_common'}
+[0.001045] (-) JobUnselected: {'identifier': 'abds_msgs'}
+[0.001078] (-) JobUnselected: {'identifier': 'dbr_pubsub'}
+[0.001102] (-) JobUnselected: {'identifier': 'ether_follow_interfaces'}
+[0.001124] (-) JobUnselected: {'identifier': 'ether_follow_pubsub'}
+[0.001148] (-) JobUnselected: {'identifier': 'my_package'}
+[0.001169] (-) JobUnselected: {'identifier': 'py_pubsub'}
+[0.001190] (-) JobUnselected: {'identifier': 'rc_interfaces'}
+[0.001881] (-) JobUnselected: {'identifier': 'tutorial_interfaces'}
+[0.001941] (abd_robot_comms) JobQueued: {'identifier': 'abd_robot_comms', 'dependencies': OrderedDict([('abds_msgs', '/home/nayab/dev_ws/install/abds_msgs'), ('rc_interfaces', '/home/nayab/dev_ws/install/rc_interfaces')])}
+[0.001992] (abd_robot_comms) JobStarted: {'identifier': 'abd_robot_comms'}
+[0.023093] (abd_robot_comms) JobProgress: {'identifier': 'abd_robot_comms', 'progress': 'cmake'}
+[0.024577] (abd_robot_comms) JobProgress: {'identifier': 'abd_robot_comms', 'progress': 'build'}
+[0.025926] (abd_robot_comms) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nayab/dev_ws/build/abd_robot_comms', '--', '-j4', '-l4'], 'cwd': '/home/nayab/dev_ws/build/abd_robot_comms', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'nayab'), ('SSH_AGENT_PID', '1494'), ('ROS_PACKAGE_PATH', '/home/nayab/project_ws/src:/opt/ros/noetic/share'), ('XDG_SESSION_TYPE', 'x11'), ('ROS_ETC_DIR', '/opt/ros/noetic/etc/ros'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nayab/dev_ws/install/rc_interfaces/lib:/home/nayab/dev_ws/install/abds_msgs/lib:/home/nayab/dev_ws/install/tutorial_interfaces/lib:/home/nayab/dev_ws/install/turtlesim/lib:/home/nayab/dev_ws/install/abds_core_common/lib:/home/nayab/dev_ws/install/ether_follow_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/home/nayab/project_ws/devel/lib:/opt/ros/noetic/lib'), ('HOME', '/home/nayab'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1314'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '1982'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nayab/dev_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nayab'), ('JOURNAL_STREAM', '8:39576'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/nayab/project_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nayab'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/opt/ros/noetic/bin:/home/nayab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nayab-HP:@/tmp/.ICE-unix/1537,unix/nayab-HP:/tmp/.ICE-unix/1537'), ('INVOCATION_ID', '6f1a3bc14c874363a531b3628bb1aa09'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('ROSLISP_PACKAGE_DIRECTORIES', '/home/nayab/project_ws/devel/share/common-lisp'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/noetic/share/ros'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nayab/dev_ws/install/tutorial_interfaces:/home/nayab/dev_ws/install/turtlesim:/home/nayab/dev_ws/install/abd_robot_comms:/home/nayab/dev_ws/install/rc_interfaces:/home/nayab/dev_ws/install/rc_data_emulator:/home/nayab/dev_ws/install/py_pubsub:/home/nayab/dev_ws/install/my_package:/home/nayab/dev_ws/install/abds_msgs:/home/nayab/dev_ws/install/abds_core_common:/home/nayab/dev_ws/install/ether_follow_pubsub:/home/nayab/dev_ws/install/ether_follow_interfaces:/home/nayab/dev_ws/install/dbr_pubsub:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:d9979ba5-a308-4fb9-a122-5f06591d9d58'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nayab/dev_ws/build/abd_robot_comms'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nayab/dev_ws/install/rc_interfaces/lib/python3.8/site-packages:/home/nayab/dev_ws/install/abds_msgs/lib/python3.8/site-packages:/home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages:/home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages:/home/nayab/dev_ws/install/rc_data_emulator/lib/python3.8/site-packages:/home/nayab/dev_ws/install/py_pubsub/lib/python3.8/site-packages:/home/nayab/dev_ws/install/my_package/lib/python3.8/site-packages:/home/nayab/dev_ws/install/abds_core_common/lib/python3.8/site-packages:/home/nayab/dev_ws/install/ether_follow_pubsub/lib/python3.8/site-packages:/home/nayab/dev_ws/install/ether_follow_interfaces/lib/python3.8/site-packages:/home/nayab/dev_ws/install/dbr_pubsub/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/nayab/project_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/nayab/dev_ws/install/rc_interfaces:/home/nayab/dev_ws/install/abds_msgs:/home/nayab/dev_ws/install/tutorial_interfaces:/home/nayab/dev_ws/install/turtlesim:/home/nayab/dev_ws/install/abd_robot_comms:/home/nayab/dev_ws/install/abds_core_common:/home/nayab/dev_ws/install/ether_follow_interfaces:/home/nayab/dev_ws/install/rc_data_emulator:/home/nayab/dev_ws/install/py_pubsub:/home/nayab/dev_ws/install/my_package:/home/nayab/dev_ws/install/ether_follow_pubsub:/home/nayab/dev_ws/install/dbr_pubsub:/opt/ros/foxy:/home/nayab/project_ws/devel:/opt/ros/noetic')]), 'shell': False}
+[0.099792] (-) TimerEvent: {}
+[0.144264] (abd_robot_comms) StdoutLine: {'line': b'[ 60%] Built target network_utils\n'}
+[0.144621] (abd_robot_comms) StdoutLine: {'line': b'[ 60%] Built target comms\n'}
+[0.144777] (abd_robot_comms) StdoutLine: {'line': b'[ 60%] Built target numeric_analysis\n'}
+[0.168236] (abd_robot_comms) StdoutLine: {'line': b'[ 80%] Built target pf_segment_functions\n'}
+[0.193847] (abd_robot_comms) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target trajectory_calculator\x1b[0m\n'}
+[0.199857] (-) TimerEvent: {}
+[0.231142] (abd_robot_comms) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/trajectory_calculator.dir/src/trajectory_calculator.cpp.o\x1b[0m\n'}
+[0.300049] (-) TimerEvent: {}
+[0.400474] (-) TimerEvent: {}
+[0.500806] (-) TimerEvent: {}
+[0.601133] (-) TimerEvent: {}
+[0.701497] (-) TimerEvent: {}
+[0.801845] (-) TimerEvent: {}
+[0.902195] (-) TimerEvent: {}
+[1.002530] (-) TimerEvent: {}
+[1.102867] (-) TimerEvent: {}
+[1.203217] (-) TimerEvent: {}
+[1.303551] (-) TimerEvent: {}
+[1.403906] (-) TimerEvent: {}
+[1.504266] (-) TimerEvent: {}
+[1.604627] (-) TimerEvent: {}
+[1.704968] (-) TimerEvent: {}
+[1.805323] (-) TimerEvent: {}
+[1.905662] (-) TimerEvent: {}
+[2.006030] (-) TimerEvent: {}
+[2.106398] (-) TimerEvent: {}
+[2.206744] (-) TimerEvent: {}
+[2.307095] (-) TimerEvent: {}
+[2.407440] (-) TimerEvent: {}
+[2.507791] (-) TimerEvent: {}
+[2.608157] (-) TimerEvent: {}
+[2.708499] (-) TimerEvent: {}
+[2.808841] (-) TimerEvent: {}
+[2.909195] (-) TimerEvent: {}
+[3.009548] (-) TimerEvent: {}
+[3.109890] (-) TimerEvent: {}
+[3.210249] (-) TimerEvent: {}
+[3.310595] (-) TimerEvent: {}
+[3.410943] (-) TimerEvent: {}
+[3.511285] (-) TimerEvent: {}
+[3.611642] (-) TimerEvent: {}
+[3.711980] (-) TimerEvent: {}
+[3.812317] (-) TimerEvent: {}
+[3.912611] (-) TimerEvent: {}
+[4.012913] (-) TimerEvent: {}
+[4.113243] (-) TimerEvent: {}
+[4.213571] (-) TimerEvent: {}
+[4.313927] (-) TimerEvent: {}
+[4.414309] (-) TimerEvent: {}
+[4.514674] (-) TimerEvent: {}
+[4.615019] (-) TimerEvent: {}
+[4.715351] (-) TimerEvent: {}
+[4.815686] (-) TimerEvent: {}
+[4.915999] (-) TimerEvent: {}
+[5.016309] (-) TimerEvent: {}
+[5.116629] (-) TimerEvent: {}
+[5.216949] (-) TimerEvent: {}
+[5.317269] (-) TimerEvent: {}
+[5.417590] (-) TimerEvent: {}
+[5.517915] (-) TimerEvent: {}
+[5.618241] (-) TimerEvent: {}
+[5.718563] (-) TimerEvent: {}
+[5.818879] (-) TimerEvent: {}
+[5.919196] (-) TimerEvent: {}
+[6.019511] (-) TimerEvent: {}
+[6.119827] (-) TimerEvent: {}
+[6.220139] (-) TimerEvent: {}
+[6.320458] (-) TimerEvent: {}
+[6.420774] (-) TimerEvent: {}
+[6.521089] (-) TimerEvent: {}
+[6.621405] (-) TimerEvent: {}
+[6.721718] (-) TimerEvent: {}
+[6.822023] (-) TimerEvent: {}
+[6.922364] (-) TimerEvent: {}
+[7.022674] (-) TimerEvent: {}
+[7.122987] (-) TimerEvent: {}
+[7.223322] (-) TimerEvent: {}
+[7.323622] (-) TimerEvent: {}
+[7.423939] (-) TimerEvent: {}
+[7.524285] (-) TimerEvent: {}
+[7.624667] (-) TimerEvent: {}
+[7.725020] (-) TimerEvent: {}
+[7.746432] (abd_robot_comms) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable trajectory_calculator\x1b[0m\n'}
+[7.825142] (-) TimerEvent: {}
+[7.925484] (-) TimerEvent: {}
+[8.025802] (-) TimerEvent: {}
+[8.126127] (-) TimerEvent: {}
+[8.150156] (abd_robot_comms) StdoutLine: {'line': b'[100%] Built target trajectory_calculator\n'}
+[8.165032] (abd_robot_comms) CommandEnded: {'returncode': 0}
+[8.212041] (abd_robot_comms) JobProgress: {'identifier': 'abd_robot_comms', 'progress': 'install'}
+[8.225651] (abd_robot_comms) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nayab/dev_ws/build/abd_robot_comms'], 'cwd': '/home/nayab/dev_ws/build/abd_robot_comms', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'nayab'), ('SSH_AGENT_PID', '1494'), ('ROS_PACKAGE_PATH', '/home/nayab/project_ws/src:/opt/ros/noetic/share'), ('XDG_SESSION_TYPE', 'x11'), ('ROS_ETC_DIR', '/opt/ros/noetic/etc/ros'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nayab/dev_ws/install/rc_interfaces/lib:/home/nayab/dev_ws/install/abds_msgs/lib:/home/nayab/dev_ws/install/tutorial_interfaces/lib:/home/nayab/dev_ws/install/turtlesim/lib:/home/nayab/dev_ws/install/abds_core_common/lib:/home/nayab/dev_ws/install/ether_follow_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/home/nayab/project_ws/devel/lib:/opt/ros/noetic/lib'), ('HOME', '/home/nayab'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1314'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '1982'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nayab/dev_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'nayab'), ('JOURNAL_STREAM', '8:39576'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/nayab/project_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nayab'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/opt/ros/noetic/bin:/home/nayab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nayab-HP:@/tmp/.ICE-unix/1537,unix/nayab-HP:/tmp/.ICE-unix/1537'), ('INVOCATION_ID', '6f1a3bc14c874363a531b3628bb1aa09'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('ROSLISP_PACKAGE_DIRECTORIES', '/home/nayab/project_ws/devel/share/common-lisp'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/noetic/share/ros'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nayab/dev_ws/install/tutorial_interfaces:/home/nayab/dev_ws/install/turtlesim:/home/nayab/dev_ws/install/abd_robot_comms:/home/nayab/dev_ws/install/rc_interfaces:/home/nayab/dev_ws/install/rc_data_emulator:/home/nayab/dev_ws/install/py_pubsub:/home/nayab/dev_ws/install/my_package:/home/nayab/dev_ws/install/abds_msgs:/home/nayab/dev_ws/install/abds_core_common:/home/nayab/dev_ws/install/ether_follow_pubsub:/home/nayab/dev_ws/install/ether_follow_interfaces:/home/nayab/dev_ws/install/dbr_pubsub:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:d9979ba5-a308-4fb9-a122-5f06591d9d58'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nayab/dev_ws/build/abd_robot_comms'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nayab/dev_ws/install/rc_interfaces/lib/python3.8/site-packages:/home/nayab/dev_ws/install/abds_msgs/lib/python3.8/site-packages:/home/nayab/dev_ws/install/tutorial_interfaces/lib/python3.8/site-packages:/home/nayab/dev_ws/install/turtlesim/lib/python3.8/site-packages:/home/nayab/dev_ws/install/rc_data_emulator/lib/python3.8/site-packages:/home/nayab/dev_ws/install/py_pubsub/lib/python3.8/site-packages:/home/nayab/dev_ws/install/my_package/lib/python3.8/site-packages:/home/nayab/dev_ws/install/abds_core_common/lib/python3.8/site-packages:/home/nayab/dev_ws/install/ether_follow_pubsub/lib/python3.8/site-packages:/home/nayab/dev_ws/install/ether_follow_interfaces/lib/python3.8/site-packages:/home/nayab/dev_ws/install/dbr_pubsub/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/nayab/project_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/nayab/dev_ws/install/rc_interfaces:/home/nayab/dev_ws/install/abds_msgs:/home/nayab/dev_ws/install/tutorial_interfaces:/home/nayab/dev_ws/install/turtlesim:/home/nayab/dev_ws/install/abd_robot_comms:/home/nayab/dev_ws/install/abds_core_common:/home/nayab/dev_ws/install/ether_follow_interfaces:/home/nayab/dev_ws/install/rc_data_emulator:/home/nayab/dev_ws/install/py_pubsub:/home/nayab/dev_ws/install/my_package:/home/nayab/dev_ws/install/ether_follow_pubsub:/home/nayab/dev_ws/install/dbr_pubsub:/opt/ros/foxy:/home/nayab/project_ws/devel:/opt/ros/noetic')]), 'shell': False}
+[8.227942] (-) TimerEvent: {}
+[8.237870] (abd_robot_comms) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.238283] (abd_robot_comms) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/abd_robot_comms/lib/abd_robot_comms/trajectory_calculator\n'}
+[8.242260] (abd_robot_comms) StdoutLine: {'line': b'-- Set runtime path of "/home/nayab/dev_ws/install/abd_robot_comms/lib/abd_robot_comms/trajectory_calculator" to ""\n'}
+[8.242480] (abd_robot_comms) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/ament_index/resource_index/package_run_dependencies/abd_robot_comms\n'}
+[8.242631] (abd_robot_comms) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/ament_index/resource_index/parent_prefix_path/abd_robot_comms\n'}
+[8.242734] (abd_robot_comms) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/environment/ament_prefix_path.sh\n'}
+[8.242832] (abd_robot_comms) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/environment/ament_prefix_path.dsv\n'}
+[8.242910] (abd_robot_comms) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/environment/path.sh\n'}
+[8.242987] (abd_robot_comms) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/environment/path.dsv\n'}
+[8.243094] (abd_robot_comms) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/local_setup.bash\n'}
+[8.243182] (abd_robot_comms) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/local_setup.sh\n'}
+[8.243264] (abd_robot_comms) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/local_setup.zsh\n'}
+[8.243347] (abd_robot_comms) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/local_setup.dsv\n'}
+[8.243421] (abd_robot_comms) StdoutLine: {'line': b'-- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/package.dsv\n'}
+[8.243494] (abd_robot_comms) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/ament_index/resource_index/packages/abd_robot_comms\n'}
+[8.243567] (abd_robot_comms) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/cmake/abd_robot_commsConfig.cmake\n'}
+[8.243640] (abd_robot_comms) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/cmake/abd_robot_commsConfig-version.cmake\n'}
+[8.243713] (abd_robot_comms) StdoutLine: {'line': b'-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/package.xml\n'}
+[8.244937] (abd_robot_comms) CommandEnded: {'returncode': 0}
+[8.312159] (abd_robot_comms) JobEnded: {'identifier': 'abd_robot_comms', 'rc': 0}
+[8.313722] (-) EventReactorShutdown: {}

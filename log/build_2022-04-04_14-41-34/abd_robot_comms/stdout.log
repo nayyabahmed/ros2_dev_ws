@@ -1,0 +1,26 @@
+[ 60%] Built target network_utils
+[ 60%] Built target comms
+[ 60%] Built target numeric_analysis
+[ 80%] Built target pf_segment_functions
+[35m[1mScanning dependencies of target trajectory_calculator[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/trajectory_calculator.dir/src/trajectory_calculator.cpp.o[0m
+[100%] [32m[1mLinking CXX executable trajectory_calculator[0m
+[100%] Built target trajectory_calculator
+-- Install configuration: ""
+-- Installing: /home/nayab/dev_ws/install/abd_robot_comms/lib/abd_robot_comms/trajectory_calculator
+-- Set runtime path of "/home/nayab/dev_ws/install/abd_robot_comms/lib/abd_robot_comms/trajectory_calculator" to ""
+-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/ament_index/resource_index/package_run_dependencies/abd_robot_comms
+-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/ament_index/resource_index/parent_prefix_path/abd_robot_comms
+-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/environment/ament_prefix_path.sh
+-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/environment/path.sh
+-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/environment/path.dsv
+-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/local_setup.bash
+-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/local_setup.sh
+-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/local_setup.zsh
+-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/local_setup.dsv
+-- Installing: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/package.dsv
+-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/ament_index/resource_index/packages/abd_robot_comms
+-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/cmake/abd_robot_commsConfig.cmake
+-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/cmake/abd_robot_commsConfig-version.cmake
+-- Up-to-date: /home/nayab/dev_ws/install/abd_robot_comms/share/abd_robot_comms/package.xml
